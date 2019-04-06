@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'role', 'is_verified', 'location', 'description'
     ];
 
     /**
@@ -36,4 +36,49 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * checking role of user if in db value is equal 1 then admin if 2 then moderator if 3 then user default user
+     * @return string
+     */
+    public function role() {
+        switch($this->role) {
+            case 1:
+                return 'admin';
+                break;
+            case 2:
+                return 'mod';
+                break;
+            case 3:
+                return 'user';
+                break;
+            default:
+                return 'user';
+                break;
+        }
+    }
+
+    /**
+     * checking role and if role is admin then return boolean isAdmin true;
+     * @return bool
+     */
+    public function isAdmin() {
+        return $this->role()=='admin' ? true : false;
+    }
+
+    /**
+     * Checking role and if role is equal mod then return boolean isModerator true;
+     * @return bool
+     */
+    public function isModerator() {
+        return $this->role()=='mod' ? true : false;
+    }
+
+    /**
+     * Checking role and if role is equal user then return boolean isUser true;
+     * @return bool
+     */
+    public function isUser() {
+        return $this->role()=='user' ? true : -false;
+    }
 }

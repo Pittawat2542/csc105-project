@@ -32,8 +32,13 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        @if(Auth::check())
+                            @if ($role=='admin' || $role=='mod')
+                                <li><a class="nav-link" href="{{ url('/admin') }}">Admin Mod Dashboard</a></li>
+                            @endif
+                        @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -49,6 +54,14 @@
                                 </li>
                             @endif
                         @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Add offer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Wishlist etc</a>
+                            </li>
+
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
