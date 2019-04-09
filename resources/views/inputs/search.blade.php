@@ -30,10 +30,11 @@
 </head>
 
 <body>
-    <form class="form-inline md-form form-sm mt-0">
+    <form class="form-inline md-form form-sm mt-0" onchange="">
         <i class="fa fa-search" aria-hidden="true"></i>
-        <input class="form-control form-control-sm ml-3 w-30 no-rounding border-only-bottom" type="text" placeholder="Search . . ." aria-label="Search">
-      </form>
+        <input class="form-control form-control-sm ml-3 w-30 no-rounding border-only-bottom" type="text"
+            placeholder="Search . . ." aria-label="Search">
+    </form>
 </body>
 
 </html>

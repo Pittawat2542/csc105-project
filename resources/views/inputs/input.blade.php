@@ -41,14 +41,16 @@
 </head>
 
 <body>
-  <label for="name" class="input-label">name</label>
-  <br>
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text no-rounding"></span>
+  <div>
+    <label for="name" class="input-label">name</label>
+    <br>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text no-rounding"></span>
+      </div>
+      <input type="text" class="form-control no-rounding">
     </div>
-    <input type="text" class="form-control no-rounding">
-
+  </div>
 
 </body>
 
