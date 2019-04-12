@@ -35,7 +35,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @if(Auth::check())
-                            @if ($role=='admin' || $role=='mod')
+                            @if (Auth::user()->role()=='admin' || Auth::user()->role()=='mod')
                                 <li><a class="nav-link" href="{{ url('/admin') }}">Admin Mod Dashboard</a></li>
                             @endif
                         @endif

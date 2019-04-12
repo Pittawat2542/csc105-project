@@ -11,6 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        Eloquent::unguard();
+        $breeds = 'database/seeds/breeds.sql';
+        DB::unprepared(file_get_contents($breeds));
+        $this->command->info('Breeds table seeded!');
     }
 }
