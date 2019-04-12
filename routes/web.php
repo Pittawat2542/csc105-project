@@ -19,8 +19,29 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//categories page
+Route::resource('/categories', 'CategoriesController', ['names'=>[
+    'index'=>'categories.index',
+    'show'=>'categories.show'
+]]);
+
 Route::group(['middleware'=>'admin'], function() {
+
     //index page of admin page
     Route::get('/admin', 'AdminController@index')->name('admin');
+    //users admin page
+    Route::resource('admin/users', 'AdminUsersController', ['names'=>[
+        'index'=>'admin.users.index',
+        'create'=>'admin.users.create',
+        'store'=>'admin.users.store',
+        'edit'=>'admin.users.edit'
+    ]]);
+    //categories admin page
+    Route::resource('admin/categories', 'AdminCategoriesController', ['names'=>[
+        'index'=>'admin.categories.index',
+        'create'=>'admin.categories.create',
+        'store'=>'admin.categories.store',
+        'edit'=>'admin.categories.edit'
+    ]]);
 
 });
