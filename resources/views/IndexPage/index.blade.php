@@ -24,7 +24,7 @@
                 </form>
             </div>
             <div class="p-2">
-                <img id="logo" class="mx-auto" src="../../design/logo/logo.png" alt="">
+                <img id="logo" class="mx-auto" src="../../../design/logo/logo.png" alt="">
             </div>
             <div class="p-2">
                 <h4 class="d-inline mr-5"><a class="font-weight-bold" href="#">Register</a></h4>
