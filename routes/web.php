@@ -44,4 +44,14 @@ Route::group(['middleware'=>'admin'], function() {
         'edit'=>'admin.categories.edit'
     ]]);
 
+    //pictures manager
+    Route::resource('admin/media', 'AdminPhotoController', ['names'=>[
+        'index'=>'admin.media.index',
+        'create'=>'admin.media.create',
+        'store'=>'admin.media.store',
+        'edit'=>'admin.media.edit',
+    ]]);
+    Route::delete('admin/delete/media', 'AdminPhotoController@deleteMedia');
+
+
 });

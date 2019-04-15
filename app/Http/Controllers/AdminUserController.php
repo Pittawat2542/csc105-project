@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\UserEditRequest;
 use App\Http\Requests\UserStoreRequest;
 
+use App\Photo;
 use App\User;
-
+use Illuminate\Support\Facades\Auth;
 
 
 class AdminUsersController extends Controller
@@ -46,6 +47,11 @@ class AdminUsersController extends Controller
         } else {
             $data = $request->all();
             $data['password'] = bcrypt($request->password);
+        }
+
+        $photo = new Photo();
+        if($file = $request->file('photo')){
+            $data['photo_id'] = $photo->photoUpload($request->file('photo'), 'user_', '0', Auth::user()->id);
         }
         User::create($data);
 
@@ -89,6 +95,11 @@ class AdminUsersController extends Controller
         } else {
             $data = $request->all();
             $data['password'] = bcrypt($request->password);
+        }
+
+        $photo = new Photo();
+        if($file = $request->file('photo')){
+            $data['photo_id'] = $photo->photoUpload($request->file('photo'), 'user_', '0', Auth::user()->id);
         }
 
         $user->update($data);

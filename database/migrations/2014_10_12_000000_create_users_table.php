@@ -19,10 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             //Roles 1 - admin 2 - mod 3 - user
-            $table->integer('role')->default(3);
+            $table->tinyInteger('role')->default(3);
             $table->boolean('is_verified')->default(false);
             $table->string('location')->nullable();
             $table->string('description')->nullable();
+            $table->integer('photo_id')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

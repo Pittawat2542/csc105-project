@@ -18,5 +18,7 @@
 <!-- Custom Theme JavaScript -->
 <script src="{{asset('js/startmin.js')}}"></script>
 
+@yield('scripts')
+
 </body>
 </html>

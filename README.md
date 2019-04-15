@@ -14,7 +14,7 @@ You need: <br>
 -XAMP or MAMP or something this way <br>
 -create new data base in your mysql (for example you can start your XAMP server and go to phpmyadmin localhost/phpmyadmin)<br>
 <br> For windows i have no idea how to put it exactly together, but for mac<br>
-1. use your terminal, go to the place where you have your XAMP files mine path is:<br>
+use your terminal, go to the place where you have your XAMP files mine path is:<br>
 /Applications/XAMPP/htdocs/ <br>
 so you can use command<br>
 <code>cd /Applications/XAMPP/htdocs/ </code>

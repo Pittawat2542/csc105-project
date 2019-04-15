@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'role', 'is_verified', 'location', 'description'
+        'name', 'email', 'password', 'role', 'is_verified', 'location', 'description', 'photo_id'
     ];
 
     /**
@@ -80,5 +80,13 @@ class User extends Authenticatable
      */
     public function isUser() {
         return $this->role()=='user' ? true : -false;
+    }
+
+    /**
+     * Var photo belongs to model photo
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function photo() {
+        return $this->belongsTo('App/Photo');
     }
 }
