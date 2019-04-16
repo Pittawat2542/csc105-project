@@ -25,6 +25,23 @@ Route::resource('/categories', 'CategoriesController', ['names'=>[
     'show'=>'categories.show'
 ]]);
 
+//Offers for not logedin
+Route::get('/offers', 'OffersController@index')->name('offers');
+
+//loged users
+Route::group(['middleware'=>'auth'], function() {
+
+    //Offers for users
+    Route::resource('admin/users', 'OffersController', ['names'=>[
+        'myOffers'=>'myOffers.create',
+        'create'=>'offers.create',
+        'store'=>'offer.store',
+        'edit'=>'offer.edit',
+        'delete'=>'offer.delete'
+    ]]);
+
+});
+
 Route::group(['middleware'=>'admin'], function() {
 
     //index page of admin page
@@ -34,14 +51,16 @@ Route::group(['middleware'=>'admin'], function() {
         'index'=>'admin.users.index',
         'create'=>'admin.users.create',
         'store'=>'admin.users.store',
-        'edit'=>'admin.users.edit'
+        'edit'=>'admin.users.edit',
+        'delete'=>'admin.users.delete'
     ]]);
     //categories admin page
     Route::resource('admin/categories', 'AdminCategoriesController', ['names'=>[
         'index'=>'admin.categories.index',
         'create'=>'admin.categories.create',
         'store'=>'admin.categories.store',
-        'edit'=>'admin.categories.edit'
+        'edit'=>'admin.categories.edit',
+        'delete'=>'admin.categories.delete'
     ]]);
 
     //pictures manager
@@ -53,5 +72,12 @@ Route::group(['middleware'=>'admin'], function() {
     ]]);
     Route::delete('admin/delete/media', 'AdminPhotoController@deleteMedia');
 
-
+    //offers for admin
+    Route::resource('admin/offers', 'AdminOffersController', ['names'=>[
+        'index'=>'admin.offer.index',
+        'create'=>'admin.offer.create',
+        'store'=>'admin.offer.store',
+        'edit'=>'admin.offer.edit',
+        'delete'=>'admin.offer.delete'
+    ]]);
 });

@@ -96,4 +96,11 @@ class User extends Authenticatable
     public function photo() {
         return $this->belongsTo('App/Photo');
     }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function offer() {
+        return $this->hasMany('App/Offer');
+    }
 }
