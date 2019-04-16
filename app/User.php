@@ -79,7 +79,14 @@ class User extends Authenticatable
      * @return bool
      */
     public function isUser() {
-        return $this->role()=='user' ? true : -false;
+        return $this->role()=='user' ? true : false;
+    }
+
+    /** return boolean if user is verified
+     * @return bool|int
+     */
+    public function isVerified() {
+        return $this->is_verify==1 ? true : false;
     }
 
     /**
