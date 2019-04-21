@@ -41,15 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
       })
    })
 
-   document.querySelectorAll('.data-group .picture, .data-group .name-detail').forEach(function(elem) {
+   document.querySelectorAll('.user-box .picture, .user-box .name-detail').forEach(function(elem) {
       elem.addEventListener('click', function() {
-         spanner = elem.parentElement.parentElement.children
-         for (let i = 0; i < spanner.length; i++) {
-            if (spanner[i].className.indexOf('data-hidden-box') + 1) {
-               if (spanner[i].style.display == 'block') {
-                  spanner[i].style.display = 'none'
+         toggling = elem.parentElement.parentElement.children
+         for (let i = 0; i < toggling.length; i++) {
+            if (toggling[i].className.indexOf('other-detail-box') + 1) {
+               if (toggling[i].getAttribute('data-span') == 'true') {
+                  toggling[i].setAttribute('data-span', 'false')
                } else {
-                  spanner[i].style.display = 'block'
+                  toggling[i].setAttribute('data-span', 'true')
                }
             }
          }

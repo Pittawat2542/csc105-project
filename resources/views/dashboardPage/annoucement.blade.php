@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="/style.css">
    <script src="/main.js"></script>
-   <title>Dashboard</title>
+   <title>Create new announcement</title>
 </head>
 <body style="color: rgb(40, 40, 140);">
 

@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="/style.css">
    <script src="/main.js"></script>
-   <title>Dashboard</title>
+   <title>Users' dashboard</title>
 </head>
 <body>
 
@@ -44,7 +44,7 @@
 
 
          <div id="my_ann" class="router-content">
-            <div class="anchor-button sticky-left"><a href="/annoucement.html" target="_blank">ADD NEW</a></div>
+            <div class="anchor-button sticky-left"><a href="/resources/views/dashboardPage/annoucement.blade.php" target="_blank">ADD NEW</a></div>
             <div class="data-list">
                <div class="data-spanner" data-span="false"></div>
 

@@ -108,7 +108,7 @@ body {
    animation: fadein .3s linear;
 }
 
-.data-spanner[data-span="false"] ~ .data-box:nth-child(n + 5), .data-spanner[data-span="false"] ~ .data-group:nth-child(n + 5) {
+.data-spanner[data-span="false"] ~ .data-box:nth-child(n+5), .data-spanner[data-span="false"] ~ .user-box:nth-child(n+5) {
    display: none;
 }
 
@@ -338,53 +338,50 @@ textarea:focus {
    margin-right: .8rem; 
 }
 
-.data-group .data-hidden-box {
+@media all and (max-width: 500px) {
+   label, #my_set span {
+      font-size: .7rem;
+   }
+}
+
+.user-box {
    position: relative;
-   min-height: 14rem;
-   width: 100%;
-   padding: 1rem;
-   display: none;
 }
 
-.data-hidden-box[data-span="true"] {
-   display: block;
-}
-
-.data-group .picture, .data-group .name-detail {
-   cursor: pointer;
-}
-
-.data-group {
+.user-box {
    margin-bottom: 1rem;
 }
 
-.data-group .data-box {
+.user-box > .data-box {
    margin-bottom: 0;
 }
 
-.data-hidden-box > * {
-   display: inline-block;
+.user-box > .other-detail-box {
+   width: 100%;
+   padding: 1rem;
+   overflow: hidden;
 }
 
-.data-hidden-box .image {
+.other-detail-box[data-span="false"] {
+   display: none;
+}
+
+.user-box .picture, .user-box .name-detail {
+   cursor: pointer;
+}
+
+.other-detail-box .other-profile {
+   display: inline-block;
    width: 9rem;
-   height: 12rem;
-   position: absolute;
+   height: 11rem;
    background-size: 100%;
    background-position: center;
    background-repeat: no-repeat;
    background-color: rgb(100, 100, 100);
 }
 
-.data-hidden-box .information {
-   width: calc(100% - 9.5rem);
-   word-wrap: break-word;
-   font-size: 80%;
+.other-detail-box .other-information {
    float: right;
-}
-
-@media all and (max-width: 500px) {
-   label, #my_set span {
-      font-size: .7rem;
-   }
+   width: calc(100% - 10rem);
+   word-wrap: break-word;
 }
