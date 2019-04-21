@@ -11,3 +11,4 @@ npm-debug.log
 yarn-error.log
 .idea/*
 .editorconfig
+cloud_sql_proxy
