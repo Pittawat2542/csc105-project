@@ -1,0 +1,390 @@
+*, ::before, ::after {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   position: relative;
+   margin: 0;
+   width: 100vw;
+   min-width: 375px;
+   min-height: 100vh;
+   color: rgb(40, 40, 140);
+}
+
+.empty-navbar {
+   display: block;
+   width: 100%;
+   height: 3rem;
+}
+
+.box-shadow {
+   box-shadow: 0 2px 5px rgb(0, 0, 0, .3);
+}
+
+.centered-size {
+   width: 70%;
+   min-width: 280px;
+   max-width: 1200px;
+   padding: 0;
+   margin: 0 auto;
+}
+
+.router-table {
+   font-family: sans-serif;
+   padding: 1.5rem 0;
+}
+
+.router-table .router-title {
+   font-size: 2rem;
+   padding-bottom: 1.5rem;
+}
+
+.indent-box {
+   padding-left: 1.5rem;
+}
+
+.router-tab {
+   font-size: .8rem;
+   color: rgb(160, 160, 160);
+   cursor: pointer;
+   transition: color .3s linear;
+   padding-bottom: 1rem;
+}
+
+.router-tab:hover, .router-tab:active, .router-tab.onwork {
+   color: rgb(40, 40, 140);
+}
+
+.router-content {
+   width: 100%;
+   display: none;
+   animation: fadein .3s ease-in;
+}
+
+@keyframes fadein {
+   from { opacity: 0; }
+}
+
+@media all and (min-width: 900px) {
+   .router-title, .router-tabs {
+      float: left;
+   }
+
+   .router-tabs {
+      clear: left;
+   }
+
+   .router-display {
+      margin-left: 16rem;
+   }
+}
+
+.data-list {
+   position: relative;
+}
+
+.data-spanner {
+   position: absolute;
+   padding: 1rem;
+   height: 3rem;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   cursor: pointer;
+   font-size: .8rem;
+   text-align: center;
+}
+
+.data-spanner * {
+   display: inline-block;
+}
+
+.data-box {
+   position: relative;
+   padding: 1rem;
+   border-radius: 2px;
+   margin-bottom: 1rem;
+   animation: fadein .3s linear;
+}
+
+.data-spanner[data-span="false"] ~ .data-box:nth-child(n + 5), .data-spanner[data-span="false"] ~ .data-group:nth-child(n + 5) {
+   display: none;
+}
+
+.data-box .picture {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: rgb(100, 100, 100);
+}
+
+.data-box .name-detail {
+   display: inline-block;
+   position: absolute;
+   margin-left: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.name-detail span:nth-of-type(n+2) {
+   font-size: .7rem;
+   color: rgb(100, 100, 100);
+}
+
+.data-box .button-action {
+   display: inline-block;
+   margin-right: 1rem;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+}
+
+@media all and (max-width: 550px) {
+   .data-box .name-detail {
+      position: relative;
+      margin-left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+
+   .data-box .button-action {
+      display: inline-block;
+      position: relative;
+      transform: translateY(0);
+   }
+}
+
+.button-action > * {
+   transform: scale(.9);
+}
+
+.button-action .simple-button {
+   display: inline-block;
+   font-size: .9rem;
+   padding: .5rem 1rem;
+   border-radius: 2px;
+   cursor: pointer;
+}
+
+.button-action .danger {
+   color: rgb(255, 55, 55);
+}
+
+
+#my_set .title {
+   font-size: 1.2rem;
+}
+
+.input-field {
+   position: relative;
+   display: block;
+   width: 100%;
+   padding-left: 6px;
+   background-color: rgb(40, 40, 140);
+   margin: 35px 0; 
+}
+
+.input-field label {
+   font-size: .8rem;
+   position: absolute;
+   top: -5px;
+   left: 0;
+   transform: translateY(-100%);
+}
+
+label.required::after {
+   content: " *";
+   color: rgb(250, 0, 0);
+}
+
+.input-field input {
+   font-size: 18px;
+   width: 100%;
+   padding: 7px 10px;
+   border: none;
+}
+
+.input-field input:focus {
+   outline: none;
+}
+
+textarea {
+   font-size: 18px;
+   width: 100%;
+   padding: 7px 10px;
+   border: none;
+   resize: none;
+}
+
+textarea:focus {
+   outline: none;
+}
+
+.commit-button {
+   display: inline-block;
+   position: relative;
+}
+
+.sticky-left {
+   left: 100%;
+   transform: translateX(-100%);
+}
+
+.commit-button label {
+   padding: .5rem 1rem;
+   border-radius: 2px;
+   cursor: pointer;
+}
+
+.commit-button input {
+   display: none;
+}
+
+#my_set .section:last-child {
+   padding-top: 1.2rem;
+}
+
+#my_set .section:last-child form {
+   padding-top: 1rem;
+}
+
+.outer-blue {
+   background-color: rgb(40, 40, 140);
+   color: rgb(248, 248, 248);
+}
+
+.inner-blue {
+   color: rgb(40, 40, 140);
+   background-color: rgb(248, 248, 248);
+}
+
+.outer-red {
+   background-color: rgb(255, 55, 55);
+   color: rgb(248, 248, 248);
+}
+
+.inner-red {
+   color: rgb(255, 55, 55);
+   background-color: rgb(248, 248, 248);
+}
+
+.picture-uploader {
+   padding-top: 1rem;
+   position: relative;
+}
+
+.picture-uploader > * {
+   display: inline-block;
+}
+
+.picture-uploader .profile-picture {
+   width: 50px;
+   height: 70px;
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: rgb(100, 100, 100);
+}
+
+.picture-uploader .upload {
+   position: absolute;
+   margin-left: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.picture-uploader .upload .commit-button {
+   margin-top: .8rem;
+}
+
+.anchor-button {
+   position: relative;
+   display: inline-block;
+   padding: .5rem 1rem;
+   border-radius: 2px;
+   background-color: rgb(40, 40, 140);
+   color: rgb(248, 248, 248);
+   margin: 1rem 0;
+}
+
+.anchor-button a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.right-para {
+   position: relative;
+   display: inline-block;
+   margin-bottom: 1rem;
+}
+
+.search-bar input {
+   border: none; 
+   border-bottom: 1px solid rgb(0, 0, 0); 
+   padding: 0 .5rem .2rem .5rem;
+}
+
+.search-bar input:focus {
+   outline: none;
+}
+
+.right-para *:not(:last-child) {
+   display: inline-block;
+   margin-right: .8rem; 
+}
+
+.data-group .data-hidden-box {
+   position: relative;
+   min-height: 14rem;
+   width: 100%;
+   padding: 1rem;
+   display: none;
+}
+
+.data-hidden-box[data-span="true"] {
+   display: block;
+}
+
+.data-group .picture, .data-group .name-detail {
+   cursor: pointer;
+}
+
+.data-group {
+   margin-bottom: 1rem;
+}
+
+.data-group .data-box {
+   margin-bottom: 0;
+}
+
+.data-hidden-box > * {
+   display: inline-block;
+}
+
+.data-hidden-box .image {
+   width: 9rem;
+   height: 12rem;
+   position: absolute;
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: rgb(100, 100, 100);
+}
+
+.data-hidden-box .information {
+   width: calc(100% - 9.5rem);
+   word-wrap: break-word;
+   font-size: 80%;
+   float: right;
+}
+
+@media all and (max-width: 500px) {
+   label, #my_set span {
+      font-size: .7rem;
+   }
+}
