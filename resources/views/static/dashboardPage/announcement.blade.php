@@ -4,13 +4,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="/style.css">
-   <script src="/main.js"></script>
+   <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
+   <script src="{{asset('js/main.js')}}"></script>
    <title>Create new announcement</title>
 </head>
 <body style="color: rgb(40, 40, 140);">
 
-   <div class="empty-navbar box-shadow"></div>
+   @include('navbar.navbar')
 
    <div class="centered-size" style="margin: 1.2rem auto; width: 60%;">
       <p style="font-size: 2rem;">CREATE NEW ANNOUNCEMENT</p>

@@ -4,15 +4,15 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="/style.css">
-   <script src="/main.js"></script>
+   <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
+   <script src="{{asset('js/main.js')}}"></script>
    <title>Admin's dashboard</title>
 </head>
 <body>
 
-   <div class="empty-navbar box-shadow"></div>
+@include('navbar.navbar')
 
-   <div class="router-table centered-size">
+   <div class="router-table centered-size mb-5">
       <div class="router-title">DASHBOARD</div>
 
       <div class="router-tabs indent-box">
@@ -192,7 +192,7 @@
                   <input id="ann_filter" name="ann_filter" type="text">
                </div>
                <div class="anchor-button">
-                  <a href="/resources/views/dashboardPage/annoucement.blade.php" target="_blank">ADD NEW</a><!-- link to create new announcement -->
+                  <a href="/static/announcement/create" target="_blank">ADD NEW</a><!-- link to create new announcement -->
                </div>
             </div>
 
@@ -210,5 +210,7 @@
          </div>
       </div>
    </div>
+
+@include('footer.footer')
 </body>
 </html>

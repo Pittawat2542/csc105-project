@@ -122,9 +122,9 @@
 
 <body>
 
-@include('navbar.navbar');
+@include('navbar.navbar')
 
-<div class="container">
+<div class="container mt-5 mb-5">
     <div class="row">
         <div class="col">
             <h2 class="header mb-3">Register</h2>
@@ -182,7 +182,7 @@
     </div>
 </div>
 
-@include('footer.footer');
+@include('footer.footer')
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

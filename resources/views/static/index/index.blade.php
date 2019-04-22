@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('style.css')}}">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <title>index</title>
 </head>
 
 <body>
     <div class="container">
-
         <div class="d-flex justify-content-between">
             <div class="p-2">
                 <form class="form-inline md-form form-sm mt-0" id="search" onchange="">
@@ -24,30 +23,34 @@
                 </form>
             </div>
             <div class="p-2">
-                <img id="logo" class="mx-auto" src="../../../design/logo/logo.png" alt="">
+                <img id="logo" class="mx-auto" src="/images/logo.png" alt="">
             </div>
             <div class="p-2">
-                <h4 class="d-inline mr-5"><a class="font-weight-bold" href="#">Register</a></h4>
-                <h4 class="d-inline"><a class="font-weight-bold" href="#">Login</a></h4>
+                <h4 class="d-inline mr-5"><a class="font-weight-bold" href="/static/register">Register</a></h4>
+                <h4 class="d-inline"><a class="font-weight-bold" href="/static/login">Login</a></h4>
             </div>
         </div>
 
         <div class="d-flex justify-content-center mt-3">
             <div class="p-2">
-                <h4 class="d-inline font-weight-bold"><a href="#">Category 1</a></h4>
+                <h4 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 1</a></h4>
             </div>
             <div class="p-2">
-                <h4 class="d-inline font-weight-bold"><a href="#">Category 2</a></h4>
+                <h4 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 2</a></h4>
             </div>
             <div class="p-2">
-                <h4 class="d-inline font-weight-bold"><a href="#">Category 3</a></h4>
+                <h4 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 3</a></h4>
             </div>
             <div class="p-2">
-                <h4 class="d-inline font-weight-bold"><a href="#">Category 4</a></h4>
+                <h4 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 4</a></h4>
             </div>
             <div class="p-2">
-                <h4 class="d-inline font-weight-bold"><a href="#">Category 5</a></h4>
+                <h4 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 5</a></h4>
             </div>
+        </div>
+        <div class="text-center bg-danger p-5 mt-3">
+            <h1 class="text-white">-- Only for development purpose --</h1>
+            <p><a class="mr-5 text-warning" href="/static/dashboard">[GOTO] User dashboard</a><a class="text-warning" href="/static/dashboard/admin">[GOTO] Admin dashboard</a></p>
         </div>
         <div class="jumbotron bg-white no-rounding mt-5">
             <h1 class="display-5 font-weight-bold text-center">PRODUCT NAME</h1>
@@ -81,83 +84,41 @@
             <div class="row mt-4">
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-2.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-2.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-3.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-3.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-4.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-4.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-5.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-6.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-7.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-8.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
@@ -165,41 +126,83 @@
             <div class="row mt-4">
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-9.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-5.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-10.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-6.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-11.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-7.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-12.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-8.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-9.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-10.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-11.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-12.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
@@ -224,83 +227,41 @@
             <div class="row mt-4">
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-2.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-2.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-3.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-3.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-4.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-4.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-5.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-6.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-7.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-8.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
@@ -308,41 +269,83 @@
             <div class="row mt-4">
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-9.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-5.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-10.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-6.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-11.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-7.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-12.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-8.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-9.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-10.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-11.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-12.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
@@ -367,83 +370,41 @@
             <div class="row mt-4">
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-2.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-2.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-3.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-3.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-4.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-4.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-5.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-6.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-7.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-8.jpeg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
-                            <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
@@ -451,41 +412,83 @@
             <div class="row mt-4">
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-9.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-5.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-10.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-6.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-11.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-7.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="../../../design/assets/225-12.jpeg" alt="Card image cap">
+                        <img class="card-img-top" src="/images/225-8.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card header</a></h5>
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
                             <p class="card-text">Card Subheader</p>
-                            <img src="../../../design/assets/like.png" class="like float-right" alt="">
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-9.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-10.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-11.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/225-12.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="/static/puppiesPage">Card header</a></h5>
+                            <p class="card-text">Card Subheader</p>
+                            <img src="/images/like.png" class="like float-right" alt="">
                         </div>
                     </div>
                 </div>
@@ -493,10 +496,8 @@
             <h4 class="d-inline float-right mt-3"><a href="#">More ></a></h4>
         </div>
     </div>
-    <br>
-    <div class="jumbotron bg-black no-rounding mt-5">
-        <h1 class="display-5 font-weight-bold text-center">FOOTER</h1>
-    </div>
+
+    @include('footer.footer')
 </body>
 
 </html>

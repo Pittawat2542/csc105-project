@@ -102,6 +102,10 @@
             float: right;
         }
 
+        .form-button > button {
+            width: 100%;
+        }
+
         .header {
             color: #405377;
             font-weight: 700;
@@ -116,12 +120,12 @@
 
 <body>
 
-@include('navbar.navbar');
+@include('navbar.navbar')
 
-<div class="container">
+<div class="container mt-5 mb-5">
     <div class="row">
         <div class="col">
-            <h2 class="header mb-3">Login</h2>
+            <h2 class="header mb-3">Reset Password</h2>
 
             <form>
                 <div class="form-group">
@@ -132,32 +136,15 @@
                         </div>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div></div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"></span>
-                        </div>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div></div>
-                <div class="form-group form-check container-fluid">
-                    <div class="row">
-                        <div class="col"><input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-                        </div>
-                        <div class="col text-right"><a href="/password_reset">Forgot Password ?</a></div>
-                    </div>
-                </div>
-                <div class="form-buttons">
-                    <button type="submit" class="btn btn-outline-primary">Register</button>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                <div class="form-button">
+                    <button type="submit" class="btn btn-primary">Reset Password</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
 
-@include('footer.footer');
+@include('footer.footer')
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
