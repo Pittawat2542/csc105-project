@@ -42,11 +42,11 @@ select#sort {
 }
 
 .sort-by-alphabet {
-    background-image: url(../../../design/assets/sort-by-alphabet.png);
+    background-image: url('/images/sort-by-alphabet.png');
 }
 
 .sort-reverse-alphabetical-order {
-    background-image: url(../../../design/assets/sort-reverse-alphabetical-order.png);
+    background-image: url('/images/sort-reverse-alphabetical-order.png');
 }
 
 .ui-select {

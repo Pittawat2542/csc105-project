@@ -12,7 +12,7 @@
 .container {
     max-width: 73%;
     margin-top: 133px;
-    color: #405377 !important;
+    color: #405377;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -80,6 +80,10 @@ a {
 }
 .like:hover{
     display: hidden;
-    background-image: url("likeHover.png");
+    background-image: url("/images/likeHover.png");
     background-size: cover;
+}
+
+footer .container {
+    color: white !important;
 }

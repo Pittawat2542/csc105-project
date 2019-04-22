@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="{{asset('css/navbar.css')}}" rel="stylesheet">
     <title>Hello, world!</title>
 
     <style>
@@ -116,7 +118,7 @@
 
 <body>
 
-@include('navbar.navbar');
+@include('navbar.navbar')
 
 <div class="container mt-5 mb-5">
     <div class="row">
@@ -157,7 +159,7 @@
     </div>
 </div>
 
-@include('footer.footer');
+@include('footer.footer')
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
