@@ -1,4 +1,4 @@
-# Luk Mha Shop (Temporarily name)
+# Puppies Hub
 Our platform intend to be a greatest platform for both people who looking for puupies
 and people who someone to adopt their puppies by using our platform we will provide
 variety of breeds, ages, colors, and so much more. Not only that, our platform also
