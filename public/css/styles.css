@@ -1,0 +1,88 @@
+/* Global */
+
+a {
+    color: #405377;
+}
+
+footer {
+    background-color: #405377;
+    color: white;
+}
+
+
+/* Utilities */
+
+.box-shadow {
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.no-border {
+    border: 0 !important;
+}
+
+.no-border-radius {
+    border-radius: 0 !important;
+}
+
+.text-primary {
+    color: #405377 !important;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+/* Index */
+
+#logo {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#hero {
+    color: #405377;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#catalog {
+    margin: 5rem 0;
+}
+
+.catalog h1 {
+    font-size: 1.75rem;
+}
+
+.catalog h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.catalog-card a {
+    text-decoration: none;
+}
+
+.catalog-card a:hover {
+    color: #405377;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.like {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.like:hover {
+    background-image: url("/images/likeHover.png");
+    background-size: cover;
+}
