@@ -42,9 +42,20 @@
 
         <section id="delete-this-on-production" class="text-center bg-danger p-5 my-3">
             <h1 class="text-white">-- This section only for development purpose --</h1>
-            <p><a class="mr-5 text-warning" href="/static/dashboard">[GOTO] User dashboard</a><a class="text-warning"
-                                                                                                 href="/static/dashboard/admin">[GOTO]
-                    Admin dashboard</a></p>
+            <p>
+                <a class="mr-3 text-warning" href="/static/login">[GOTO] Login page</a>
+                <a class="mr-3 text-warning" href="/static/register">[GOTO] Register page</a>
+                <a class="text-warning" href="/static/password_reset">[GOTO] Reset passsword page</a>
+            </p>
+            <p>
+                <a class="mr-3 text-warning" href="/static/categoryPage">[GOTO] Category page</a>
+                <a class="text-warning" href="/static/puppiesPage">[GOTO] Puppy page</a>
+            </p>
+            <p>
+                <a class="mr-3 text-warning" href="/static/announcement/create">[GOTO] Create announcement</a>
+                <a class="mr-3 text-warning" href="/static/dashboard">[GOTO] User dashboard</a>
+                <a class="text-warning" href="/static/dashboard/admin">[GOTO] Admin dashboard</a>
+            </p>
         </section>
 
         <section id="hero" class="jumbotron bg-white no-rounding mt-5 box-shadow">

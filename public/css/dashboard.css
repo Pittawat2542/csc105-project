@@ -9,17 +9,55 @@ body {
    width: 100vw;
    min-width: 375px;
    min-height: 100vh;
-   color: rgb(40, 40, 140);
+   color: #405377;
 }
 
-.empty-navbar {
-   display: block;
-   width: 100%;
-   height: 3rem;
+/* Navigation bar */
+
+.navbar-brand img {
+   max-width: 12.5%;
 }
+
+.navbar-light a.navbar-brand {
+   color: #405377;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.btn-link.nav-link-main {
+   color: #405377;
+   font-weight: 700;
+}
+
+.search-icon {
+   color: #405377;
+   font-size: 1.25rem;
+}
+
+.search-box {
+   background-color: inherit;
+   border: none;
+   border-bottom: 1px solid #405377;
+   border-radius: 0;
+}
+
+.search-box::placeholder {
+   color: #405377;
+}
+
+/* Footer */
+
+footer {
+   background-color: #405377;
+   color: white;
+}
+
+/* --------------------------- */
 
 .box-shadow {
-   box-shadow: 0 2px 5px rgb(0, 0, 0, .3);
+   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .centered-size {
@@ -53,7 +91,7 @@ body {
 }
 
 .router-tab:hover, .router-tab:active, .router-tab.onwork {
-   color: rgb(40, 40, 140);
+   color: #405377;
 }
 
 .router-content {
@@ -185,7 +223,7 @@ body {
    display: block;
    width: 100%;
    padding-left: 6px;
-   background-color: rgb(40, 40, 140);
+   background-color: #405377;
    margin: 35px 0; 
 }
 
@@ -254,12 +292,12 @@ textarea:focus {
 }
 
 .outer-blue {
-   background-color: rgb(40, 40, 140);
+   background-color: #405377;
    color: rgb(248, 248, 248);
 }
 
 .inner-blue {
-   color: rgb(40, 40, 140);
+   color: #405377;
    background-color: rgb(248, 248, 248);
 }
 
@@ -307,7 +345,7 @@ textarea:focus {
    display: inline-block;
    padding: .5rem 1rem;
    border-radius: 2px;
-   background-color: rgb(40, 40, 140);
+   background-color: #405377;
    color: rgb(248, 248, 248);
    margin: 1rem 0;
 }

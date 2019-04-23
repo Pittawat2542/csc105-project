@@ -1,14 +1,3 @@
-@font-face {
-    font-family: Delicious;
-    src: url('Delicious-Roman.otf');
-}
-
-@font-face {
-    font-family: Delicious;
-    font-weight: bold;
-    src: url('Delicious-Bold.otf');
-}
-
 body {
     padding: 0px;
     margin: 0 auto;
