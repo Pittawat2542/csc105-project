@@ -8,7 +8,7 @@
             <div class="col"><h4>Contact Us</h4>
                 <p><span class="font-weight-bold">Tel:</span> 012-3456-789</p>
                 <p><span class="font-weight-bold">Email:</span> info@puppieshub.com</p>
-                <p><span class="font-weight-bold">Address:</span> 126 Pracha Uthit Rd., Bang Mod, Thung Khru, Bangkok 10140, Thailand</p>
+                <p><span class="font-weight-bold">Address:</span> 126 Pracha Uthit Rd., Bang Mod, Thung Khru, Bangkok 10140, Thailan</p>
             </div>
         </div>
         <div class="row justify-content-center mt-3">

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd2134c7-5a40-4ea2-989a-15948ab274be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/static/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/index/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/index/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/categoryPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/categoryPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/footer/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/footer/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/static/categoryPage/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/categoryPage/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/static/puppiesPage/puppiesPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/puppiesPage/puppiesPage.blade.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -96,20 +98,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/static/categoryPage/category.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="435">
+              <caret line="76" column="60" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
+              <folding>
+                <element signature="e#17101#17108#1#HTML" expanded="true" />
+                <element signature="e#18476#18483#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="155" column="19" selection-start-line="155" selection-start-column="19" selection-end-line="155" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/static/puppiesPage/puppiesPage.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3024">
+              <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/static/index/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="249" column="57" selection-start-line="249" selection-start-column="57" selection-end-line="249" selection-end-column="57" />
+            <state relative-caret-position="221">
+              <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -117,26 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/categoryPage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+            <state relative-caret-position="180">
+              <caret line="10" column="198" selection-start-line="10" selection-start-column="198" selection-end-line="10" selection-end-column="198" />
             </state>
           </provider>
         </entry>
@@ -146,15 +152,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/navbar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -201,6 +198,11 @@
       <find>no-rounding</find>
       <find>&lt;h1 class=&quot;font-weight-bold&quot;&gt;&lt;a href=&quot;#&quot;&gt;Main Category&lt;/a&gt;&lt;/h1&gt;</find>
       <find>input-group</find>
+      <find>shadow-without-top</find>
+      <find>ui-select</find>
+      <find>1</find>
+      <find>page-item</find>
+      <find>3</find>
     </findStrings>
     <replaceStrings>
       <replace>offer</replace>
@@ -245,7 +247,6 @@
         <option value="$PROJECT_DIR$/resources/views/puppiesPage/puppiesPage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/puppiesPage/puppiesPage.css" />
         <option value="$PROJECT_DIR$/resources/views/categoryPage/category.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/categoryPage.css" />
         <option value="$PROJECT_DIR$/resources/views/auth_static/password_reset.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth_static/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboardPage/annoucement.blade.php" />
@@ -255,22 +256,23 @@
         <option value="$PROJECT_DIR$/resources/views/IndexPage/style.css" />
         <option value="$PROJECT_DIR$/resources/views/IndexPage/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/public/css/navbar.css" />
         <option value="$PROJECT_DIR$/resources/views/static/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/auth/password_reset.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/static/categoryPage/category.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/navbar/navbar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/static/puppiesPage/puppiesPage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/public/css/styles.css" />
-        <option value="$PROJECT_DIR$/resources/views/footer/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/index/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/categoryPage.css" />
+        <option value="$PROJECT_DIR$/public/css/navbar.css" />
+        <option value="$PROJECT_DIR$/resources/views/static/puppiesPage/puppiesPage.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/navbar/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/footer/footer.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/styles.css" />
+        <option value="$PROJECT_DIR$/resources/views/static/categoryPage/category.blade.php" />
       </list>
     </option>
   </component>
@@ -420,6 +422,38 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="categoryPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="puppiesPage" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -471,7 +505,7 @@
       <workItem from="1554881874350" duration="22227000" />
       <workItem from="1555652433339" duration="1044000" />
       <workItem from="1555902844882" duration="5617000" />
-      <workItem from="1555999970305" duration="3820000" />
+      <workItem from="1555999970305" duration="8313000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'features/views.navbar'&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
       <created>1555654283847</created>
@@ -484,7 +518,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38070000" />
+    <option name="totallyTimeSpent" value="42563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -714,24 +748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/categoryPage/category.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="116" selection-start-line="8" selection-start-column="116" selection-end-line="8" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="197" selection-start-line="6" selection-start-column="197" selection-end-line="6" selection-end-column="197" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/puppiesPage/puppiesPage.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="119" />
         </state>
       </provider>
     </entry>
@@ -752,13 +772,6 @@
     <entry file="file://$PROJECT_DIR$/public/css/app.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/puppiesPage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -769,44 +782,6 @@
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/navbar/navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="86" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/footer/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="e#776#782#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -814,17 +789,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/categoryPage.css">
+    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/navbar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/categoryPage.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="198" selection-start-line="10" selection-start-column="198" selection-end-line="10" selection-end-column="198" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/static/index/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="249" column="57" selection-start-line="249" selection-start-column="57" selection-end-line="249" selection-end-column="57" />
+        <state relative-caret-position="221">
+          <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/navbar/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="104" selection-start-line="1" selection-start-column="104" selection-end-line="1" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/footer/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="132" selection-start-line="10" selection-start-column="132" selection-end-line="10" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/static/puppiesPage/puppiesPage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3024">
+          <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="155" column="19" selection-start-line="155" selection-start-column="19" selection-end-line="155" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/static/categoryPage/category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="76" column="60" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
+          <folding>
+            <element signature="e#17101#17108#1#HTML" expanded="true" />
+            <element signature="e#18476#18483#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

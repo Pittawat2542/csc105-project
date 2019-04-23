@@ -9,6 +9,22 @@ footer {
     color: white;
 }
 
+.card:hover {
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.like {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.like:hover {
+    background-image: url("/images/likeHover.png");
+    background-size: cover;
+}
+
 
 /* Utilities */
 
@@ -32,6 +48,39 @@ footer {
 
 .text-underline {
     text-decoration: underline;
+}
+
+/* Navigation bar */
+
+.navbar-brand img {
+    max-width: 12.5%;
+}
+
+.navbar-light a.navbar-brand {
+    color: #405377;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.btn-link.nav-link-main {
+    color: #405377;
+    font-weight: 700;
+}
+
+.search-icon {
+    color: #405377;
+    font-size: 1.25rem;
+}
+
+.search-box {
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #405377;
+    border-radius: 0;
+}
+
+.search-box::placeholder {
+    color: #405377;
 }
 
 /* Index */
@@ -71,18 +120,90 @@ footer {
     color: #405377;
 }
 
-.card:hover {
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+/* Category */
+
+#category-header h1 {
+    color: #405377;
 }
 
-.like {
+label[for="itemsPerPage"] {
+    color: #405377;
+}
+
+select[name="itemsPerPage"] {
+    color: #405377;
+    font-weight: 600;
+    padding: 10px 50px;
+}
+
+.sorting > img {
+    opacity: 0.3;
+    max-width: 25%;
+    height: auto;
+}
+
+.sorting h4 {
+    color: #405377;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sorting div a img {
+    max-width: 50%;
+}
+
+#category-filter h3 {
+    color: #405377;
+}
+
+#category select::-ms-expand {
+    display: none;
+}
+
+#category select {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
+    -khtml-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
+    border: none;
+}
+
+#category .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    padding: 10px;
+    display: block;
+}
+
+.date-img {
     max-width: 30px;
-    max-height: 30px;
 }
 
-.like:hover {
-    background-image: url("/images/likeHover.png");
-    background-size: cover;
+#category input[name="date"] {
+    color: #405377;
+}
+
+#category input[type=date]::-webkit-inner-spin-button,
+#category input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#category .page-item.active .page-link {
+    background: #405377;
+    color: white !important;
+    border-color: #405377;
 }

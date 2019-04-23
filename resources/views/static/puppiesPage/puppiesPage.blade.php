@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('static.layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="{{asset('css/navbar.css')}}" rel="stylesheet">
-    <link href="{{asset('css/puppiesPage.css')}}" rel="stylesheet">
-    <title>puppiesPage</title>
-</head>
-
-<body>
-    @include('navbar.navbar')
+@section('content')
     <div class="container mt-5 mb-5" id="main">
         <h3><span class="opacity50"> Category / Subcategory / Sub of Subcategory /</span> Product Name</h3>
         <div class="row mt-5">
@@ -181,11 +166,4 @@
                 aliquet sit amet ac nisi. Phasellus finibus congue dapibus.</p>
         </h3>
     </div>
-
-    @include('footer.footer')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+@endsection
