@@ -20,57 +20,50 @@
         <h3><span class="opacity50"> Category / Subcategory / Sub of Subcategory /</span> Product Name</h3>
         <div class="row mt-5">
             <div class="slider-container col-md-5">
-                <div class="product-slider">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="item active"> <img src="/images/225-4.jpeg"> </div>
-                            <div class="item"> <img src="/images/225-4.jpeg"> </div>
-                            <div class="item"> <img src="/images/225-4.jpeg"> </div>
-                            <div class="item"> <img src="/images/225-4.jpeg"> </div>
-                            <div class="item"> <img src="/images/225-4.jpeg"> </div>
-                            <div class="item"> <img src="/images/225-4.jpeg"> </div>
-                            <div class="item"> <img src="/images/225-4.jpeg"> </div>
-                            <div class="item"> <img src="/images/225-4.jpeg"> </div>
-                            <div class="item"> <img src="/images/225-4.jpeg"> </div>
-                            <div class="item"> <img src="/images/225-4.jpeg"> </div>
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                        <div id="thumbcarousel" class="carousel slide" data-interval="false">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div data-target="#carousel" data-slide-to="0" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                    <div data-target="#carousel" data-slide-to="1" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                    <div data-target="#carousel" data-slide-to="2" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                    <div data-target="#carousel" data-slide-to="3" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                    <div data-target="#carousel" data-slide-to="4" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                </div>
-                                <div class="item">
-                                    <div data-target="#carousel" data-slide-to="5" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                    <div data-target="#carousel" data-slide-to="6" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                    <div data-target="#carousel" data-slide-to="7" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                    <div data-target="#carousel" data-slide-to="8" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                    <div data-target="#carousel" data-slide-to="9" class="thumb"><img
-                                            src="/images/225-4.jpeg"></div>
-                                </div>
-                            </div>
-                            <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev"> <i
-                                    class="fa fa-angle-left" aria-hidden="true"></i> </a>
-                            <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next"><i
-                                    class="fa fa-angle-right" aria-hidden="true"></i> </a>
-                        </div>
+            <div class="slider-container col-lg-5">
+                <div id="puppy-slider" class="carousel slide" data-ride="carousel">
 
+
+                    <ul class="carousel-indicators">
+                        <li data-target="#puppy-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#puppy-slider" data-slide-to="1"></li>
+                        <li data-target="#puppy-slider" data-slide-to="2"></li>
+                        <li data-target="#puppy-slider" data-slide-to="3"></li>
+                        <li data-target="#puppy-slider" data-slide-to="4"></li>
+                        <li data-target="#puppy-slider" data-slide-to="5"></li>
+                    </ul>
+
+
+                    <div class="carousel-inner height100">
+                        <div class="carousel-item active height100">
+                            <img class="img-fluid height100" src="/images/225-2.jpeg" >
+                        </div>
+                        <div class="carousel-item height100">
+                            <img class="img-fluid height100" src="/images/225-3.jpeg" >
+                        </div>
+                        <div class="carousel-item height100">
+                            <img class="img-fluid height100" src="/images/225-4.jpeg" >
+                        </div>
+                        <div class="carousel-item height100">
+                            <img class="img-fluid height100" src="/images/225-5.jpeg" >
+                        </div>
+                        <div class="carousel-item height100">
+                            <img class="img-fluid height100" src="/images/225-6.jpeg" >
+                        </div>
+                        <div class="carousel-item height100">
+                            <img class="img-fluid height100" src="/images/225-7.jpeg" >
+                        </div>
                     </div>
+
+
+                    <a class="carousel-control-prev" href="#puppy-slider" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#puppy-slider" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
+            </div>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-5">
@@ -184,7 +177,7 @@
 
     @include('footer.footer')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 
