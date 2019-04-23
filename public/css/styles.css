@@ -29,6 +29,15 @@ footer {
     background-size: cover;
 }
 
+.opacity50 {
+    opacity: 0.5;
+}
+
+.height100 {
+    height: 100%;
+}
+
+
 
 /* Utilities */
 
@@ -289,4 +298,65 @@ select[name="itemsPerPage"] {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* Puppy page */
+
+#puppy .user-image {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+#puppy hr {
+    border-top: 1px solid #405377;
+}
+
+#puppy .social-button {
+    border: 0;
+    height: 3rem;
+    width: 100%;
+}
+
+#puppy a:hover {
+    color: white !important;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+#puppy #line a {
+    background-color: #00C300;
+}
+
+#puppy #line img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+#puppy #fb a {
+    background-color: #3B5998;
+}
+
+#puppy #fb img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+#puppy #mail a {
+    background-color: #3498DB;
+}
+
+#puppy #mail img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#puppy #call a {
+    background-color: #F1C40F;
+}
+
+#puppy #call img {
+    max-width: 50px;
+    max-height: 50px;
 }
