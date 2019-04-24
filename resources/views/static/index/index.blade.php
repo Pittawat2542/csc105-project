@@ -22,20 +22,20 @@
             </div>
         </section>
 
-        <section id="category-navigation" class="d-flex justify-content-center mt-5">
-            <div class="p-2 pr-5">
+        <section id="category-navigation" class="row justify-content-center mt-5">
+            <div class="col-md-2 text-center">
                 <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 1</a></h5>
             </div>
-            <div class="p-2 pr-5">
+            <div class="col-md-2 text-center">
                 <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 2</a></h5>
             </div>
-            <div class="p-2 pr-5">
+            <div class="col-md-2 text-center">
                 <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 3</a></h5>
             </div>
-            <div class="p-2 pr-5">
+            <div class="col-md-2 text-center">
                 <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 4</a></h5>
             </div>
-            <div class="p-2 pr-5">
+            <div class="col-md-2 text-center">
                 <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 5</a></h5>
             </div>
         </section>
@@ -93,7 +93,7 @@
                 </div>
 
                 <div class="row mt-4 catalog-body">
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225.jpeg" alt="Card image cap">
@@ -105,7 +105,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-2.jpeg" alt="Card image cap">
@@ -117,7 +117,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-3.jpeg" alt="Card image cap">
@@ -129,7 +129,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-4.jpeg" alt="Card image cap">
@@ -144,7 +144,7 @@
                 </div>
 
                 <div class="row mt-4 catalog-body">
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-5.jpeg" alt="Card image cap">
@@ -156,7 +156,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-6.jpeg" alt="Card image cap">
@@ -168,7 +168,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-7.jpeg" alt="Card image cap">
@@ -180,7 +180,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-8.jpeg" alt="Card image cap">
@@ -195,7 +195,7 @@
                 </div>
 
                 <div class="row mt-4 catalog-body">
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-9.jpeg" alt="Card image cap">
@@ -207,7 +207,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-10.jpeg" alt="Card image cap">
@@ -219,7 +219,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-11.jpeg" alt="Card image cap">
@@ -231,7 +231,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-12.jpeg" alt="Card image cap">
@@ -263,7 +263,7 @@
                 </div>
 
                 <div class="row mt-4 catalog-body">
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225.jpeg" alt="Card image cap">
@@ -275,7 +275,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-2.jpeg" alt="Card image cap">
@@ -287,7 +287,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-3.jpeg" alt="Card image cap">
@@ -299,7 +299,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-4.jpeg" alt="Card image cap">
@@ -314,7 +314,7 @@
                 </div>
 
                 <div class="row mt-4 catalog-body">
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-5.jpeg" alt="Card image cap">
@@ -326,7 +326,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-6.jpeg" alt="Card image cap">
@@ -338,7 +338,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-7.jpeg" alt="Card image cap">
@@ -350,7 +350,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-8.jpeg" alt="Card image cap">
@@ -365,7 +365,7 @@
                 </div>
 
                 <div class="row mt-4 catalog-body">
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-9.jpeg" alt="Card image cap">
@@ -377,7 +377,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-10.jpeg" alt="Card image cap">
@@ -389,7 +389,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-11.jpeg" alt="Card image cap">
@@ -401,7 +401,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-1 catalog-card">
+                    <div class="col-md-3 col-sm-6 catalog-card">
                         <a href="/static/puppiesPage">
                             <div class="card no-border">
                                 <img class="card-img-top" src="/images/225-12.jpeg" alt="Card image cap">
