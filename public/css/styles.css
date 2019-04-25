@@ -300,6 +300,16 @@ select[name="itemsPerPage"] {
     text-transform: uppercase;
 }
 
+@media (max-width: 575px) {
+    #auth form {
+        width: 100%;
+    }
+
+    #auth #btn-register {
+       display: none;
+    }
+}
+
 /* Puppy page */
 
 #puppy .user-image {

@@ -38,12 +38,12 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
-                                <div class="form-button">
+                                <div id="btn-register" class="form-button">
                                     <button type="submit" class="btn btn-outline-primary">Register</button>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="form-button">
+                                <div id="btn-login" class="form-button">
                                     <button type="submit" class="btn btn-primary">Login</button>
                                 </div>
                             </div>
