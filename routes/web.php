@@ -13,7 +13,7 @@
 
 Route::get('/', 'StaticRoutesController@index');
 
-Route::get('/static/puppiesPage', 'StaticRoutesController@puppy');
+Route::get('/static/puppiesPage', 'StaticRoutesController@puppies');
 
 Route::get('/static/categoryPage', 'StaticRoutesController@category');
 

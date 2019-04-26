@@ -37,7 +37,9 @@ footer {
     height: 100%;
 }
 
-
+#auth, #category, #announcement, #dashboard, #puppy {
+    margin-top: 7rem !important;
+}
 
 /* Utilities */
 
