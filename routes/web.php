@@ -11,45 +11,23 @@
 |
 */
 
-Route::get('/',function() {
-    return view('static.index.index');
-});
+Route::get('/', 'StaticRoutesController@index');
 
-Route::get('/static/puppiesPage', function() {
-    return view("static.puppiesPage.puppiesPage");
-});
+Route::get('/static/puppiesPage', 'StaticRoutesController@puppy');
 
-Route::get('/static/categoryPage', function() {
-   return view('static.categoryPage.category');
-});
+Route::get('/static/categoryPage', 'StaticRoutesController@category');
 
-Route::get("/static/register", function() {
-    return view('static.auth.register');
-});
+Route::get("/static/register", 'StaticRoutesController@register');
 
-Route::get("/static/login", function() {
-    return view('static.auth.login');
-});
+Route::get("/static/login", 'StaticRoutesController@login');
 
-Route::get("/static/password_reset", function() {
-    return view('static.auth.password_reset');
-});
+Route::get("/static/password_reset", 'StaticRoutesController@password_reset');
 
-Route::get("/static/dashboard/", function() {
-    return view('static.dashboardPage.dashboard_user');
-});
+Route::get("/static/dashboard/", 'StaticRoutesController@dashboard');
 
-Route::get("/static/dashboard/admin", function() {
-    return view('static.dashboardPage.dashboard_admin');
-});
+Route::get("/static/dashboard/admin", 'StaticRoutesController@dashboard_admin');
 
-Route::get("/static/dashboard/", function() {
-    return view('static.dashboardPage.dashboard_user');
-});
-
-Route::get('/static/announcement/create', function() {
-    return view('static.dashboardPage.announcement');
-});
+Route::get('/static/announcement/create', 'StaticRoutesController@announcement_create');
 
 //Route::get('/', function () {
 //    return view('welcome');
