@@ -135,7 +135,7 @@ footer {
     color: #405377;
 }
 
-nav {
+#index-nav {
     display: none !important;
 }
 
@@ -170,7 +170,7 @@ nav {
             display: inline;
         }
         @media(max-width: 430px){
-            .navbar-toggler{
+            #index-nav .navbar-toggler{
                 margin-top: 0 !important;
             }
             #category-navigation{
