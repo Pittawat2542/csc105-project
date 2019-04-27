@@ -146,6 +146,9 @@ nav {
     #index-nav {
         display: block !important;
     }
+    #category-navigation{
+        margin-top: 7rem !important;
+    }
 }
 
 @media (max-width:767px) {
@@ -170,6 +173,10 @@ nav {
             .navbar-toggler{
                 margin-top: 0 !important;
             }
+            #category-navigation{
+                margin-top: 5rem !important;
+            }
+
             @media(max-width: 324px){
                 body{
                     min-width: 324px !important;
