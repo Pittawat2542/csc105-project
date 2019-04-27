@@ -43,7 +43,7 @@ footer {
 
 @media (max-width: 575px) {
     #auth, #category, #announcement, #dashboard, #puppy {
-        margin-top: 8rem !important;
+        margin-top: 5rem !important;
     }
 }
 
@@ -72,6 +72,10 @@ footer {
 }
 
 /* Navigation bar */
+
+.navbar {
+    display: block;
+}
 
 .navbar-brand img {
     max-width: 12.5%;
@@ -102,6 +106,20 @@ footer {
 
 .search-box::placeholder {
     color: #405377;
+}
+
+@media (max-width:767px) {
+    @media (max-width: 575px) {
+        .navbar-brand {
+            display: inline;
+        }
+
+        @media (max-width: 430px) {
+            .navbar-toggler {
+                margin-top: 0 !important;
+            }
+        }
+    }
 }
 
 /* Index */
