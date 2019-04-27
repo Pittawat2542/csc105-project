@@ -73,10 +73,6 @@ footer {
 
 /* Navigation bar */
 
-.navbar {
-    display: block;
-}
-
 .navbar-brand img {
     max-width: 12.5%;
 }
@@ -110,6 +106,10 @@ footer {
 
 @media (max-width:767px) {
     @media (max-width: 575px) {
+        .navbar {
+            display: block;
+        }
+
         .navbar-brand {
             display: inline;
         }

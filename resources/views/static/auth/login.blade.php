@@ -6,15 +6,16 @@
             <div class="col">
                 <h2 class="header mb-3">Login</h2>
 
-                <form>
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
                     <div class="form-group">
                         <label for="login_email">Email</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"></span>
                             </div>
-                            <input type="email" class="form-control" id="login_email" name="login_email"
-                                   placeholder="Enter email">
+                            <input type="email" class="form-control" id="login_email" name="email"
+                                   placeholder="Enter email" required autofocus>
                         </div>
                     </div>
                     <div class="form-group">
@@ -23,13 +24,13 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"></span>
                             </div>
-                            <input type="password" class="form-control" id="login_password" name="login_password"
-                                   placeholder="Password">
+                            <input type="password" class="form-control" id="login_password" name="password"
+                                   placeholder="Password" required>
                         </div>
                     </div>
                     <div class="form-group form-check container-fluid">
                         <div class="row">
-                            <div class="col"><input type="checkbox" class="form-check-input" id="login_remember">
+                            <div class="col"><input type="checkbox" class="form-check-input" id="login_remember" name="remember">
                                 <label class="form-check-label" for="login_remember">Remember Me</label>
                             </div>
                             <div class="col text-right"><a href="/static/password_reset">Forgot Password ?</a></div>

@@ -6,14 +6,24 @@
         <div class="col">
             <h2 class="header mb-3">Register</h2>
 
-            <form>
+            <form method="POST" action="{{ route('register') }}">
+                @csrf
+
+                <div class="form-group">
+                    <label for="register_first_name">Name</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"></span>
+                        </div>
+                        <input type="text" class="form-control" id="register_first_name" name="name" placeholder="Your name">
+                    </div></div>
                 <div class="form-group">
                     <label for="register_email">Email</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"></span>
                         </div>
-                        <input type="email" class="form-control" id="register_email" name="register_email" placeholder="Enter email">
+                        <input type="email" class="form-control" id="register_email" name="email" placeholder="Enter email" required autofocus>
                     </div></div>
                 <div class="form-group">
                     <label for="register_password">Password</label>
@@ -21,7 +31,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"></span>
                         </div>
-                        <input type="password" class="form-control" id="register_password" name="register_password" placeholder="Password">
+                        <input type="password" class="form-control" id="register_password" name="password" placeholder="Password" required>
                     </div></div>
                 <div class="form-group">
                     <label for="register_password_retyped">Re-type Password</label>
@@ -29,24 +39,16 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"></span>
                         </div>
-                        <input type="password" class="form-control" id="register_password_retyped" name="register_password_retyped" placeholder="Re-type passsword">
+                        <input type="password" class="form-control" id="register_password_retyped" name="password_confirmation" placeholder="Re-type passsword" required>
                     </div></div>
-                <div class="form-group">
-                    <label for="register_first_name">First Name</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"></span>
-                        </div>
-                        <input type="text" class="form-control" id="register_first_name" name="register_first_name" placeholder="Your first name">
-                    </div></div>
-                <div class="form-group">
-                    <label for="register_last_name">Last Name</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"></span>
-                        </div>
-                        <input type="text" class="form-control" id="register_last_name" name="register_last_name" placeholder="Your last name">
-                    </div></div>
+{{--                <div class="form-group">--}}
+{{--                    <label for="register_last_name">Last Name</label>--}}
+{{--                    <div class="input-group">--}}
+{{--                        <div class="input-group-prepend">--}}
+{{--                            <span class="input-group-text"></span>--}}
+{{--                        </div>--}}
+{{--                        <input type="text" class="form-control" id="register_last_name" name="last_name" placeholder="Your last name">--}}
+{{--                    </div></div>--}}
                 <div class="form-group form-check">
                     <input type="checkbox" class="form-check-input" id="register_accepted">
                     <label class="form-check-label" for="register_accepted">I agreed and accepted <a class="text-underline" href="#">terms and conditions</a></label>
