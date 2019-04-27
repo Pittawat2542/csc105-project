@@ -1,7 +1,7 @@
 @extends('static.layouts.app-basic')
 
 @section('body')
-<nav id="index-nav" class="navbar navbar-expand-lg navbar-light bg-light box-shadow">
+<nav id="index-nav" class="navbar navbar-expand-lg navbar-light bg-light box-shadow fixed-top">
     <a class="navbar-brand" href="/"><img class="img-responsive mr-3" src="/images/logo.png" alt="logo">Puppies Hub</a>
     <button class="navbar-toggler float-right mt-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
