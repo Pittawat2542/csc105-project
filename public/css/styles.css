@@ -132,6 +132,27 @@ footer {
 .catalog-card a:hover {
     color: #405377;
 }
+nav{
+    display: none !important;
+}
+@media (max-width:991px){
+    #header{
+        display: none !important;
+    }
+    nav{
+        display: block !important;
+    }
+}
+@media (max-width:767px){
+    #category-navigation{
+        min-width: 768px;
+    }
+    .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+}
 
 /* Category */
 
