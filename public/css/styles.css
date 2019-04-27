@@ -141,6 +141,50 @@ footer {
     color: #405377;
 }
 
+nav {
+    display: none !important;
+}
+
+@media (max-width:991px) {
+    #index-header {
+        display: none !important;
+    }
+    #index-nav {
+        display: block !important;
+    }
+}
+
+@media (max-width:767px) {
+    #category-navigation {
+        justify-content: left !important;
+    }
+    .scrolling-wrapper {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+        /* Remove scrollbar space */
+        background: transparent;
+        /* Optional: just make scrollbar invisible */
+    }
+    @media (max-width:535px){
+        #index-nav .navbar-brand{
+            display: inline;
+        }
+        @media(max-width: 430px){
+            .navbar-toggler{
+                margin-top: 0 !important;
+            }
+            @media(max-width: 324px){
+                body{
+                    min-width: 324px !important;
+                }
+            }
+        }
+    }
+}
+
 /* Category */
 
 #category-header h1 {
@@ -157,7 +201,7 @@ select[name="itemsPerPage"] {
     padding: 10px 50px;
 }
 
-.sorting > img {
+.sorting>img {
     opacity: 0.3;
     max-width: 25%;
     height: auto;
@@ -218,8 +262,7 @@ select[name="itemsPerPage"] {
     color: #405377;
 }
 
-#category input[type=date]::-webkit-inner-spin-button,
-#category input[type=date]::-webkit-outer-spin-button {
+#category input[type=date]::-webkit-inner-spin-button, #category input[type=date]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
@@ -228,7 +271,6 @@ select[name="itemsPerPage"] {
     color: white !important;
     border-color: #405377;
 }
-
 
 /* Authentication Page */
 
@@ -297,7 +339,7 @@ select[name="itemsPerPage"] {
     color: #405377;
 }
 
-#auth .form-button > button {
+#auth .form-button>button {
     width: 100%;
 }
 
@@ -359,7 +401,6 @@ select[name="itemsPerPage"] {
     max-width: 50px;
     max-height: 50px;
 }
-
 
 #puppy #mail a {
     background-color: #3498DB;
