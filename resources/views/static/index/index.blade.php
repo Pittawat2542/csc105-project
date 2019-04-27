@@ -1,7 +1,7 @@
 @extends('static.layouts.app-basic')
 
 @section('body')
-<nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow">
+<nav id="index-nav" class="navbar navbar-expand-lg navbar-light bg-light box-shadow">
     <a class="navbar-brand" href="/"><img class="img-responsive mr-3" src="/images/logo.png" alt="logo">Puppies Hub</a>
     <button class="navbar-toggler float-right mt-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
     </div>
 </nav>
 <div class="container mt-5">
-    <section id="header" class="d-flex justify-content-between">
+    <section id="index-header" class="d-flex justify-content-between">
         <div class="p-2">
             <form class="form-inline md-form form-sm mt-0" id="search" onchange="">
                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -37,19 +37,19 @@
     </section>
 
     <section id="category-navigation" class="d-flex justify-content-center mt-5 scrolling-wrapper">
-        <div class="text-center d-inline-block">
+        <div class="text-center d-inline-block mr-3">
             <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 1</a></h5>
         </div>
-        <div class="text-center d-inline-block">
+        <div class="text-center d-inline-block mr-3">
             <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 2</a></h5>
         </div>
-        <div class="text-center d-inline-block">
+        <div class="text-center d-inline-block mr-3">
             <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 3</a></h5>
         </div>
-        <div class="text-center d-inline-block">
+        <div class="text-center d-inline-block mr-3">
             <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 4</a></h5>
         </div>
-        <div class="text-center d-inline-block">
+        <div class="text-center d-inline-block mr-3">
             <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 5</a></h5>
         </div>
     </section>
@@ -91,7 +91,7 @@
 
     <section id="catalog">
         <div class="catalog mt-5">
-            <div class="d-flex catalog-header">
+            <div class="d-flex catalog-header scrolling-wrapper">
                 <div class="pt-1 pl-0 mr-4">
                     <h1 class="font-weight-bold"><a href="/static/categoryPage">Main Category</a></h1>
                 </div>
@@ -260,8 +260,9 @@
             </div>
             <h4 class="d-inline float-right mt-3"><a href="/static/categoryPage">More ></a></h4>
         </div>
+        <br>
         <div class="catalog mt-5">
-            <div class="d-flex catalog-header">
+            <div class="d-flex catalog-header scrolling-wrapper">
                 <div class="pt-1 pl-0 mr-4">
                     <h1 class="font-weight-bold"><a href="/static/categoryPage">Main Category</a></h1>
                 </div>
