@@ -2,11 +2,11 @@
 
 @section('content')
     <section id="puppy" class="container mt-5 mb-5">
-        <h5><span class="opacity50"> Category / Subcategory / Sub of Subcategory /</span> <span
+        <h5 class="scrolling-wrapper"><span class="opacity50"> Category / Subcategory / Sub of Subcategory /</span> <span
                     class="text-primary text-uppercase font-weight-bold">Product Name</span></h5>
 
         <div class="row mt-5">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -43,8 +43,8 @@
                 </div>
             </div>
             <div class="col-md-1"></div>
-            <div class="col-md-5">
-                <div class="container d-flex flex-column align-items-end">
+            <div  class="col-lg-5">
+                <div id="puppy-info" class="container d-flex flex-column align-items-end">
                     <div class="row">
                         <h1 class="text-primary text-uppercase">Puppy Name</h1>
                         <img src="/images/like.png" class="like ml-3" style="position: relative;top: 10px;">
@@ -71,7 +71,7 @@
                     <div class="row my-3" style="width: 100%;border-bottom:1px solid #405377;">
                     </div>
                     <div class="container-fluid">
-                        <div class="row">
+                        <div id="row-line-fb" class="row">
                             <div class="col-md-6 text-center" id="line">
                                 <a href="https://line.me/th/" class="btn btn-primary social-button no-border-radius" target="blank">
                                     <h4><img class="mr-1" src="/images/line.png" alt=""> LINE
@@ -86,7 +86,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="row mt-3">
+                        <div id="row-mail-call" class="row mt-3">
                             <div class="col-md-6 text-center" id="mail">
                                 <a href="mailto:info@puppieshub.com" class="btn btn-primary social-button no-border-radius"
                                    target="blank">
@@ -106,7 +106,7 @@
             </div>
         </div>
         <hr class="my-3">
-        <div class="row">
+        <div id="description" class="row">
             <h2 class="text-uppercase text-primary">Description</h2>
             <div class="mt-3">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum laoreet nisi nec
