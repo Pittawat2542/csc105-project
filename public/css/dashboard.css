@@ -423,3 +423,13 @@ textarea:focus {
    width: calc(100% - 10rem);
    word-wrap: break-word;
 }
+
+#auth, #category, #announcement, #dashboard, #puppy {
+   margin-top: 7rem !important;
+}
+
+@media (max-width: 575px) {
+   #auth, #category, #announcement, #dashboard, #puppy {
+      margin-top: 8rem !important;
+   }
+}
