@@ -41,6 +41,12 @@ footer {
     margin-top: 7rem !important;
 }
 
+@media (max-width: 575px) {
+    #auth, #category, #announcement, #dashboard, #puppy {
+        margin-top: 8rem !important;
+    }
+}
+
 /* Utilities */
 
 .box-shadow {
