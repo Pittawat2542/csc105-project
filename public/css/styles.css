@@ -109,11 +109,9 @@ footer {
         .navbar {
             display: block;
         }
-
         .navbar-brand {
             display: inline;
         }
-
         @media (max-width: 430px) {
             .navbar-toggler {
                 margin-top: 0 !important;
@@ -170,7 +168,7 @@ footer {
     #index-nav {
         display: block !important;
     }
-    #category-navigation{
+    #category-navigation {
         margin-top: 7rem !important;
     }
 }
@@ -189,20 +187,19 @@ footer {
         background: transparent;
         /* Optional: just make scrollbar invisible */
     }
-    @media (max-width:535px){
-        #index-nav .navbar-brand{
+    @media (max-width:535px) {
+        #index-nav .navbar-brand {
             display: inline;
         }
-        @media(max-width: 430px){
-            #index-nav .navbar-toggler{
+        @media(max-width: 430px) {
+            #index-nav .navbar-toggler {
                 margin-top: 0 !important;
             }
-            #category-navigation{
+            #category-navigation {
                 margin-top: 5rem !important;
             }
-
-            @media(max-width: 324px){
-                body{
+            @media(max-width: 324px) {
+                body {
                     min-width: 324px !important;
                 }
             }
@@ -221,9 +218,13 @@ label[for="itemsPerPage"] {
 }
 
 select[name="itemsPerPage"] {
+    background-color: white;
     color: #405377;
     font-weight: 600;
     padding: 10px 50px;
+}
+#sort-group{
+    text-align: end;
 }
 
 .sorting>img {
@@ -253,10 +254,6 @@ select[name="itemsPerPage"] {
 #category select {
     -webkit-appearance: none;
     appearance: none;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
-    -khtml-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
     border: none;
 }
 
@@ -268,7 +265,7 @@ select[name="itemsPerPage"] {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: white;
     min-width: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -285,6 +282,7 @@ select[name="itemsPerPage"] {
 
 #category input[name="date"] {
     color: #405377;
+    background-color: white;
 }
 
 #category input[type=date]::-webkit-inner-spin-button, #category input[type=date]::-webkit-outer-spin-button {
@@ -295,6 +293,39 @@ select[name="itemsPerPage"] {
     background: #405377;
     color: white !important;
     border-color: #405377;
+}
+
+@media(max-width:1199px) {
+    input[type=date] {
+        width: 75%;
+    }
+    @media(max-width:991px) {
+        #sort-group{
+            margin-top: 1.5rem;
+        }
+        @media(max-width: 767px) {
+            .sub-cat {
+                display: none;
+            }
+            .filter {
+                display: none;
+            }
+            #FROM-date{
+                width: 75%;
+            }
+            #TO-date{
+                width: 75%;
+            }
+            .page-number{
+                display: none;
+            }
+            @media(max-width: 461px){
+                label[for=itemsPerPage]{
+                    display: block !important;
+                }
+            }
+        }
+    }
 }
 
 /* Authentication Page */
@@ -379,9 +410,8 @@ select[name="itemsPerPage"] {
     #auth form {
         width: 100%;
     }
-
     #auth #btn-register {
-       display: none;
+        display: none;
     }
 }
 
@@ -444,51 +474,50 @@ select[name="itemsPerPage"] {
     max-width: 50px;
     max-height: 50px;
 }
-@media(max-width:1199px){
-    #puppy #line img{
+
+@media(max-width:1199px) {
+    #puppy #line img {
         display: block;
         margin: 0.2rem auto !important;
     }
-    #puppy #fb img{
+    #puppy #fb img {
         display: block;
         margin: 0.4rem auto !important;
     }
-    #puppy #mail img{
+    #puppy #mail img {
         display: block;
         margin: 0.2rem auto !important;
     }
-    #puppy #call img{
+    #puppy #call img {
         display: block;
         margin: 0.2rem auto !important;
     }
-    #puppy .social-button{
+    #puppy .social-button {
         height: 5rem;
     }
-    @media(max-width: 991px){
-        #puppy-info{
-            margin-top :1rem;
+    @media(max-width: 991px) {
+        #puppy-info {
+            margin-top: 1rem;
             align-items: flex-start !important;
-        }     
-        @media(max-width: 767px){
-            #puppy #line img,#puppy #fb img,#puppy #mail img,#puppy #call img{
+        }
+        @media(max-width: 767px) {
+            #puppy #line img, #puppy #fb img, #puppy #mail img, #puppy #call img {
                 display: inline-block;
             }
-            #puppy .social-button{
+            #puppy .social-button {
                 height: 3rem;
             }
-            #fb{
+            #fb {
                 margin-top: 1rem;
             }
-            #call{
+            #call {
                 margin-top: 1rem;
             }
-
-            @media(max-width: 575px){
-                #description{
+            @media(max-width: 575px) {
+                #description {
                     padding: 0.75rem;
                 }
             }
         }
     }
 }
-
