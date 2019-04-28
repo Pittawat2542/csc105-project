@@ -1,6 +1,7 @@
 @extends('static.layouts.app')
 
 @section('content')
+    @guest
     <section id="auth" class="container mt-5 mb-5">
         <div class="row">
             <div class="col">
@@ -14,8 +15,14 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"></span>
                             </div>
-                            <input type="email" class="form-control" id="login_email" name="email"
+                            <input type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="login_email" name="email"
                                    placeholder="Enter email" required autofocus>
+
+                            @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group">
@@ -24,8 +31,14 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"></span>
                             </div>
-                            <input type="password" class="form-control" id="login_password" name="password"
+                            <input type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="login_password" name="password"
                                    placeholder="Password" required>
+
+                            @if ($errors->has('password'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group form-check container-fluid">
@@ -54,4 +67,9 @@
             </div>
         </div>
     </section>
+    @endguest
+
+    @auth
+        <script>window.location = "/static/dashboard";</script>
+    @endauth
 @endsection

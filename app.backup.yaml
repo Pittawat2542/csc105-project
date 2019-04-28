@@ -19,9 +19,9 @@ env_variables:
   DB_DATABASE: laravel
   DB_USERNAME: root
   DB_PASSWORD: hzN0uKkKksqBbr7q
-  DB_SOCKET: "/cloudsql/puppieshub:asia-south1:puppieshub-database"
+  DB_SOCKET: "/cloudsql/puppies-hub:asia-southeast1:puppies-hub-database"
 
 beta_settings:
     # for Cloud SQL, set this value to the Cloud SQL connection name,
     # e.g. "project:region:cloudsql-instance"
-    cloud_sql_instances: "puppieshub:asia-south1:puppieshub-database"
+    cloud_sql_instances: "puppies-hub:asia-southeast1:puppies-hub-database"

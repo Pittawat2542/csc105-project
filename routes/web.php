@@ -32,11 +32,11 @@ Route::get('/static/announcement/create', 'StaticRoutesController@announcement_c
 //Route::get('/', function () {
 //    return view('welcome');
 //});
-
+//
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
+//
+//Route::get('/home', 'HomeController@index')->name('home');
+//
 //categories page
 Route::resource('/categories', 'CategoriesController', ['names'=>[
     'index'=>'categories.index',

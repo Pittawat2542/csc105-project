@@ -14,8 +14,20 @@
             <label class="mr-2 search-icon" for=""><i class="fas fa-search"></i></label>
             <input class="form-control mr-sm-2 search-box box-shadow" type="search" placeholder="Search . . ." aria-label="Search">
         </form>
-        <a href="/static/register" class="btn btn-link nav-link-main text-uppercase" role="button">Register</a>
-        <a href="/static/login" class="btn btn-link nav-link-main text-uppercase" role="button">Login</a>
+        @guest
+            <a href="/static/register" class="btn btn-link nav-link-main text-uppercase" role="button">Register</a>
+            <a href="/static/login" class="btn btn-link nav-link-main text-uppercase" role="button">Login</a>
+        @endguest
+
+        @auth
+            <a href="/static/dashboard" class="btn btn-link nav-link-main text-uppercase" role="button">
+                {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}
+            </a>
+            <form action="/logout" method="POST">
+                @csrf
+                <button type="submit" class="btn btn-danger nav-link-main text-uppercase">Logout</button>
+            </form>
+        @endauth
     </div>
 </nav>
 <div class="container mt-5">
@@ -54,23 +66,23 @@
         </div>
     </section>
 
-    <section id="delete-this-on-production" class="text-center bg-danger p-5 my-3">
-        <h1 class="text-white">-- This section only for development purpose --</h1>
-        <p>
-            <a class="mr-3 text-warning" href="/static/login">[GOTO] Login page</a>
-            <a class="mr-3 text-warning" href="/static/register">[GOTO] Register page</a>
-            <a class="text-warning" href="/static/password_reset">[GOTO] Reset passsword page</a>
-        </p>
-        <p>
-            <a class="mr-3 text-warning" href="/static/categoryPage">[GOTO] Category page</a>
-            <a class="text-warning" href="/static/puppiesPage">[GOTO] Puppy page</a>
-        </p>
-        <p>
-            <a class="mr-3 text-warning" href="/static/announcement/create">[GOTO] Create announcement</a>
-            <a class="mr-3 text-warning" href="/static/dashboard">[GOTO] User dashboard</a>
-            <a class="text-warning" href="/static/dashboard/admin">[GOTO] Admin dashboard</a>
-        </p>
-    </section>
+{{--    <section id="delete-this-on-production" class="text-center bg-danger p-5 my-3">--}}
+{{--        <h1 class="text-white">-- This section only for development purpose --</h1>--}}
+{{--        <p>--}}
+{{--            <a class="mr-3 text-warning" href="/static/login">[GOTO] Login page</a>--}}
+{{--            <a class="mr-3 text-warning" href="/static/register">[GOTO] Register page</a>--}}
+{{--            <a class="text-warning" href="/static/password_reset">[GOTO] Reset passsword page</a>--}}
+{{--        </p>--}}
+{{--        <p>--}}
+{{--            <a class="mr-3 text-warning" href="/static/categoryPage">[GOTO] Category page</a>--}}
+{{--            <a class="text-warning" href="/static/puppiesPage">[GOTO] Puppy page</a>--}}
+{{--        </p>--}}
+{{--        <p>--}}
+{{--            <a class="mr-3 text-warning" href="/static/announcement/create">[GOTO] Create announcement</a>--}}
+{{--            <a class="mr-3 text-warning" href="/static/dashboard">[GOTO] User dashboard</a>--}}
+{{--            <a class="text-warning" href="/static/dashboard/admin">[GOTO] Admin dashboard</a>--}}
+{{--        </p>--}}
+{{--    </section>--}}
 
     <section id="hero" class="jumbotron bg-white no-rounding mt-5 box-shadow">
         <h2 class="display-5 font-weight-bold text-center">PRODUCT NAME</h2>
