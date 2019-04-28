@@ -21,7 +21,7 @@
 
         @auth
             <a href="/static/dashboard" class="btn btn-link nav-link-main text-uppercase" role="button">
-                {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}
+                Welcome, @{{{ Auth::user()->name }}}
             </a>
             <form action="/logout" method="POST">
                 @csrf
