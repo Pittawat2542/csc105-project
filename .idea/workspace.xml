@@ -4,13 +4,6 @@
     <list default="true" id="bd2134c7-5a40-4ea2-989a-15948ab274be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navbar/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navbar/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/index/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/index/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -113,8 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+            <state relative-caret-position="367">
+              <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -375,6 +368,17 @@
             <path>
               <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -501,7 +505,8 @@
       <workItem from="1556346884267" duration="1101000" />
       <workItem from="1556367539430" duration="181000" />
       <workItem from="1556368015388" duration="185000" />
-      <workItem from="1556422815539" duration="2540000" />
+      <workItem from="1556422815539" duration="2607000" />
+      <workItem from="1556446835832" duration="337000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'features/views.navbar'&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
       <created>1555654283847</created>
@@ -514,13 +519,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57285000" />
+    <option name="totallyTimeSpent" value="57689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23565324" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23809524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -575,13 +580,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'features/views.navbar'&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/categories/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/categories/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/main.js" />
     <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard.css" />
     <entry file="file://$PROJECT_DIR$/resources/views/IndexPage/style.css" />
     <entry file="file://$PROJECT_DIR$/public/css/app.css">
@@ -809,10 +807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/navbar/navbar.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="-335">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -823,17 +821,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/navbar/navbar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-335">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="288">
+          <caret line="16" selection-start-line="16" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_16_044957_create_offers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        <state relative-caret-position="367">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
         </state>
       </provider>
     </entry>
