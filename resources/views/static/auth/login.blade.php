@@ -46,7 +46,7 @@
                             <div class="col"><input type="checkbox" class="form-check-input" id="login_remember" name="remember">
                                 <label class="form-check-label" for="login_remember">Remember Me</label>
                             </div>
-                            <div class="col text-right"><a href="/static/password_reset">Forgot Password ?</a></div>
+                            <div class="col text-right"><a href="/static/password_reset">Forgot Password?</a></div>
                         </div>
                     </div>
                     <div class="container-fluid">

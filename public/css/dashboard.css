@@ -45,6 +45,22 @@ body {
    color: #405377;
 }
 
+@media (max-width:767px) {
+    @media (max-width: 575px) {
+        .navbar {
+            display: block;
+        }
+        .navbar-brand {
+            display: inline;
+        }
+        @media (max-width: 430px) {
+            .navbar-toggler {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}
+
 /* Footer */
 
 footer {
