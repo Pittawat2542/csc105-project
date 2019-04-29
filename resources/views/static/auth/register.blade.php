@@ -34,6 +34,12 @@
                             </div>
                             <input type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="register_email" name="email"
                                    placeholder="Enter email" required>
+
+                            @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group">
@@ -45,9 +51,9 @@
                             <input type="password" class="form-control" id="register_password" name="password"
                                    placeholder="Password" required>
 
-                            @if ($errors->has('email'))
+                            @if ($errors->has('password'))
                                 <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                             @endif
                         </div>
@@ -58,12 +64,12 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"></span>
                             </div>
-                            <input type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="register_password_retyped"
+                            <input type="password" class="form-control{{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}" id="register_password_retyped"
                                    name="password_confirmation" placeholder="Re-type passsword" required>
 
-                            @if ($errors->has('password'))
+                            @if ($errors->has('password_confirmation'))
                                 <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
+                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
                                     </span>
                             @endif
                         </div>

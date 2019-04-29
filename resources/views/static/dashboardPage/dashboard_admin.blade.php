@@ -6,9 +6,9 @@
       <div class="router-title">DASHBOARD</div>
 
       <div class="router-tabs indent-box">
-         <div class="router-tab" data-target="#my_ver">VERIFICATION REQUESTS</div>
-         <div class="router-tab" data-target="#my_use">USERS</div>
-         <div class="router-tab" data-target="#my_ann">ANNOUNCEMENTS</div>
+         <div class="router-item" data-target="#my_ver">VERIFICATION REQUESTS</div>
+         <div class="router-item" data-target="#my_use">USERS</div>
+         <div class="router-item" data-target="#my_ann">ANNOUNCEMENTS</div>
       </div>
 
       <div class="router-display">

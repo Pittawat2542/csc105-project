@@ -6,15 +6,22 @@
             <div class="col">
                 <h2 class="header mb-3">Reset Password</h2>
 
-                <form>
+                <form action="{{ route('password.email') }}" method="POST">
+                    @csrf
                     <div class="form-group">
                         <label for="reset_password_email">Email</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"></span>
                             </div>
-                            <input type="email" class="form-control" id="reset_password_email" name="reset_password_email"
-                                   placeholder="Enter email">
+                            <input type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="reset_password_email" name="email"
+                                   placeholder="Enter email" required>
+
+                            @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                            @endif
                         </div>
                     </div>
                     <div class="form-button">
