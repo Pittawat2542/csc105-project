@@ -24,7 +24,7 @@
 
             @auth
                 <a href="/static/dashboard" class="btn btn-link nav-link-main text-uppercase" role="button">
-                    Welcome, @{{ Auth::user()->name }}
+                    Welcome, @ {{ Auth::user()->name }}
                 </a>
                 <form action="/logout" method="POST">
                     @csrf
@@ -47,10 +47,23 @@
                 <img id="logo" class="mx-auto" src="/images/logo.png" alt="">
             </div>
             <div class="p-2">
-                <h5 class="d-inline mr-5"><a class="font-weight-bold text-uppercase"
-                                             href="/static/register">Register</a>
-                </h5>
-                <h5 class="d-inline"><a class="font-weight-bold text-uppercase" href="/static/login">Login</a></h5>
+                @guest
+                    <h5 class="d-inline mr-5"><a class="font-weight-bold text-uppercase"
+                                                 href="/static/register">Register</a>
+                    </h5>
+                    <h5 class="d-inline"><a class="font-weight-bold text-uppercase" href="/static/login">Login</a></h5>
+                @endguest
+
+                @auth
+                    <h5 class="d-inline mr-5 text-uppercase"><a href="/static/dashboard">
+                            Welcome, @ {{ Auth::user()->name }}
+                        </a>
+                    </h5>
+                    <form class="d-inline" action="/logout" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-danger nav-link-main text-uppercase">Logout</button>
+                    </form>
+                @endauth
             </div>
         </section>
 
