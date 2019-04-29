@@ -3,7 +3,7 @@
 @section('content')
 
     <section id="announcement" class="centered-size" style="margin: 1.2rem auto; width: 60%;">
-        <p style="font-size: 2rem;">CREATE NEW ANNOUNCEMENT</p>
+        <h1 class="text-uppercase mb-3">Create New Announcement</h1>
         <form action="" method="post" class="indent-box">
             <p style="font-size: 15px;">BASIC INFORMATION</p>
             <div class="indent-box">
@@ -52,7 +52,7 @@
                         <div class="commit-button sticky-left">
                             <label for="main_image" class="inner-blue box-shadow">SELECT FILE</label>
                             <input id="main_image" name="main_image" type="file"
-                                   accept="image/png, image/jpg, image/jpeg" required></input>
+                                   accept="image/png, image/jpg, image/jpeg" required>
                         </div>
                         <br/><br/><span id="main_text" style="color: rgb(100, 100, 100); font-size: .8rem;">Upload your image.</span>
                     </div>
@@ -61,7 +61,7 @@
                 <div class="commit-button" style="margin: 1rem 0 0 1rem;">
                     <label for="additional_image" class="inner-blue box-shadow">SELECT MULTIPLE FILES</label>
                     <input id="additional_image" name="additional_image[]" type="file"
-                           accept="image/png, image/jpg, image/jpeg" multiple></input>
+                           accept="image/png, image/jpg, image/jpeg" multiple>
                 </div>
                 <br/><br/><span id="additional_text"
                                 style="color: rgb(100, 100, 100); font-size: .8rem;">PNG, JPG, JPEG</span>
@@ -76,7 +76,7 @@
             </div>
             <div class="commit-button sticky-left" style="margin: 2rem 0;">
                 <label for="save" class="outer-blue" style="padding: .8rem 2rem;">SUBMIT</label>
-                <input id="save" type="submit"></input>
+                <input id="save" type="submit">
             </div>
         </form>
     </section>

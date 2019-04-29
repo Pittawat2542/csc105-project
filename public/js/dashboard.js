@@ -6,9 +6,10 @@ showFirstContent = function (index) {
 setInitialSpannerText = function () {
     document.querySelectorAll('.data-spanner').forEach(function (elem) {
         if (elem.getAttribute('data-span') == 'true') {
-            elem.innerHTML = `<p class="text-primary text-uppercase"><span>More</span><br/><span style='transform: rotateZ(-90deg);'>&#10094;</span></p>`
-        } else {
             elem.innerHTML = `<p class="text-primary text-uppercase"><span style='transform: rotateZ(90deg);'>&#10094;</span><br/><span>Less</span></p>`
+        } else {
+            elem.innerHTML = `<p class="text-primary text-uppercase"><span>More</span><br/><span style='transform: rotateZ(-90deg);'>&#10094;</span></p>`
+
         }
     })
 }
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.user-box .picture, .user-box .name-detail').forEach(function (elem) {
         elem.addEventListener('click', function () {
-            toggling = elem.parentElement.parentElement.children
+            toggling = elem.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children
             for (let i = 0; i < toggling.length; i++) {
                 if (toggling[i].className.indexOf('other-detail-box') + 1) {
                     if (toggling[i].getAttribute('data-span') == 'true') {

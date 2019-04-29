@@ -10,7 +10,8 @@
         <ul class="navbar-nav mr-auto">
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <label class="mr-2 search-icon" for=""><i class="fas fa-search"></i></label>
+            @csrf
+            <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
             <input class="form-control mr-sm-2 search-box box-shadow" type="search" placeholder="Search . . ."
                    aria-label="Search">
         </form>

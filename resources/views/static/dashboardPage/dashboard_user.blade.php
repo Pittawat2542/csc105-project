@@ -7,14 +7,14 @@
             <h1 class="mb-3 text-uppercase">Dashboard</h1>
 
             <div class="router-tabs ml-3">
-                <p class="router-item text-uppercase" data-target="#my_fav">My Favourites</p>
-                <p class="router-item text-uppercase" data-target="#my_ann">My Announcements</p>
-                <p class="router-item text-uppercase" data-target="#my_set">Settings</p>
+                <p class="router-item text-uppercase" data-target="#favourites">My Favourites</p>
+                <p class="router-item text-uppercase" data-target="#announcements">My Announcements</p>
+                <p class="router-item text-uppercase" data-target="#settings">Settings</p>
             </div>
 
             <div class="router-display">
 
-                <div id="my_fav" class="router-content">
+                <div id="favourites" class="router-content">
                     <div class="data-list">
                         <div class="data-spanner" data-span="false"></div>
 
@@ -22,7 +22,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
-                                        <img class="dashboard-img mr-3" src="https://bit.ly/1KUXdA3" alt="">
+                                        <img class="dashboard-img mr-3" src="/images/225.jpeg" alt="">
                                         <h2 class="d-inline text-uppercase text-primary">Puppy Name</h2></div>
                                     <div class="col-md-6 col-sm-12 text-right align-middle">
                                         <form method="POST" action="">
@@ -40,7 +40,7 @@
                 </div>
 
 
-                <div id="my_ann" class="router-content">
+                <div id="announcements" class="router-content">
                     <div class="row mb-3">
                         <div class="col text-right">
                             <a class="btn btn-primary text-uppercase" href="/static/announcement/create"
@@ -59,7 +59,7 @@
                                         <div class="row">
                                             <div class="col-md-2">
                                                 <img class="dashboard-img mr-3"
-                                                     src="https://bit.ly/1KUXdA3" alt="">
+                                                     src="/images/225.jpeg" alt="">
                                             </div>
                                             <div class="col-md-10 align-middle">
                                                 <h2 class="d-inline text-uppercase text-primary">Puppy Name</h2>
@@ -94,7 +94,7 @@
                                         <div class="row">
                                             <div class="col-md-2">
                                                 <img class="dashboard-img mr-3"
-                                                     src="https://bit.ly/1KUXdA3" alt="">
+                                                     src="/images/225.jpeg" alt="">
                                             </div>
                                             <div class="col-md-10 align-middle">
                                                 <h2 class="d-inline text-uppercase text-primary">Puppy Name</h2>
@@ -128,7 +128,7 @@
                                         <div class="row">
                                             <div class="col-md-2">
                                                 <img class="dashboard-img mr-3"
-                                                     src="https://bit.ly/1KUXdA3" alt="">
+                                                     src="/images/225.jpeg" alt="">
                                             </div>
                                             <div class="col-md-10 align-middle">
                                                 <h2 class="d-inline text-uppercase text-primary">Puppy Name</h2>
@@ -162,7 +162,7 @@
                                         <div class="row">
                                             <div class="col-md-2">
                                                 <img class="dashboard-img mr-3"
-                                                     src="https://bit.ly/1KUXdA3" alt="">
+                                                     src="/images/225.jpeg" alt="">
                                             </div>
                                             <div class="col-md-10 align-middle">
                                                 <h2 class="d-inline text-uppercase text-primary">Puppy Name</h2>
@@ -193,7 +193,7 @@
                     </div>
 
                 </div>
-                <div id="my_set" class="router-content">
+                <div id="settings" class="router-content">
                     <!-- for manage user's profile -->
                     <div class="section">
                         <h2 class="mb-3 text-primary text-uppercase">Profile</h2>
@@ -327,6 +327,7 @@
                 </div>
             </div>
         </div>
+        <br>
     </section>
 
 @endsection
