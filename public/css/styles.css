@@ -40,6 +40,7 @@ footer {
 #auth, #category, #announcement, #dashboard, #puppy {
     margin-top: 7rem !important;
 }
+
 @media (max-width:767px){
     .card{
         -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
@@ -76,6 +77,10 @@ footer {
 
 .text-underline {
     text-decoration: underline;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 /* Navigation bar */
@@ -134,8 +139,18 @@ footer {
     max-height: 150px;
 }
 
-#hero {
-    color: #405377;
+#hero, #hero a {
+    color: white;
+}
+
+#hero a:hover {
+    color: white !important;
+}
+
+.hero-background-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-description {

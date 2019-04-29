@@ -103,21 +103,21 @@
         {{--        </p>--}}
         {{--    </section>--}}
 
-        <section id="hero" class="jumbotron bg-white no-rounding mt-5 box-shadow">
-            <h2 class="display-5 font-weight-bold text-center">PRODUCT NAME</h2>
-            <p class="px-5 pb-3 text-center mt-5 ml-auto mr-auto hero-description">Lorem ipsum dolor sit amet, an
-                laoreet
-                commune
-                signiferumque est. Ut dui
-                elit, tempus facilisis tortor et, lobortis lacinia dui.</p>
-            <div class="d-flex justify-content-center mt-3">
-                <div class="p-2">
-                    <h6 class="d-inline"><a class="font-weight-bold" href="#">Learn More ></a></h6>
+        <section id="hero" class="mt-5">
+            <div class="jumbotron bg-white no-rounding box-shadow hero-background-image" style="background-image: url('/images/hero.jpeg')">
+                    <h2 class="display-5 font-weight-bold text-center text-uppercase text-shadow">Siberian Husky</h2>
+                    <p class="px-5 pb-3 text-center mt-5 ml-auto mr-auto hero-description text-shadow">The most smart and cutest
+                        creatures ever!</p>
+                    <div class="d-flex justify-content-center mt-3">
+                        <div class="p-2">
+                            <h6 class="d-inline text-shadow"><a class="font-weight-bold" href="/static/puppyPage">Learn More ></a>
+                            </h6>
+                        </div>
+                        <div class="p-2 ml-5">
+                            <h6 class="d-inline text-shadow"><a class="font-weight-bold" href="#">Buy ></a></h6>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-2 ml-5">
-                    <h6 class="d-inline"><a class="font-weight-bold" href="#">Buy ></a></h6>
-                </div>
-            </div>
         </section>
 
         <section id="catalog">
