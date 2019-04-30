@@ -47,7 +47,9 @@
                 <div id="puppy-info" class="container d-flex flex-column align-items-end">
                     <div class="row">
                         <h1 class="text-primary text-uppercase">Puppy Name</h1>
-                        <img src="/images/like.png" class="like ml-3" style="position: relative;top: 10px;">
+                        <form id="puppy-like" class="ml-3" style="position: relative;top: 10px;">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="row mb-3">
                         <h5>
