@@ -53,7 +53,8 @@
                 {!! Form::close() !!}
             </div>
             <div class="p-2">
-                <img id="logo" class="mx-auto" src="/images/logo.png" alt="">
+                <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
+    left: -4.3rem;">
             </div>
             <div class="p-2">
                 @guest
