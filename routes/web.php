@@ -29,6 +29,9 @@ Route::get("/static/dashboard/admin", 'StaticRoutesController@dashboard_admin');
 
 Route::get('/static/announcement/create', 'StaticRoutesController@announcement_create');
 
+
+Route::get('autocomplete', 'HomeController@autocomplete');
+
 //Route::get('/', function () {
 //    return view('welcome');
 //});
