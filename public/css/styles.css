@@ -841,6 +841,10 @@ select[name="itemsPerPage"] {
     background-color: rgb(100, 100, 100);
 }
 
+#dashboard .profile-picture img, #announcement .profile-picture img {
+    height: inherit;
+}
+
 #dashboard .picture-uploader .upload, #announcement .picture-uploader .upload {
     position: absolute;
     margin-left: 10px;

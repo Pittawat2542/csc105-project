@@ -50,7 +50,7 @@
 
                     <div class="data-list">
                         <div class="data-spanner" data-span="false"></div>
-                        @isset($offers)
+                        @if(isset($offers))
                             @foreach($offers as $offer)
                                 <div class="card no-border-radius border-0 box-shadow mb-3">
                                     <div class="card-body">
@@ -84,7 +84,7 @@
                                     </div>
                                 </div>
                             @endforeach
-                        @endisset
+                        @endif
 
                     </div>
 
@@ -96,7 +96,13 @@
 
                         <div class="picture-uploader mb-3">
                             <div class="profile-picture mr-3">
-                                <img {{--src="{{$user->photo->path}}"--}} src="/images/31.jpg" class="img-responsive">
+                                @if(isset($user->photo->path))
+
+                                    <img src="{{$user->photo->path}}" class="img-responsive">
+                                    @else
+                                    {{-- TODO: Change to placehodler image --}}
+                                    <img src="/images/31.jpg" class="img-responsive">
+                                @endif
                             </div>
                             <div class="upload">
                                 <p class="text-primary mb-0">Profile Picture</p>
@@ -116,7 +122,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
-                                {!! Form::text('name', null, ['class'=>'form-control'.$errors->has('name') ? ' is-invalid' : '']) !!}
+                                {!! Form::text('name', null, ['class'=>'form-control'. ($errors->has('name') ? ' is-invalid' : '')]) !!}
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback" role="alert">
@@ -131,7 +137,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
-                                {!! Form::email('email', null, ['class'=>'form-control'.$errors->has('email') ? ' is-invalid' : '']) !!}
+                                {!! Form::email('email', null, ['class'=>'form-control'.($errors->has('email') ? ' is-invalid' : '')]) !!}
                             </div>
                         </div>
                         <div class="form-group">
@@ -140,7 +146,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
-                                {!! Form::password('password', null, ['class'=>'form-control'.$errors->has('password') ? ' is-invalid' : '']) !!}
+                                {!! Form::password('password', null, ['class'=>'form-control'.($errors->has('password') ? ' is-invalid' : '')]) !!}
 
                                 @if ($errors->has('old_password'))
                                     <span class="invalid-feedback" role="alert">
@@ -155,7 +161,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
-                                {!! Form::text('new_password', null, ['class'=>'form-control'.$errors->has('new_password') ? ' is-invalid' : '']) !!}
+                                {!! Form::text('new_password', null, ['class'=>'form-control'.($errors->has('new_password') ? ' is-invalid' : '')]) !!}
 
                                 @if ($errors->has('new_password'))
                                     <span class="invalid-feedback" role="alert">
@@ -170,7 +176,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
-                                {!! Form::text('new_password_confirmation', null, ['class'=>'form-control'.$errors->has('new_password_confirmation') ? ' is-invalid' : '']) !!}
+                                {!! Form::text('new_password_confirmation', null, ['class'=>'form-control'.($errors->has('new_password_confirmation') ? ' is-invalid' : '')]) !!}
 
                                 @if ($errors->has('new_password_confirmation'))
                                     <span class="invalid-feedback" role="alert">
