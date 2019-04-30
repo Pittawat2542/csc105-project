@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
     public function index() {
+
         return view('static.dashboardPage.dashboard_user', [
             'offers'=>Offer::where('id', '=', Auth::user()->id)->paginate(30),
             'user' => User::findOrFail(Auth::user())->first()]);
