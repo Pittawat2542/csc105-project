@@ -30,13 +30,33 @@ footer {
 }
 
 .like {
-    max-width: 30px;
-    max-height: 30px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url("/images/like.png");
+    background-color:white; 
+}
+.liked{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url("/images/likeHover.png");
+    background-color:white; 
 }
 
 .like:hover {
     background-image: url("/images/likeHover.png");
     background-size: cover;
+}
+.liked:hover {
+    background-image: url("/images/like.png");
+    background-size: cover;
+}
+.like-form{
+    position:absolute;
+    bottom:0.75rem;
+    right:1.5rem;
+    z-index: 10;
 }
 
 .opacity50 {
@@ -372,11 +392,11 @@ select[name="itemsPerPage"] {
             .page-number {
                 display: none;
             }
+            div.catalog-card {
+                margin-bottom: 3rem !important;
+            }
 
             @media (max-width: 575px) {
-                div.catalog-card {
-                    margin-bottom: 3rem !important;
-                }
 
                 @media (max-width: 461px) {
                     label[for=itemsPerPage] {
@@ -478,6 +498,10 @@ select[name="itemsPerPage"] {
 }
 
 /* Puppy page */
+
+#puppy-like{
+    position: relative;
+}
 
 #puppy .user-image {
     max-width: 40px;
