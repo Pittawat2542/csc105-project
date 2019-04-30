@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd2134c7-5a40-4ea2-989a-15948ab274be" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navbar/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navbar/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/footer/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/footer/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/index/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/index/index.blade.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -98,115 +95,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/static/index/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="605" column="21" lean-forward="true" selection-start-line="605" selection-start-column="21" selection-end-line="606" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-              <folding>
-                <element signature="e#800#1897#0#HTML" />
-                <element signature="e#1630#1636#0#HTML" expanded="true" />
-                <element signature="e#3940#3946#0#HTML" expanded="true" />
-                <element signature="e#4361#4367#0#HTML" expanded="true" />
-                <element signature="e#6069#6075#0#HTML" expanded="true" />
-                <element signature="e#6490#6496#0#HTML" expanded="true" />
-                <element signature="e#8145#8151#0#HTML" expanded="true" />
-                <element signature="e#8566#8572#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="389" column="112" selection-start-line="389" selection-start-column="112" selection-end-line="389" selection-end-column="112" />
-              <folding>
-                <element signature="e#3188#3194#0#HTML" expanded="true" />
-                <element signature="e#3621#3627#0#HTML" expanded="true" />
-                <element signature="e#4094#4142#0#HTML" expanded="true" />
-                <element signature="e#6115#6121#0#HTML" expanded="true" />
-                <element signature="e#6548#6554#0#HTML" expanded="true" />
-                <element signature="e#7021#7069#0#HTML" expanded="true" />
-                <element signature="e#9042#9048#0#HTML" expanded="true" />
-                <element signature="e#9475#9481#0#HTML" expanded="true" />
-                <element signature="e#9948#9996#0#HTML" expanded="true" />
-                <element signature="e#11969#11975#0#HTML" expanded="true" />
-                <element signature="e#12402#12408#0#HTML" expanded="true" />
-                <element signature="e#12875#12923#0#HTML" expanded="true" />
-                <element signature="e#15743#15749#0#HTML" expanded="true" />
-                <element signature="e#16164#16170#0#HTML" expanded="true" />
-                <element signature="e#17896#17902#0#HTML" expanded="true" />
-                <element signature="e#18317#18323#0#HTML" expanded="true" />
-                <element signature="e#19996#20002#0#HTML" expanded="true" />
-                <element signature="e#20417#20423#0#HTML" expanded="true" />
-                <element signature="e#22096#22102#0#HTML" expanded="true" />
-                <element signature="e#22517#22523#0#HTML" expanded="true" />
-                <element signature="e#23860#25910#0#HTML" />
-                <element signature="e#25227#25233#0#HTML" expanded="true" />
-                <element signature="e#25648#25654#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="152" selection-start-line="8" selection-start-column="152" selection-end-line="8" selection-end-column="152" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-              <folding>
-                <element signature="e#116#156#0#HTML" expanded="true" />
-                <element signature="e#295#319#0#HTML" expanded="true" />
-                <element signature="e#1373#1397#0#HTML" expanded="true" />
-                <element signature="e#2532#2568#0#HTML" expanded="true" />
-                <element signature="e#3357#3387#0#HTML" expanded="true" />
-                <element signature="e#3781#3833#0#HTML" expanded="true" />
-                <element signature="e#3890#3932#0#HTML" expanded="true" />
-                <element signature="e#4056#4110#0#HTML" expanded="true" />
-                <element signature="e#4367#4390#0#HTML" expanded="true" />
-                <element signature="e#4445#4473#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -217,8 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ui-select</find>
-      <find>1</find>
       <find>page-item</find>
       <find>3</find>
       <find>under</find>
@@ -247,6 +134,8 @@
       <find>/images/31.jpeg</find>
       <find>margin-bottom: 1rem;</find>
       <find>Search</find>
+      <find>i class=&quot;</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>offer</replace>
@@ -303,7 +192,6 @@
         <option value="$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php" />
         <option value="$PROJECT_DIR$/public/css/puppiesPage.css" />
         <option value="$PROJECT_DIR$/resources/views/static/puppiesPage/puppiesPage.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/footer/footer.blade.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/StaticRoutesController.php" />
         <option value="$PROJECT_DIR$/resources/views/static/categoryPage/category.blade.php" />
@@ -317,13 +205,14 @@
         <option value="$PROJECT_DIR$/public/css/dashboard.css" />
         <option value="$PROJECT_DIR$/resources/views/static/auth/password_reset.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/navbar/navbar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/static/index/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php" />
         <option value="$PROJECT_DIR$/public/js/dashboard.js" />
-        <option value="$PROJECT_DIR$/public/css/styles.css" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/styles.css" />
+        <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/static/index/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/footer/footer.blade.php" />
       </list>
     </option>
   </component>
@@ -429,150 +318,6 @@
               <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="passwords" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboardPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="csc105-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="csc105-project" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -644,7 +389,7 @@
       <workItem from="1556450324451" duration="888000" />
       <workItem from="1556507467553" duration="633000" />
       <workItem from="1556511412820" duration="1531000" />
-      <workItem from="1556517906245" duration="8065000" />
+      <workItem from="1556517906245" duration="9835000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'features/views.navbar'&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
       <created>1555654283847</created>
@@ -657,11 +402,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69541000" />
+    <option name="totallyTimeSpent" value="71311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25030527" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -725,13 +469,6 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_24_130808_create_sessions_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_19_150940_create_sessions_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_19_150915_create_sessions_table.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/footer/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/console.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -953,36 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/static/auth/password_reset.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="e#116#156#0#HTML" expanded="true" />
-            <element signature="e#295#319#0#HTML" expanded="true" />
-            <element signature="e#1373#1397#0#HTML" expanded="true" />
-            <element signature="e#2532#2568#0#HTML" expanded="true" />
-            <element signature="e#3357#3387#0#HTML" expanded="true" />
-            <element signature="e#3781#3833#0#HTML" expanded="true" />
-            <element signature="e#3890#3932#0#HTML" expanded="true" />
-            <element signature="e#4056#4110#0#HTML" expanded="true" />
-            <element signature="e#4367#4390#0#HTML" expanded="true" />
-            <element signature="e#4445#4473#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,35 +711,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/index/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="152" selection-start-line="8" selection-start-column="152" selection-end-line="8" selection-end-column="152" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/31.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="605" column="21" lean-forward="true" selection-start-line="605" selection-start-column="21" selection-end-line="606" selection-end-column="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1047,10 +731,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="152" selection-start-line="8" selection-start-column="152" selection-end-line="8" selection-end-column="152" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="389" column="112" selection-start-line="389" selection-start-column="112" selection-end-line="389" selection-end-column="112" />
+        <state relative-caret-position="259">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="37" />
           <folding>
             <element signature="e#3188#3194#0#HTML" expanded="true" />
             <element signature="e#3621#3627#0#HTML" expanded="true" />
@@ -1076,6 +773,47 @@
             <element signature="e#25227#25233#0#HTML" expanded="true" />
             <element signature="e#25648#25654#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/static/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="89" selection-start-line="89" selection-end-line="91" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#2532#2568#0#HTML" expanded="true" />
+            <element signature="e#3357#3387#0#HTML" expanded="true" />
+            <element signature="e#3781#3833#0#HTML" expanded="true" />
+            <element signature="e#4056#4110#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="746" column="40" selection-start-line="746" selection-start-column="40" selection-end-line="746" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/footer/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/static/index/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
         </state>
       </provider>
     </entry>
