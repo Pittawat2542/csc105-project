@@ -99,7 +99,7 @@
                                 @if(isset($user->photo->path))
 
                                     <img src="{{$user->photo->path}}" class="img-responsive">
-                                    @else
+                                @else
                                     {{-- TODO: Change to placehodler image --}}
                                     <img src="/images/31.jpg" class="img-responsive">
                                 @endif
@@ -146,7 +146,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
-                                {!! Form::password('password', null, ['class'=>'form-control'.($errors->has('password') ? ' is-invalid' : '')]) !!}
+                                {!! Form::password('password', ['class'=>'form-control'.($errors->has('password') ? ' is-invalid' : '')]) !!}
 
                                 @if ($errors->has('old_password'))
                                     <span class="invalid-feedback" role="alert">
@@ -161,7 +161,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
-                                {!! Form::text('new_password', null, ['class'=>'form-control'.($errors->has('new_password') ? ' is-invalid' : '')]) !!}
+                                {!! Form::password('new_password', ['class'=>'form-control'.($errors->has('new_password') ? ' is-invalid' : '')]) !!}
 
                                 @if ($errors->has('new_password'))
                                     <span class="invalid-feedback" role="alert">
@@ -176,7 +176,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
-                                {!! Form::text('new_password_confirmation', null, ['class'=>'form-control'.($errors->has('new_password_confirmation') ? ' is-invalid' : '')]) !!}
+                                {!! Form::password('new_password_confirmation', ['class'=>'form-control'.($errors->has('new_password_confirmation') ? ' is-invalid' : '')]) !!}
 
                                 @if ($errors->has('new_password_confirmation'))
                                     <span class="invalid-feedback" role="alert">
