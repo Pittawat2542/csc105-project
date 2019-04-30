@@ -52,7 +52,6 @@
                         <div class="data-spanner" data-span="false"></div>
                     @if($offers)
                         @foreach($offers as $offer)
-                        <!-- provide each data here --> <!-- my announcement -->
                         <div class="card no-border-radius border-0 box-shadow mb-3">
                             <div class="card-body">
                                 <div class="row">
