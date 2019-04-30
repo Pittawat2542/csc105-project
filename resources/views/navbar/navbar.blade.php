@@ -9,12 +9,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        {{-- <form class="form-inline my-2 my-lg-0">
             @csrf
             <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
             <input class="form-control mr-sm-2 search-box box-shadow" type="search" placeholder="Search . . ."
                    aria-label="Search">
-        </form>
+        </form> --}}
+
+
+        {{ Form::close() }}
+
+        {!! Form::open(['method'=>'GET','url'=>'admin/search', 'class'=>'form-inline my-2 my-lg-0']) !!}
+        {!! Form::text('search', null, ['required',
+                                    'id'=>'searchForm',
+                                    'class'=>'form-control mr-sm-2 search-box box-shadow',
+                                    'placeholder'=>'Search']) !!}
+        {!! Form::submit('Search',['class'=>'btn btn-primary']) !!}
+        {!! Form::close() !!}
+
         @guest
             <a href="/static/register" class="btn btn-link nav-link-main text-uppercase" role="button">Register</a>
             <a href="/static/login" class="btn btn-link nav-link-main text-uppercase" role="button">Login</a>

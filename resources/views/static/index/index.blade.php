@@ -146,10 +146,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -158,10 +161,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -170,10 +176,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -182,10 +191,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                 </div>
 
@@ -197,10 +209,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -209,10 +224,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -221,10 +239,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -233,10 +254,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                 </div>
 
@@ -248,10 +272,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -260,10 +287,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -272,10 +302,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -284,10 +317,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                 </div>
                 <h4 class="d-inline float-right mt-3"><a href="/static/categoryPage">More ></a></h4>
@@ -317,10 +353,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -329,10 +368,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -341,10 +383,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -353,10 +398,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                 </div>
 
@@ -368,10 +416,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -380,10 +431,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -392,10 +446,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -404,10 +461,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                 </div>
 
@@ -419,10 +479,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -431,10 +494,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -443,10 +509,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
@@ -455,10 +524,13 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Card header</h5>
                                     <p class="card-text">Card Subheader</p>
-                                    <img src="/images/like.png" class="like float-right" alt="">
+                                    <img src="/images/like.png" class="like float-right invisible" alt="">
                                 </div>
                             </div>
                         </a>
+                        <form class="p-0 like-form">
+                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                        </form>
                     </div>
                 </div>
                 <h4 class="d-inline float-right mt-3"><a href="/static/categoryPage">More ></a></h4>
