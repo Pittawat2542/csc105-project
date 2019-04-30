@@ -12,6 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             </ul>
+            <div id="navigation-bar">
             {{ Form::close() }}
 
             {!! Form::open(['method'=>'GET','url'=>'admin/search', 'class'=>'form-inline my-2 my-lg-0']) !!}
@@ -22,6 +23,7 @@
                                         'placeholder'=>'Search . . .']) !!}
             {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
             {!! Form::close() !!}
+            </div>
             @guest
                 <a href="/register" class="btn btn-link nav-link-main text-uppercase" role="button">Register</a>
                 <a href="/login" class="btn btn-link nav-link-main text-uppercase" role="button">Login</a>
