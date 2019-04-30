@@ -17,10 +17,6 @@ Route::get('/static/puppiesPage', 'StaticRoutesController@puppies');
 
 Route::get('/static/categoryPage', 'StaticRoutesController@category');
 
-Route::get("/static/register", 'StaticRoutesController@register');
-
-Route::get("/static/login", 'StaticRoutesController@login');
-
 Route::get("/static/password_reset", 'StaticRoutesController@password_reset');
 
 Route::get("/static/dashboard/", 'StaticRoutesController@dashboard');
@@ -29,30 +25,23 @@ Route::get("/static/dashboard/admin", 'StaticRoutesController@dashboard_admin');
 
 Route::get('/static/announcement/create', 'StaticRoutesController@announcement_create');
 
-
 Route::get('autocomplete', 'HomeController@autocomplete');
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-//
 Auth::routes();
-//
-//Route::get('/home', 'HomeController@index')->name('home');
-//
-//categories page
+
+// Categories page
 Route::resource('/categories', 'CategoriesController', ['names'=>[
     'index'=>'categories.index',
     'show'=>'categories.show'
 ]]);
 
-//Offers for not logedin
+// Offers for not logged in
 Route::get('/offers', 'OffersController@index')->name('offers');
 
-//loged users
+// Logged users
 Route::group(['middleware'=>'auth'], function() {
 
-    //Offers for users
+    // Offers for users
     Route::resource('admin/users', 'OffersController', ['names'=>[
         'myOffers'=>'myOffers.create',
         'create'=>'offers.create',
@@ -65,9 +54,9 @@ Route::group(['middleware'=>'auth'], function() {
 
 Route::group(['middleware'=>'admin'], function() {
 
-    //index page of admin page
+    // Index page of admin page
     Route::get('/admin', 'AdminController@index')->name('admin');
-    //users admin page
+    // Users admin page
     Route::resource('admin/users', 'AdminUsersController', ['names'=>[
         'index'=>'admin.users.index',
         'create'=>'admin.users.create',
@@ -75,7 +64,7 @@ Route::group(['middleware'=>'admin'], function() {
         'edit'=>'admin.users.edit',
         'delete'=>'admin.users.delete'
     ]]);
-    //categories admin page
+    // Categories admin page
     Route::resource('admin/categories', 'AdminCategoriesController', ['names'=>[
         'index'=>'admin.categories.index',
         'create'=>'admin.categories.create',
@@ -84,7 +73,7 @@ Route::group(['middleware'=>'admin'], function() {
         'delete'=>'admin.categories.delete'
     ]]);
 
-    //pictures manager
+    // Pictures manager
     Route::resource('admin/media', 'AdminPhotoController', ['names'=>[
         'index'=>'admin.media.index',
         'create'=>'admin.media.create',
@@ -93,7 +82,7 @@ Route::group(['middleware'=>'admin'], function() {
     ]]);
     Route::delete('admin/delete/media', 'AdminPhotoController@deleteMedia');
 
-    //offers for admin
+    // Offers for admin
     Route::resource('admin/offers', 'AdminOffersController', ['names'=>[
         'index'=>'admin.offer.index',
         'create'=>'admin.offer.create',

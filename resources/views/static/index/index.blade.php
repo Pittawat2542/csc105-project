@@ -12,15 +12,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                @csrf
-                <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
-                <input class="form-control mr-sm-2 search-box box-shadow" type="search" placeholder="Search . . ."
-                       aria-label="Search">
-            </form>
+            {{ Form::close() }}
+
+            {!! Form::open(['method'=>'GET','url'=>'admin/search', 'class'=>'form-inline my-2 my-lg-0']) !!}
+            <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
+            {!! Form::text('search', null, ['required',
+                                        'id'=>'searchForm',
+                                        'class'=>'form-control mr-sm-2 search-box box-shadow',
+                                        'placeholder'=>'Search . . .']) !!}
+            {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
+            {!! Form::close() !!}
             @guest
-                <a href="/static/register" class="btn btn-link nav-link-main text-uppercase" role="button">Register</a>
-                <a href="/static/login" class="btn btn-link nav-link-main text-uppercase" role="button">Login</a>
+                <a href="/register" class="btn btn-link nav-link-main text-uppercase" role="button">Register</a>
+                <a href="/login" class="btn btn-link nav-link-main text-uppercase" role="button">Login</a>
             @endguest
 
             @auth
@@ -37,12 +41,16 @@
     <div class="container mt-5">
         <section id="index-header" class="d-flex justify-content-between">
             <div class="p-2">
-                <form class="form-inline md-form form-sm mt-0" id="search" onchange="">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input
-                        class="form-control form-control-sm ml-3 w-30 no-border no-border-radius border-bottom box-shadow"
-                        type="text" placeholder="Search . . ." aria-label="Search">
-                </form>
+                {{ Form::close() }}
+
+                {!! Form::open(['method'=>'GET','url'=>'admin/search', 'class'=>'form-inline my-2 my-lg-0']) !!}
+                <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
+                {!! Form::text('search', null, ['required',
+                                            'id'=>'searchForm',
+                                            'class'=>'form-control mr-sm-2 search-box box-shadow',
+                                            'placeholder'=>'Search . . .']) !!}
+                {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
+                {!! Form::close() !!}
             </div>
             <div class="p-2">
                 <img id="logo" class="mx-auto" src="/images/logo.png" alt="">
@@ -50,9 +58,9 @@
             <div class="p-2">
                 @guest
                     <h5 class="d-inline mr-5"><a class="font-weight-bold text-uppercase"
-                                                 href="/static/register">Register</a>
+                                                 href="/register">Register</a>
                     </h5>
-                    <h5 class="d-inline"><a class="font-weight-bold text-uppercase" href="/static/login">Login</a></h5>
+                    <h5 class="d-inline"><a class="font-weight-bold text-uppercase" href="/login">Login</a></h5>
                 @endguest
 
                 @auth

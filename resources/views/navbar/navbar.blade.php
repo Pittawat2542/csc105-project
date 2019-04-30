@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow fixed-top">
+<nav id="navigation-bar" class="navbar navbar-expand-lg navbar-light bg-light box-shadow fixed-top">
     <a class="navbar-brand" href="/"><img class="img-responsive mr-3" src="/images/logo.png" alt="logo">Puppies Hub</a>
     <button class="navbar-toggler float-right mt-2" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -9,27 +9,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         </ul>
-        {{-- <form class="form-inline my-2 my-lg-0">
-            @csrf
-            <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
-            <input class="form-control mr-sm-2 search-box box-shadow" type="search" placeholder="Search . . ."
-                   aria-label="Search">
-        </form> --}}
-
 
         {{ Form::close() }}
 
         {!! Form::open(['method'=>'GET','url'=>'admin/search', 'class'=>'form-inline my-2 my-lg-0']) !!}
+        <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
         {!! Form::text('search', null, ['required',
                                     'id'=>'searchForm',
                                     'class'=>'form-control mr-sm-2 search-box box-shadow',
-                                    'placeholder'=>'Search']) !!}
-        {!! Form::submit('Search',['class'=>'btn btn-primary']) !!}
+                                    'placeholder'=>'Search . . .']) !!}
+        {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
         {!! Form::close() !!}
 
         @guest
-            <a href="/static/register" class="btn btn-link nav-link-main text-uppercase" role="button">Register</a>
-            <a href="/static/login" class="btn btn-link nav-link-main text-uppercase" role="button">Login</a>
+            <a href="/register" class="btn btn-link nav-link-main text-uppercase" role="button">Register</a>
+            <a href="/login" class="btn btn-link nav-link-main text-uppercase" role="button">Login</a>
         @endguest
 
         @auth

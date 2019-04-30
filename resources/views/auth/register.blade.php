@@ -1,21 +1,23 @@
-@extends('layouts.app')
+@extends('static.layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+    @guest
+        <section id="auth" class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col">
+                    <h2 class="header mb-3">Register</h2>
 
-                <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                        <div class="form-group">
+                            <label for="register_first_name">Name</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"></span>
+                                </div>
+                                <input type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
+                                       id="register_first_name" name="name" placeholder="Your name" required autofocus>
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback" role="alert">
@@ -24,12 +26,14 @@
                                 @endif
                             </div>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                        <div class="form-group">
+                            <label for="register_email">Email</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"></span>
+                                </div>
+                                <input type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="register_email" name="email"
+                                       placeholder="Enter email" required>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
@@ -38,12 +42,14 @@
                                 @endif
                             </div>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                        <div class="form-group">
+                            <label for="register_password">Password</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"></span>
+                                </div>
+                                <input type="password" class="form-control" id="register_password" name="password"
+                                       placeholder="Password" required>
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback" role="alert">
@@ -52,26 +58,45 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="register_password_retyped">Re-type Password</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"></span>
+                                </div>
+                                <input type="password" class="form-control{{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}" id="register_password_retyped"
+                                       name="password_confirmation" placeholder="Re-type passsword" required>
 
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                @if ($errors->has('password_confirmation'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
+                                    </span>
+                                @endif
                             </div>
                         </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
+                        {{--                <div class="form-group">--}}
+                        {{--                    <label for="register_last_name">Last Name</label>--}}
+                        {{--                    <div class="input-group">--}}
+                        {{--                        <div class="input-group-prepend">--}}
+                        {{--                            <span class="input-group-text"></span>--}}
+                        {{--                        </div>--}}
+                        {{--                        <input type="text" class="form-control" id="register_last_name" name="last_name" placeholder="Your last name">--}}
+                        {{--                    </div></div>--}}
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="register_accepted">
+                            <label class="form-check-label" for="register_accepted">I agreed and accepted <a
+                                    class="text-underline" href="#">terms and conditions</a></label>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" class="btn btn-primary">Register</button>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </section>
+    @endguest
+
+    @auth
+        <script>window.location = "/static/dashboard";</script>
+    @endauth
 @endsection
