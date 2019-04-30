@@ -9,7 +9,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-.idea/
+.idea/*
 .editorconfig
 cloud_sql_proxy
-.idea/workplace.xml
+/public/uploads

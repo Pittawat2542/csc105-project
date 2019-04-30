@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Auth;
 
 class PhotoController extends Controller
 {
-//Do we need have a media panel for users? :)
 //    /**
 //     * @param Request $request
 //     */

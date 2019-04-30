@@ -110,7 +110,7 @@
         {{--        </p>--}}
         {{--        <p>--}}
         {{--            <a class="mr-3 text-warning" href="/static/announcement/create">[GOTO] Create announcement</a>--}}
-        {{--            <a class="mr-3 text-warning" href="/static/dashboard">[GOTO] User dashboard</a>--}}
+        {{--            <a class="mr-3 text-warning" href="/static/dashboard">[GOTO] UserController dashboard</a>--}}
         {{--            <a class="text-warning" href="/static/dashboard/admin">[GOTO] Admin dashboard</a>--}}
         {{--        </p>--}}
         {{--    </section>--}}

@@ -30,9 +30,6 @@ class StaticRoutesController extends Controller
         return view('static.auth.password_reset');
     }
 
-    public function dashboard() {
-        return view('static.dashboardPage.dashboard_user');
-    }
 
     public function dashboard_admin() {
         return view('static.dashboardPage.dashboard_admin');

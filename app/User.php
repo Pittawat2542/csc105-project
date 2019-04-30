@@ -94,13 +94,13 @@ class User extends Authenticatable
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function photo() {
-        return $this->belongsTo('App/Photo');
+        return $this->belongsTo('App\Photo');
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function offer() {
-        return $this->hasMany('App/Offer');
+        return $this->hasMany('App\Offer');
     }
 }

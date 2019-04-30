@@ -23,13 +23,6 @@ class OffersController extends Controller
         ]);
     }
 
-    public function myOffers()
-    {
-        $offers = Offer::whereUser_id(Auth::user()->id);
-        return view('offers.index', [
-            'offers'=>$offers->paginate(30)
-        ]);
-    }
     /**
      * Show the form for creating a new resource.
      *
