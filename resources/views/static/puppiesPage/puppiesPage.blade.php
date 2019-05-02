@@ -5,6 +5,7 @@
         <h5 class="scrolling-wrapper"><span class="opacity50"> Category / Subcategory / Sub of Subcategory /</span> <span
                     class="text-primary text-uppercase font-weight-bold">Product Name</span></h5>
 
+        <!-- img slider -->
         <div class="row mt-5">
             <div class="col-lg-6">
                 <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -72,6 +73,8 @@
                     </div>
                     <div class="row my-3" style="width: 100%;border-bottom:1px solid #405377;">
                     </div>
+
+                    <!-- contract info -->
                     <div class="container-fluid">
                         <div id="row-line-fb" class="row">
                             <div class="col-md-6 text-center" id="line">
@@ -107,6 +110,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- description -->
         <hr class="my-3">
         <div id="description" class="row">
             <h2 class="text-uppercase text-primary">Description</h2>

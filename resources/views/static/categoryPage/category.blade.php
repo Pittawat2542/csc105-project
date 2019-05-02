@@ -30,6 +30,7 @@
         </div>
     </section>
 
+    <!-- filter -->
     <section id="category-body" class="mt-5 container">
         <div class="row">
             <section id="category-filter" class="col-md-4">
@@ -76,6 +77,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- dog card -->
             <section id="category-items" class="col-md-8" id="item-box">
                 <div class="row mb-3">
                     <div class="col-md-4 col-sm-12 catalog-card mb-sm-5">
@@ -359,6 +362,8 @@
                         </form>
                     </div>
                 </div>
+
+                <!-- page next prev -->
                 <nav class="d-flex justify-content-center mt-3">
                     <ul class="pagination ">
                         <li class="page-item mr-3">

@@ -1,6 +1,8 @@
 @extends('static.layouts.app-basic')
 
 @section('body')
+
+    <!-- mobile navbar-->
     <nav id="index-nav" class="navbar navbar-expand-lg navbar-light bg-light box-shadow fixed-top">
         <a class="navbar-brand" href="/"><img class="img-responsive mr-3" src="/images/logo.png" alt="logo">Puppies Hub</a>
         <button class="navbar-toggler float-right mt-2" type="button" data-toggle="collapse"
@@ -40,6 +42,8 @@
             @endauth
         </div>
     </nav>
+
+    <!-- desktop site navbar-->
     <div class="container mt-5">
         <section id="index-header" class="d-flex justify-content-between">
             <div class="p-2">
@@ -79,6 +83,7 @@
             </div>
         </section>
 
+        <!-- category navigation-->
         <section id="category-navigation" class="d-flex justify-content-center mt-5 scrolling-wrapper">
             <div class="text-center d-inline-block mr-3">
                 <h5 class="d-inline font-weight-bold"><a href="/static/categoryPage">Category 1</a></h5>
@@ -115,6 +120,7 @@
         {{--        </p>--}}
         {{--    </section>--}}
 
+        <!-- feature dog-->
         <section id="hero" class="mt-5">
             <div class="jumbotron bg-white no-rounding box-shadow hero-background-image" style="background-image: url('/images/hero.jpeg')">
                     <h2 class="display-5 font-weight-bold text-center text-uppercase text-shadow">Siberian Husky</h2>
@@ -131,7 +137,7 @@
                     </div>
                 </div>
         </section>
-
+        
         <section id="catalog">
             <div class="catalog mt-5">
                 <div class="d-flex catalog-header scrolling-wrapper">
@@ -149,6 +155,7 @@
                     </div>
                 </div>
 
+                <!-- dog card -->
                 <div class="row mt-4 catalog-body">
                     <div class="col-md-3 col-sm-12 catalog-card">
                         <a href="/static/puppiesPage">
