@@ -10,9 +10,8 @@
         <ul class="navbar-nav mr-auto">
         </ul>
 
-        {{ Form::close() }}
 
-        {!! Form::open(['method'=>'GET','url'=>'admin/search', 'class'=>'form-inline my-2 my-lg-0']) !!}
+        {!! Form::open(['method'=>'GET', 'class'=>'form-inline my-2 my-lg-0']) !!}
         <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
         {!! Form::text('search', null, ['required',
                                     'id'=>'searchForm',

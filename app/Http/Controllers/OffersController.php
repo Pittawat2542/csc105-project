@@ -30,7 +30,7 @@ class OffersController extends Controller
      */
     public function create()
     {
-        return view('offers.create', [
+        return view('static.dashboardPage.announcement', [
             'categories'=>Categories::pluck('breed', 'id')->all(),
         ]);
     }
@@ -45,8 +45,16 @@ class OffersController extends Controller
 
     public function store(Request $request)
     {
-        Offer::create($request);
-        return redirect('/offers');
+        $data = $request->all();
+        $lastId = Offer::create($data)->id;
+        return redirect('/static/announcement/addpictures/'.$lastId);
+    }
+
+    public function addPictures($id)
+    {
+//        if(Auth::user()->id==$->user_id) {
+
+        return view('static.dashboardPage.annoucementPictures');
     }
 
     /**

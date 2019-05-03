@@ -15,14 +15,16 @@ class CreateOffersTable extends Migration
     {
         Schema::create('offers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->string('name')->nullable();
             $table->integer('age')->nullable();
             $table->integer('category_id');
             $table->string('location')->nullable();
             $table->string('description')->nullable();
-            $table->date('birth')->nullable();
-            $table->decimal('price',8,2)->default(0.00);
+            $table->integer('photo_id')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('line')->nullable();
+            $table->string('facebook')->nullable();
             $table->timestamps();
         });
     }
