@@ -71,13 +71,15 @@ Route::group(['middleware'=>'admin'], function() {
 
     //index page of admin page
     Route::get('/admin', 'AdminController@index')->name('admin');
+    Route::patch('/admin/approve/{id}', 'AdminController@approve')->name('approve');
+
     //users admin page
     Route::resource('admin/users', 'AdminUsersController', ['names'=>[
         'index'=>'admin.users.index',
         'create'=>'admin.users.create',
         'store'=>'admin.users.store',
         'edit'=>'admin.users.edit',
-        'delete'=>'admin.users.delete'
+        'destroy'=>'admin.users.destroy'
     ]]);
     //categories admin page
     Route::resource('admin/categories', 'AdminCategoriesController', ['names'=>[

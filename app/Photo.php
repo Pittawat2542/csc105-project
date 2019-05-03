@@ -48,4 +48,8 @@ class Photo extends Model
         return $result[0];
     }
 
+    public function user() {
+        return $this->belongsTo('App\User');
+    }
+
 }
