@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd2134c7-5a40-4ea2-989a-15948ab274be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -96,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1791">
+            <state relative-caret-position="2664">
               <caret line="148" column="136" selection-start-line="148" selection-start-column="136" selection-end-line="148" selection-end-column="136" />
             </state>
           </provider>
@@ -105,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="666">
+              <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -324,7 +324,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -404,6 +403,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -475,7 +475,8 @@
       <workItem from="1556633047945" duration="2491000" />
       <workItem from="1556637930815" duration="38000" />
       <workItem from="1556638707603" duration="228000" />
-      <workItem from="1556689209077" duration="151000" />
+      <workItem from="1556689209077" duration="476000" />
+      <workItem from="1556867478799" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'features/views.navbar'&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
       <created>1555654283847</created>
@@ -488,13 +489,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74350000" />
+    <option name="totallyTimeSpent" value="74752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2985348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3021978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -909,13 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1791">
-          <caret line="148" column="136" selection-start-line="148" selection-start-column="136" selection-end-line="148" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app-dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -923,10 +916,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2664">
+          <caret line="148" column="136" selection-start-line="148" selection-start-column="136" selection-end-line="148" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="666">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
         </state>
       </provider>
     </entry>
