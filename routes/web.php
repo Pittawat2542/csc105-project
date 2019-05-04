@@ -52,16 +52,12 @@ Route::get('/offers', 'OffersController@index')->name('offers');
 Route::group(['middleware'=>'auth'], function() {
 
     Route::get('/static/announcement/create', 'OffersController@create')->name('create.offer');
+    Route::get('/static/announcement/{id}/edit', 'OffersController@edit')->name('edit.offer');
+    Route::patch('/static/announcement/{id}/update', 'OffersController@update')->name('update.offer');
+    Route::delete('/static/announcement/{id}/destroy', 'OffersController@destroy')->name('destroy.offer');
     Route::get('/static/announcement/addpictures/{id}', 'OffersController@addpictures')->name('create.offer.pictures');
+    Route::post('/static/announcement/addpictures/', 'OffersController@storePictures');
 
-    //Offers for users
-    Route::resource('offers', 'OffersController', ['names'=>[
-        'myOffers'=>'myOffers.create',
-        'create'=>'offers.create',
-        'store'=>'offer.store',
-        'edit'=>'offer.edit',
-        'delete'=>'offer.delete'
-    ]]);
 
     Route::get('/static/dashboard/', 'UserController@index');
     Route::patch('/static/dashboard/{id}', 'UserController@update');

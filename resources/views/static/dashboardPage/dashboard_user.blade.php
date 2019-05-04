@@ -60,7 +60,7 @@
                                         <div class="row">
                                             <div class="col-md-2">
                                                 <img class="dashboard-img mr-3"
-                                                     src="https://bit.ly/1KUXdA3" alt="">
+                                                     src="{{ $offer->photo ? $offer->photo->path : '/images/default.png' }}" alt="">
                                             </div>
                                             <div class="col-md-10 align-middle">
                                                 <h2 class="d-inline text-uppercase text-primary">{{$offer->name}}</h2>
@@ -69,7 +69,7 @@
                                     </div>
 
                                     <div class="col-md-6 col-sm-12 text-right align-middle">
-                                        <a href="{{route('offers.edit', $offer->id)}}"
+                                        <a href="{{route('edit.offer', $offer->id)}}"
                                            class="btn btn-light box-shadow text-uppercase">&#128465;&nbsp;EDIT</a>
 
                                         {!! Form::open(['method'=>'DELETE', 'action'=>['OffersController@destroy', $offer->id]]) !!}
@@ -94,7 +94,7 @@
                             <div class="picture-uploader mb-3">
                                 <div class="profile-picture mr-3">
                                     @if($user->photo)
-                                        <img src="{{$user->photo->path}}" class="img-responsive">
+                                        <img src="{{ $user->photo ? $user->photo->path : '/images/default.png' }}" class="img-responsive">
                                     @endif
                                 </div>
                                 <div class="upload">

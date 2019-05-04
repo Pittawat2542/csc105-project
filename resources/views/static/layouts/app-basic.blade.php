@@ -32,7 +32,7 @@
 <script>
     $(function()
     {
-        $( "#searchForm" ).autocomplete({
+        $( ".search-box" ).autocomplete({
             source: "/autocomplete",
             messages: {
                 noResults: '',

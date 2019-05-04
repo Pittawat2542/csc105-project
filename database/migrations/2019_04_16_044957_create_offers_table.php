@@ -22,6 +22,7 @@ class CreateOffersTable extends Migration
             $table->string('location')->nullable();
             $table->string('description')->nullable();
             $table->integer('photo_id')->nullable();
+            $table->integer('user_id')->nullable();
             $table->string('phone')->nullable();
             $table->string('line')->nullable();
             $table->string('facebook')->nullable();

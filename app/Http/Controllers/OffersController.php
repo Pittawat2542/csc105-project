@@ -45,25 +45,48 @@ class OffersController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->all();
+        $data = $request->except('user_id');
+        $data['user_id'] = Auth::user()->id;
         $lastId = Offer::create($data)->id;
         return redirect('/static/announcement/addpictures/'.$lastId);
     }
 
     public function addPictures($id)
     {
-//        if(Auth::user()->id==$->user_id) {
-
-        return view('static.dashboardPage.annoucementPictures');
+        $offer = Offer::findOrFail($id);
+        if(Auth::user()->id==$offer->user_id) {
+            return view('static.dashboardPage.annoucementPictures', ['offer'=>$offer]);
+        }
+        return redirect()->back();
     }
 
+    public function storePictures(Request $request)
+    {
+        $offer = Offer::findOrFail($request->offer_id);
+        if(Auth::user()->id==$offer->user_id) {
+            $photo = new Photo();
+            if ($file = $request->file('photo')) {
+                $newPhoto_id = $photo->photoUpload($request->file('photo'), 'offer_', $request->offer_id, Auth::user()->id);
+                $offer = Offer::findOrFail($request->offer_id);
+                $offer->photo_id = $newPhoto_id;
+                $offer->save();
+            }
+
+            if ($request->photoadd) {
+                foreach ($request->photoadd as $photoad) {
+                    $photo->photoUpload($photoad, 'offer_', $request->offer_id, Auth::user()->id);
+                }
+            }
+        }
+        return redirect('/');
+    }
     /**
      * Display the specified resource.
      *
      * @param  \App\offers  $offers
      * @return \Illuminate\Http\Response
      */
-    public function show(offers $offers)
+    public function show(Offer $offers)
     {
         return view('offers.index', [
             'offers'=>Offer::paginate(30),
@@ -77,14 +100,17 @@ class OffersController extends Controller
      * @param  \App\offers  $offers
      * @return \Illuminate\Http\Response
      */
-    public function edit(offers $offers)
+    public function edit($id)
     {
-        $offer = Offer::findOrFail($offers);
-        //Checking if offer belongs to user
+        $offer = Offer::findOrFail($id)->first();
+            //Checking if offer belongs to user
         if(Auth::user()->id==$offer->user_id) {
-            return view('offer.edit', ['offer' => Offer::findOrFail($offer)]);
+            return view('static.dashboardPage.annoucementEdit', [
+                'offers' => $offer,
+                'categories'=>Categories::pluck('breed', 'id')->all()
+                ]);
         }
-        return redirect('/offers');
+        return redirect()->back();
     }
 
     /**
@@ -94,15 +120,14 @@ class OffersController extends Controller
      * @param  \App\offers  $offers
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, offers $offers)
+    public function update(Request $request, $id)
     {
-        $offer = Offer::findOrFail($offers);
+        $offer = Offer::findOrFail($id);
         //Checking if offer belongs to user
         if(Auth::user()->id==$offer->user_id) {
-            $offer->update($request);
-            return redirect('/offers');
+            $offer->update($request->all());
         }
-        return redirect('/offers');
+        return redirect()->back();
     }
 
     /**
@@ -111,14 +136,13 @@ class OffersController extends Controller
      * @param  \App\offers  $offers
      * @return \Illuminate\Http\Response
      */
-    public function destroy(offers $offers)
+    public function destroy($id)
     {
-        $offer = Offer::findOrFail($offers);
+        $offer = Offer::findOrFail($id);
         //Checking if offer belongs to user
         if(Auth::user()->id==$offer->user_id) {
             $offer->delete();
-            return redirect('/offers');
         }
-        return redirect('/offers');
+        return redirect()->back();
     }
 }
