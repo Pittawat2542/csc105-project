@@ -404,6 +404,9 @@ select[name="itemsPerPage"] {
     border-color: #405377;
 }
 
+input[type=date] {
+    width: 75%;
+}
 @media (max-width: 1199px) {
     input[type=date] {
         width: 75%;
