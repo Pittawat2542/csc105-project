@@ -30,8 +30,8 @@
             @endguest
 
             @auth
-                <a href="/static/dashboard" class="btn btn-link nav-link-main text-uppercase" role="button">
-                    Welcome, @ {{ Auth::user()->name }}
+                <a href="/dashboard" class="btn btn-link nav-link-main text-uppercase" role="button">
+                    Welcome, {{ Auth::user()->name }}
                 </a>
                 <form action="/logout" method="POST">
                     @csrf
@@ -56,7 +56,7 @@
             </div>
             <div class="p-2">
                 <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
-    left: -4.3rem;">
+    left: -1.3rem;">
             </div>
             <div class="p-2">
                 @guest
@@ -67,8 +67,8 @@
                 @endguest
 
                 @auth
-                    <h5 class="d-inline mr-5 text-uppercase"><a href="/static/dashboard">
-                            Welcome, @ {{ Auth::user()->name }}
+                    <h5 class="d-inline mr-5 text-uppercase"><a href="/dashboard">
+                            Welcome, {{ Auth::user()->name }}
                         </a>
                     </h5>
                     <form class="d-inline" action="/logout" method="POST">

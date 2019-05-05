@@ -13,8 +13,8 @@ class UserController extends Controller
 {
     public function index() {
 
-        return view('static.dashboardPage.dashboard_user', [
-            'offers'=>Offer::where('id', '=', Auth::user()->id)->paginate(30),
+        return view('dashboard.dashboard_user', [
+            'offers'=>Offer::where('user_id', '=', Auth::user()->id)->paginate(30),
             'user' => User::findOrFail(Auth::user())->first()]);
     }
 
@@ -36,7 +36,7 @@ class UserController extends Controller
             }
             $user->update($data);
         }
-        return redirect('/static/dashboard');
+        return redirect('/dashboard');
     }
 
     public function updateId(Request $request)
@@ -46,6 +46,6 @@ class UserController extends Controller
         if ($file = $request->file('photoId')) {
             $photo->photoUpload($request->file('photoId'), 'verify_', '0', Auth::user()->id);
         }
-        return redirect('/static/dashboard');
+        return redirect('/dashboard');
     }
 }

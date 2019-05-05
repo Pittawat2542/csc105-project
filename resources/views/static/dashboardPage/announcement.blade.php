@@ -6,34 +6,34 @@
         <div class="container">
             <h1 class="text-uppercase mb-3">Create New Announcement</h1>
             {!! Form::open(['method'=>'POST', 'action'=>'OffersController@store', 'class'=>'ml-0 ml-md-5']) !!}
-                <h2 class="text-uppercase text-primary">Basic Information</h2>
+            <h2 class="text-uppercase text-primary">Basic Information</h2>
 
-                <div class="ml-0 ml-md-3">
+            <div class="ml-0 ml-md-3">
 
-                    <div class="form-group row mt-3">
-                        <div class="col-md-3 col-sm-12">
-                            {!! Form::label('title', 'Title of announcement') !!}
-                        </div>
-                        <div class="col-md-9 col-sm-12">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"></span>
-                                </div>
-                                {!! Form::text('title', null, ['class'=>'form-control']) !!}
+                <div class="form-group row mt-3">
+                    <div class="col-md-3 col-sm-12">
+                        {!! Form::label('title', 'Title of announcement') !!}
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"></span>
                             </div>
+                            {!! Form::text('title', null, ['class'=>'form-control']) !!}
                         </div>
                     </div>
+                </div>
 
-                    <div class="form-group row mt-3">
-                        <div class="col-md-3 col-sm-12">
-                            {!! Form::label('name', 'Name') !!}
-                        </div>
-                        <div class="col-md-9 col-sm-12">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"></span>
-                                </div>
-                                {!! Form::text('name', null, ['class'=>'form-control']) !!}
+                <div class="form-group row mt-3">
+                    <div class="col-md-3 col-sm-12">
+                        {!! Form::label('name', 'Name') !!}
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"></span>
+                            </div>
+                            {!! Form::text('name', null, ['class'=>'form-control']) !!}
                         </div>
                     </div>
 
@@ -120,7 +120,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"></span>
                                 </div>
-                                    {!! Form::text('line', null, ['class'=>'form-control']) !!}
+                                {!! Form::text('line', null, ['class'=>'form-control']) !!}
                             </div>
                         </div>
                     </div>
@@ -133,8 +133,9 @@
                         {!! Form::textarea('description', null, ['class'=>'box-shadow', 'rows'=>5, 'cols'=>30]) !!}
                     </div>
                 </div>
-                    {!! Form::submit('Next step add pictures', ['class'=>'btn btn-primary mt-5']) !!}
+                {!! Form::submit('Next step add pictures', ['class'=>'btn btn-primary mt-5']) !!}
                 {!! Form::close() !!}
+            </div>
         </div>
         <br>
     </section>

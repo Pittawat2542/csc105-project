@@ -15,25 +15,12 @@
             <div class="router-display">
 
                 <div id="verifications" class="router-content">
-{{--                    <div class="row mb-3">--}}
-{{--                        <div class="col">--}}
-{{--                            <form class="form-inline my-2 my-lg-0 float-right">--}}
-{{--                                @csrf--}}
-{{--                                <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>--}}
-{{--                                <input class="form-control mr-sm-2 search-box box-shadow" type="search"--}}
-{{--                                       placeholder="Search . . ."--}}
-{{--                                       aria-label="Search">--}}
-{{--                            </form>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-
-
                     <div class="data-list">
-                        <div class="data-spanner" data-span="false"></div>
                         @if($toVerify)
+                            <div class="data-spanner" data-span="false"></div>
                             @foreach($toVerify as $personToVerify)
                                 @if(!$personToVerify->user->isVerified())
-                                    <!-- provide each data here --> <!-- my requested list -->
+                                <!-- provide each data here --> <!-- my requested list -->
                                     <div class="user-box">
                                         <div class="card no-border-radius border-0 box-shadow mb-3">
                                             <div class="card-body">
@@ -42,12 +29,14 @@
                                                         <div class="row">
                                                             <div class="col-md-2">
                                                                 <img class="dashboard-img mr-3 picture"
-                                                                     src="{{ $personToVerify->user->photo ? $personToVerify->user->photo->path : '/images/default.png' }}" alt="">
+                                                                     src="{{ $personToVerify->user->photo ? $personToVerify->user->photo->path : '/images/default.png' }}"
+                                                                     alt="">
                                                             </div>
                                                             <div class="col-md-10 align-middle">
                                                                 <h2 class="d-inline text-uppercase text-primary name-detail">
                                                                     {{ $personToVerify->user->name }}</h2>
-                                                                <p>Registered Date: {{ $personToVerify->user->created_at }}</p>
+                                                                <p>Registered
+                                                                    Date: {{ $personToVerify->user->created_at }}</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -90,72 +79,68 @@
                                     </div>
                                 @endif
                             @endforeach
+                        @else
+                            <div class="user-box">
+                                <div class="card no-border-radius border-0 box-shadow mb-3">
+                                    <div class="card-body">
+                                        <h2 class="text-primary text-center">Currently, no user verification
+                                            request!</h2>
+                                    </div>
+                                </div>
+                            </div>
                         @endif
                     </div>
                 </div>
 
 
                 <div id="users" class="router-content">
-                    <!-- check user's information from here -->
-{{--                    <div class="row mb-3">--}}
-{{--                        <div class="col">--}}
-{{--                            <form class="form-inline my-2 my-lg-0 float-right">--}}
-{{--                                @csrf--}}
-{{--                                <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>--}}
-{{--                                <input class="form-control mr-sm-2 search-box box-shadow" type="search"--}}
-{{--                                       placeholder="Search . . ."--}}
-{{--                                       aria-label="Search">--}}
-{{--                            </form>--}}
-{{--                            <a class="btn btn-primary text-uppercase" href="/static/users/create"--}}
-{{--                               target="_blank" role="button">Add New</a></div>--}}
-{{--                    </div>--}}
-
                     <div class="data-list">
                         <div class="data-spanner" data-span="false"></div>
                     @if($users)
                         @foreach($users as $user)
                             <!-- our users -->
-                            <div class="card no-border-radius border-0 box-shadow mb-3">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <img class="dashboard-img mr-3"
-                                                         src="{{ $user->photo ? $user->photo->path : '/images/default.png' }}" alt="">
-                                                </div>
-                                                <div class="col-md-10 align-middle">
-                                                    <h2 class="d-inline text-uppercase text-primary">
-                                                        {{ $user->name }}</h2>
-                                                    <p>Registered Date: {{ $user->created_at }}</p>
+                                <div class="card no-border-radius border-0 box-shadow mb-3">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <img class="dashboard-img mr-3"
+                                                             src="{{ $user->photo ? $user->photo->path : '/images/default.png' }}"
+                                                             alt="">
+                                                    </div>
+                                                    <div class="col-md-10 align-middle">
+                                                        <h2 class="d-inline text-uppercase text-primary">
+                                                            {{ $user->name }}</h2>
+                                                        <p>Registered Date: {{ $user->created_at }}</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="col-md-6 col-sm-12 text-right align-middle">
-                                            {!! Form::open(['method'=>'DELETE',
-                                            'action'=>['AdminUsersController@destroy', $user->id]]) !!}
+                                            <div class="col-md-6 col-sm-12 text-right align-middle">
+                                                {!! Form::open(['method'=>'GET',
+  'action'=>['AdminUsersController@edit', $user->id], 'class' => 'd-inline']) !!}
 
-                                            {!! Form::submit('&#10006;&nbsp;DELETE', [
-                                            'class'=>'btn btn-light box-shadow text-danger text-uppercase'
-                                            ]) !!}
+                                                {!! Form::submit('&#128221;&nbsp;EDIT', [
+                                                'class'=>'btn btn-light box-shadow text-uppercase'
+                                                ]) !!}
 
-                                            {!! Form::close() !!}
+                                                {!! Form::close() !!}
 
-                                            {!! Form::open(['method'=>'GET',
-                                            'action'=>['AdminUsersController@edit', $user->id]]) !!}
+                                                {!! Form::open(['method'=>'DELETE',
+                                                'action'=>['AdminUsersController@destroy', $user->id], 'class' => 'd-inline mr-2']) !!}
 
-                                            {!! Form::submit('&#9745;&nbsp;EDIT', [
-                                            'class'=>'btn btn-light box-shadow text-uppercase'
-                                            ]) !!}
+                                                {!! Form::submit('&#128465;&nbsp;DELETE', [
+                                                'class'=>'btn btn-light box-shadow text-danger text-uppercase'
+                                                ]) !!}
 
-                                            {!! Form::close() !!}
+                                                {!! Form::close() !!}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        @endforeach
-                    @endif
+                            @endforeach
+                        @endif
                     </div>
 
                 </div>
@@ -166,7 +151,8 @@
                         <div class="col">
                             <form class="form-inline my-2 my-lg-0 float-right">
                                 @csrf
-                                <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
+                                <label class="mr-2 search-icon" for=""><i class="fas fa-search"
+                                                                          id="search-icon"></i></label>
                                 <input class="form-control mr-sm-2 search-box box-shadow" type="search"
                                        placeholder="Search . . ."
                                        aria-label="Search">
@@ -210,7 +196,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

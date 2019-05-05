@@ -20,7 +20,7 @@ class AdminController extends Controller
     {
         $peopeToVerify = Photo::where('path', 'LIKE', 'verify_%')->take(25)->get();
 
-        return view('static.dashboardPage.dashboard_admin', [
+        return view('dashboard.dashboard_admin', [
             'toVerify' => $peopeToVerify,
             'users' => User::paginate(25),
             'offers' => Offer::paginate(25)

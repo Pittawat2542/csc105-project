@@ -11,7 +11,19 @@ class Offer extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'name', 'age', 'category_id', 'location', 'description', 'birth', 'price'];
+    protected $fillable = [
+        'title',
+        'name',
+        'age',
+        'category_id',
+        'location',
+        'description',
+        'photo_id',
+        'user_id',
+        'phone',
+        'line',
+        'facebook'
+    ];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
