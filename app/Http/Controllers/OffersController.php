@@ -86,11 +86,13 @@ class OffersController extends Controller
      * @param  \App\offers  $offers
      * @return \Illuminate\Http\Response
      */
-    public function show(Offer $offers)
+    public function show($id)
     {
-        return view('offers.index', [
-            'offers'=>Offer::paginate(30),
-            'photos'=>Photo::whereOffer_id($offers)->get()
+        $puppy = Offer::findOrFail($id);
+        $photo = Photo::where('offer_id', '=', $puppy->id)->get();
+        return view('static.puppiesPage.puppiesPage', [
+            'puppy'=>$puppy,
+            'photos'=>$photo
         ]);
     }
 

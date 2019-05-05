@@ -50,13 +50,16 @@ Route::get('/offers', 'OffersController@index')->name('offers');
 
 //loged users
 Route::group(['middleware'=>'auth'], function() {
+    Route::get('/static/puppiesPage/{id}', 'OffersController@show')->name('show.offer');
 
     Route::get('/static/announcement/create', 'OffersController@create')->name('create.offer');
     Route::get('/static/announcement/{id}/edit', 'OffersController@edit')->name('edit.offer');
+    Route::post('/static/announcement/store', 'OffersController@store')->name('store.offer');
     Route::patch('/static/announcement/{id}/update', 'OffersController@update')->name('update.offer');
     Route::delete('/static/announcement/{id}/destroy', 'OffersController@destroy')->name('destroy.offer');
     Route::get('/static/announcement/addpictures/{id}', 'OffersController@addpictures')->name('create.offer.pictures');
     Route::post('/static/announcement/addpictures/', 'OffersController@storePictures');
+
 
 
     Route::get('/static/dashboard/', 'UserController@index');

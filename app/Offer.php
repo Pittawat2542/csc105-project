@@ -25,11 +25,15 @@ class Offer extends Model
         'facebook'
     ];
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
+//    /**
+//     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+//     */
+//    public function category() {
+//        return $this->belongsToMany('App\Categories', 'categories', 'category_id', null, 'id');
+//    }
+
     public function category() {
-        return $this->belongsToMany('App\Categories');
+        return $this->belongsTo('App\Categories', 'category_id');
     }
 
     /**

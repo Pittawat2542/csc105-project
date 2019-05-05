@@ -21,8 +21,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $categories = Categories::withCount('offers')->latest('offer_count')->take(10)->with('offers')->get();
-        return view('static.index.index');
+        $categories = $categories = Categories::with('offer')->get();
+        return view('static.index.index', ['categories'=> $categories]);
     }
 
     public function autocomplete(){
