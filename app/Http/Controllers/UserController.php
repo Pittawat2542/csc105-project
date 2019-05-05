@@ -15,7 +15,9 @@ class UserController extends Controller
 
         return view('static.dashboardPage.dashboard_user', [
             'offers'=>Offer::where('user_id', '=', Auth::user()->id)->paginate(30),
-            'user' => User::findOrFail(Auth::user())->first()]);
+            'user' => User::findOrFail(Auth::user())->first()
+        ]);
+
     }
 
 

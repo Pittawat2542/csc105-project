@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd2134c7-5a40-4ea2-989a-15948ab274be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/static/dashboardPage/annoucementEdit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Offer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_16_044957_create_offers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_16_044957_create_offers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/dashboardPage/annoucementPictures.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/dashboardPage/annoucementPictures.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
@@ -103,22 +99,52 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/annoucementPictures.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="49" />
+            <state relative-caret-position="34">
+              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+              <folding>
+                <element signature="e#40#78#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+              <folding>
+                <element signature="e#40#59#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_16_044957_create_offers_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-              <folding>
-                <element signature="e#40#78#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Photo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="42" column="33" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -136,19 +162,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/annoucementEdit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="96" column="113" selection-start-line="96" selection-start-column="113" selection-end-line="96" selection-end-column="113" />
+            <state relative-caret-position="-11">
+              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -162,7 +179,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
@@ -172,10 +189,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Offer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="124" column="125" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="125" />
+            <state relative-caret-position="164">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -244,7 +261,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/puppiesPage/puppiesPage.css" />
         <option value="$PROJECT_DIR$/resources/views/categoryPage/category.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth_static/password_reset.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth_static/login.blade.php" />
@@ -280,21 +296,22 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/navbar/navbar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/index/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/announcement.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminUserController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_16_044957_create_offers_table.php" />
         <option value="$PROJECT_DIR$/app/Photo.php" />
-        <option value="$PROJECT_DIR$/app/Offer.php" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/annoucementPictures.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/annoucementEdit.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php" />
+        <option value="$PROJECT_DIR$/app/Categories.php" />
+        <option value="$PROJECT_DIR$/app/Offer.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -492,14 +509,6 @@
             <path>
               <item name="e-commerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-commerce" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-commerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-commerce" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -590,7 +599,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97327000" />
+    <option name="totallyTimeSpent" value="98590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -737,13 +746,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env.example">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -906,31 +908,10 @@
         <state relative-caret-position="-522" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_16_044957_create_offers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="32" column="22" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Offer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -945,16 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-367">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -986,13 +957,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/annoucementEdit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <element signature="e#40#78#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="207">
+          <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="124" column="125" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Offer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1006,31 +1009,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/annoucementEdit.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="124" column="125" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="96" column="113" selection-start-line="96" selection-start-column="113" selection-end-line="96" selection-end-column="113" />
+        <state relative-caret-position="34">
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          <folding>
+            <element signature="e#40#78#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1041,10 +1026,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/static/layouts/app-basic.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/static/dashboardPage/dashboard_user.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="-11">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_16_044957_create_offers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <folding>
+            <element signature="e#40#59#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

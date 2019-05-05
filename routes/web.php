@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'StaticRoutesController@index');
+Route::get('/', 'HomeController@index');
 
 Route::get('/static/puppiesPage', 'StaticRoutesController@puppies');
 

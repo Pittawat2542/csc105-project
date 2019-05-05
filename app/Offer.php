@@ -26,10 +26,10 @@ class Offer extends Model
     ];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function category() {
-        return $this->belongsTo('App\Category');
+        return $this->belongsToMany('App\Categories');
     }
 
     /**

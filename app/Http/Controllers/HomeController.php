@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Categories;
+use App\Offer;
 use App\Home;
-use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -12,15 +13,6 @@ use Illuminate\Support\Facades\Lang;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     /**
      * Show the application dashboard.
@@ -29,7 +21,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $categories = Categories::withCount('offers')->latest('offer_count')->take(10)->with('offers')->get();
+        return view('static.index.index');
     }
 
     public function autocomplete(){

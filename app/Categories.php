@@ -14,4 +14,7 @@ class Categories extends Model
      */
     protected $fillable = ['breed', 'section', 'provisional', 'country', 'url', 'image', 'pdf'];
 
+    public function Offer() {
+        return $this->belongsToMany('App\Offer');
+    }
 }
