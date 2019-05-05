@@ -86,7 +86,7 @@ class User extends Authenticatable
      * @return bool|int
      */
     public function isVerified() {
-        return $this->is_verify==1 ? true : false;
+        return $this->is_verified==1 ? true : false;
     }
 
     /**

@@ -15,16 +15,14 @@
             <ul class="navbar-nav mr-auto">
             </ul>
             <div id="navigation-bar">
-            {{ Form::close() }}
-
-            {!! Form::open(['method'=>'GET','url'=>'admin/search', 'class'=>'form-inline my-2 my-lg-0']) !!}
-            <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
-            {!! Form::text('search', null, ['required',
-                                        'id'=>'searchForm',
-                                        'class'=>'form-control mr-sm-2 search-box box-shadow',
-                                        'placeholder'=>'Search . . .']) !!}
-            {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
-            {!! Form::close() !!}
+                {!! Form::open(['method'=>'GET', 'class'=>'form-inline my-2 my-lg-0']) !!}
+                <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
+                {!! Form::text('search', null, ['required',
+                                            'id'=>'searchForm',
+                                            'class'=>'form-control mr-sm-2 search-box box-shadow',
+                                            'placeholder'=>'Search . . .']) !!}
+                {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
+                {!! Form::close() !!}
             </div>
             @guest
                 <a href="/register" class="btn btn-link nav-link-main text-uppercase" role="button">Register</a>
@@ -47,9 +45,7 @@
     <div class="container mt-5">
         <section id="index-header" class="d-flex justify-content-between">
             <div class="p-2">
-                {{ Form::close() }}
-
-                {!! Form::open(['method'=>'GET','url'=>'admin/search', 'class'=>'form-inline my-2 my-lg-0']) !!}
+                {!! Form::open(['method'=>'GET', 'class'=>'form-inline my-2 my-lg-0']) !!}
                 <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
                 {!! Form::text('search', null, ['required',
                                             'id'=>'searchForm',

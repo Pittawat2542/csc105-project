@@ -50,6 +50,8 @@ class AdminPhotoController extends Controller
         if(!empty($photo->file)) unlink(public_path() . $photo->file);
 
         $photo->delete();
+
+        return redirect()->back();
     }
 
     /**

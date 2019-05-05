@@ -27,10 +27,9 @@ Route::get("/static/dashboard/", 'UserController@index');
 
 Route::get("/static/dashboard/admin", 'StaticRoutesController@dashboard_admin');
 
-Route::get('/static/announcement/create', 'StaticRoutesController@announcement_create');
 
 
-Route::get('autocomplete', 'HomeController@autocomplete');
+Route::get('autocomplete/', 'HomeController@autocomplete');
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -52,8 +51,11 @@ Route::get('/offers', 'OffersController@index')->name('offers');
 //loged users
 Route::group(['middleware'=>'auth'], function() {
 
+    Route::get('/static/announcement/create', 'OffersController@create')->name('create.offer');
+    Route::get('/static/announcement/addpictures/{id}', 'OffersController@addpictures')->name('create.offer.pictures');
+
     //Offers for users
-    Route::resource('admin/users', 'OffersController', ['names'=>[
+    Route::resource('offers', 'OffersController', ['names'=>[
         'myOffers'=>'myOffers.create',
         'create'=>'offers.create',
         'store'=>'offer.store',
@@ -71,13 +73,15 @@ Route::group(['middleware'=>'admin'], function() {
 
     //index page of admin page
     Route::get('/admin', 'AdminController@index')->name('admin');
+    Route::patch('/admin/approve/{id}', 'AdminController@approve')->name('approve');
+
     //users admin page
     Route::resource('admin/users', 'AdminUsersController', ['names'=>[
         'index'=>'admin.users.index',
         'create'=>'admin.users.create',
         'store'=>'admin.users.store',
         'edit'=>'admin.users.edit',
-        'delete'=>'admin.users.delete'
+        'destroy'=>'admin.users.destroy'
     ]]);
     //categories admin page
     Route::resource('admin/categories', 'AdminCategoriesController', ['names'=>[

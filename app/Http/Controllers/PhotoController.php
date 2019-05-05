@@ -21,20 +21,20 @@ class PhotoController extends Controller
 //
 //    }
 //
-//    /**
-//     * @param $id
-//     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
-//     */
-//    public function destroy($id) {
-//
-//        $photo = Photo::findOrFail($id);
-//
-//        //Check if picture belongs to user  but its not tested
-//        if(Auth::user()->id==$photo->user_id) {
-//            if (!empty($photo->file)) unlink(public_path() . $photo->file);
-//            $photo->delete();
-//        }
-//    }
+    /**
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function destroy($id) {
+
+        $photo = Photo::findOrFail($id);
+
+        //Check if picture belongs to user  but its not tested
+        if(Auth::user()->id==$photo->user_id) {
+            if (!empty($photo->file)) unlink(public_path() . $photo->file);
+            $photo->delete();
+        }
+    }
 
     public function createOffer($id) {
         return view('offer.addPictures', [
