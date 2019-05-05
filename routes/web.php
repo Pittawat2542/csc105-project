@@ -15,8 +15,6 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/static/puppiesPage', 'StaticRoutesController@puppies');
 
-Route::get('/static/categoryPage', 'StaticRoutesController@category');
-
 Route::get("/static/register", 'StaticRoutesController@register');
 
 Route::get("/static/login", 'StaticRoutesController@login');
@@ -27,7 +25,7 @@ Route::get("/static/dashboard/", 'UserController@index');
 
 Route::get("/static/dashboard/admin", 'StaticRoutesController@dashboard_admin');
 
-
+Route::get('/static/categoryPage/{id}', 'CategoriesController@show')->name('category.show');
 
 Route::get('autocomplete/', 'HomeController@autocomplete');
 

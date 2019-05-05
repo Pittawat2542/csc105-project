@@ -17,7 +17,7 @@ class CreateOffersTable extends Migration
             $table->bigIncrements('id');
             $table->string('title')->nullable();
             $table->string('name')->nullable();
-            $table->integer('age')->nullable();
+            $table->string('age')->nullable();
             $table->integer('category_id');
             $table->string('location')->nullable();
             $table->string('description')->nullable();

@@ -81,16 +81,15 @@
 
         <!-- category navigation-->
         <section id="category-navigation" class="d-flex justify-content-center mt-5 scrolling-wrapper">
-            <?php $count = 0; ?>
+
             @if($categories)
                 @foreach($categories as $category)
                     @if(!$category->offer->isEmpty())
                       <div class="text-center d-inline-block mr-3">
                           <h5 class="d-inline font-weight-bold">
-                              <a href="/static/categoryPage/{{$category->id}}">{{$category->breed}}</a>
+                              <a href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a>
                           </h5>
                       </div>
-                      <?php if($count>3) break; $count++; ?>
                     @endif
               @endforeach
           @endif
@@ -123,7 +122,7 @@
                           @if(!$category->offer->isEmpty())
                               <div class="d-flex catalog-header scrolling-wrapper">
                                   <div class="pt-1 pl-0 mr-4">
-                                      <h1 class="font-weight-bold"> <a href="/static/categoryPage/{{$category->id}}">{{$category->breed}}</a></h1>
+                                      <h1 class="font-weight-bold"> <a href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a></h1>
                                   </div>
                               </div>
 
@@ -150,9 +149,8 @@
                                   @endforeach
                               </div>
 
-                            <h4 class="d-inline float-right mt-3"><a href="/static/categoryPage">More ></a></h4>
-                          <?php if($count>3) break;
-                          ?>
+                            <h4 class="d-inline float-right mt-3"><a href="{{ route('category.show',$category->id)}}">More ></a></h4>
+
 
                       @endif
                   @endforeach

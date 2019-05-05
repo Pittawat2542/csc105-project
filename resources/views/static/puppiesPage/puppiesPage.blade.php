@@ -41,6 +41,9 @@
                             <h5>
                                 <img class="mr-3 user-image rounded-circle" src="{{$puppy->user->photo ? $puppy->user->photo->path : ''}}" alt="">
                                 {{$puppy->user->name}}
+                                @if($puppy->user->isVerified())
+                                    <p class="verified text-success">This user is verified</p>
+                                @endif
                             </h5>
                         </div>
                         <div class="row">
