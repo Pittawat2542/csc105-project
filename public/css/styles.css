@@ -77,7 +77,7 @@ footer {
     border: 0;
 }
 
-#auth, #category, #announcement, #dashboard, #puppy {
+#auth, #category, #announcement, #dashboard, #puppy, #edit_user {
     margin-top: 7rem !important;
 }
 
