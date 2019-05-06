@@ -209,9 +209,9 @@
 
                                             <div class="col-md-6 col-sm-12 text-right align-middle">
                                                 <a href="{{route('edit.offer', $offer->id)}}"
-                                                   class="btn btn-light box-shadow text-uppercase">&#128465;&nbsp;EDIT</a>
+                                                   class="btn btn-light box-shadow text-uppercase">&#128221;&nbsp;EDIT</a>
 
-                                                {!! Form::open(['method'=>'DELETE', 'action'=>['OffersController@destroy', $offer->id]]) !!}
+                                                {!! Form::open(['method'=>'DELETE', 'action'=>['OffersController@destroy', $offer->id], 'class'=>'d-inline']) !!}
                                                 {!! Form::submit('&#128465;&nbsp;DELETE',
                                                 ['class'=>'btn btn-light box-shadow text-danger text-uppercase']) !!}
                                                 {!! Form::close() !!}

@@ -917,3 +917,114 @@ input[type=date] {
     width: calc(100% - 10rem);
     word-wrap: break-word;
 }
+
+/* Edit User */
+
+#edit_user .btn {
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+#edit_user .btn.btn-primary {
+    border: 3px solid #405377;
+    background-color: #405377;
+}
+
+#edit_user .btn.btn-primary:hover {
+    border: 3px solid #273A5E;
+    background-color: #273A5E;
+    color: white !important;
+}
+
+#edit_user .form-button > button {
+    width: 100%;
+}
+
+#edit_user input {
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+#edit_user input.form-control {
+    border: 0;
+    border-radius: 0;
+    color: #405377;
+}
+
+#edit_user input.form-control::placeholder {
+    color: #405377;
+}
+
+#edit_user .input-group .input-group-prepend .input-group-text {
+    background-color: #405377;
+    border: 0;
+    border-radius: 0;
+    padding: .375rem 0.5rem;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+#edit_user label {
+    color: #405377;
+}
+
+@media (max-width: 575px) {
+    #edit_user form {
+        width: 100%;
+    }
+}
+
+#edit_user .commit-button {
+    display: inline-block;
+    position: relative;
+}
+
+#edit_user .commit-button label {
+    padding: .5rem 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#edit_user .commit-button input {
+    display: none;
+}
+
+#edit_user .picture-uploader {
+    padding-top: 1rem;
+    position: relative;
+}
+
+#edit_user .picture-uploader > * {
+    display: inline-block;
+}
+
+#edit_user .picture-uploader .profile-picture {
+    width: 4rem;
+    height: 5rem;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(100, 100, 100);
+}
+
+#edit_user .profile-picture img {
+    height: inherit;
+}
+
+#edit_user .picture-uploader .upload {
+    position: absolute;
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#edit_user .picture-uploader .upload .commit-button {
+    margin-top: .8rem;
+}
