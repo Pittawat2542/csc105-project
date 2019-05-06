@@ -29,9 +29,10 @@
             <a href="/dashboard" class="btn btn-link nav-link-main text-uppercase" role="button">
                 Welcome, {{ Auth::user()->name }}
             </a>
-        @if(Auth::user()->isAdmin())
-            <a href="{{route('admin')}}">Admin</a>
-        @endif
+            @if(Auth::user()->isAdmin())
+                <a href="{{route('admin')}}" class="btn btn-link nav-link-main text-uppercase" role="button">Admin
+                    Panel</a>
+            @endif
             <form action="/logout" method="POST">
                 @csrf
                 <button type="submit" class="btn btn-danger nav-link-main text-uppercase">Logout</button>
