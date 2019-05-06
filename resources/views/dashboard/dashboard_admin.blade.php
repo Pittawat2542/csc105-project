@@ -147,55 +147,50 @@
 
                 <div id="announcements" class="router-content">
                     <!-- Manage user's announcement -->
-                    <div class="row mb-3">
-                        <div class="col">
-                            <form class="form-inline my-2 my-lg-0 float-right">
-                                @csrf
-                                <label class="mr-2 search-icon" for=""><i class="fas fa-search"
-                                                                          id="search-icon"></i></label>
-                                <input class="form-control mr-sm-2 search-box box-shadow" type="search"
-                                       placeholder="Search . . ."
-                                       aria-label="Search">
-                            </form>
-                            <a class="btn btn-primary text-uppercase" href="/static/announcement/create"
-                               target="_blank" role="button">Add New</a>
-                        </div>
-                    </div>
+{{--                    <div class="row mb-3">--}}
+{{--                        <div class="col">--}}
+{{--                            <form class="form-inline my-2 my-lg-0 float-right">--}}
+{{--                                @csrf--}}
+{{--                                <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>--}}
+{{--                                <input class="form-control mr-sm-2 search-box box-shadow" type="search"--}}
+{{--                                       placeholder="Search . . ."--}}
+{{--                                       aria-label="Search">--}}
+{{--                            </form>--}}
+{{--                            <a class="btn btn-primary text-uppercase" href="/static/announcement/create"--}}
+{{--                               target="_blank" role="button">Add New</a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-
-                    <div class="card no-border-radius border-0 box-shadow mb-3">
+                    @foreach($offers as $offer)
+                        <div class="card no-border-radius border-0 box-shadow mb-3">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="row">
                                         <div class="col-md-2">
                                             <img class="dashboard-img mr-3"
-                                                 src="/images/225.jpeg" alt="">
+                                                 src="{{$offer->photo ? $offer->photo->path : ''}}" alt="">
                                         </div>
                                         <div class="col-md-10 align-middle">
-                                            <h2 class="d-inline text-uppercase text-primary">Puppy Name</h2>
-                                            <p>Announcer</p>
+                                            <h2 class="d-inline text-uppercase text-primary">{{$offer->name}}</h2>
+                                            <p>{{$offer->user->name}}</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 col-sm-12 text-right align-middle">
-                                    <form class="d-inline mr-2" method="POST" action="">
-                                        @csrf
-                                        <button class="btn btn-light box-shadow text-uppercase">
-                                            &#128221;&nbsp;EDIT
-                                        </button>
-                                    </form>
-                                    <form class="d-inline" method="POST" action="">
-                                        @csrf
-                                        <button class="btn btn-light box-shadow text-danger text-uppercase">
-                                            &#128465;&nbsp;DELETE
-                                        </button>
-                                    </form>
+                                        <a href="{{route('edit.offer', $offer->id)}}"
+                                           class="btn btn-light box-shadow text-uppercase">&#128465;&nbsp;EDIT</a>
+
+                                        {!! Form::open(['method'=>'DELETE', 'action'=>['OffersController@destroy', $offer->id]]) !!}
+                                        {!! Form::submit('&#128465;&nbsp;DELETE',
+                                        ['class'=>'btn btn-light box-shadow text-danger text-uppercase']) !!}
+                                        {!! Form::close() !!}
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>

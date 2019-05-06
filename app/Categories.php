@@ -14,4 +14,11 @@ class Categories extends Model
      */
     protected $fillable = ['breed', 'section', 'provisional', 'country', 'url', 'image', 'pdf'];
 
+//    public function Offer() {
+//        return $this->belongsTo('App\Offer', null, 'category_id');
+//    }
+
+    public function Offer() {
+        return $this->hasMany('App\Offer', 'category_id');
+    }
 }

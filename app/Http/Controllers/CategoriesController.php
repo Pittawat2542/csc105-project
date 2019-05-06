@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Categories;
+use App\Offer;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -25,7 +26,11 @@ class CategoriesController extends Controller
      */
     public function show($id)
     {
-        return view('categories.show', ['category'=>Categories::findOrFail($id)]);
+        $category = Categories::findOrFail($id);
+        return view('static.categoryPage.category', [
+            'category'=>$category,
+            'puppies'=>Offer::where('category_id', '=', $id)->paginate(25)
+        ]);
     }
 
 }

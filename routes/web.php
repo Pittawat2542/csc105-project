@@ -11,11 +11,9 @@
 |
 */
 
-Route::get('/', 'StaticRoutesController@index');
+Route::get('/', 'HomeController@index');
 
 Route::get('/static/puppiesPage', 'StaticRoutesController@puppies');
-
-Route::get('/static/categoryPage', 'StaticRoutesController@category');
 
 Route::get("/static/register", 'StaticRoutesController@register');
 
@@ -26,6 +24,8 @@ Route::get("/static/password_reset", 'StaticRoutesController@password_reset');
 Route::get("/dashboard/", 'UserController@index');
 
 Route::get('/autocomplete', 'HomeController@autocomplete');
+
+Route::get('/static/categoryPage/{id}', 'CategoriesController@show')->name('category.show');
 
 Auth::routes();
 
@@ -39,18 +39,27 @@ Route::get('/offers', 'OffersController@index')->name('offers');
 
 //loged users
 Route::group(['middleware'=>'auth'], function() {
+    Route::get('/static/puppiesPage/{id}', 'OffersController@show')->name('show.offer');
 
     Route::get('/static/announcement/create', 'OffersController@create')->name('create.offer');
     Route::get('/static/announcement/{id}/edit', 'OffersController@edit')->name('edit.offer');
+    Route::post('/static/announcement/store', 'OffersController@store')->name('store.offer');
     Route::patch('/static/announcement/{id}/update', 'OffersController@update')->name('update.offer');
     Route::delete('/static/announcement/{id}/destroy', 'OffersController@destroy')->name('destroy.offer');
     Route::get('/static/announcement/addpictures/{id}', 'OffersController@addpictures')->name('create.offer.pictures');
     Route::post('/static/announcement/addpictures/', 'OffersController@storePictures');
 
 
+<<<<<<< HEAD
     Route::get('/dashboard/', 'UserController@index');
     Route::patch('/dashboard/{id}', 'UserController@update');
     Route::post('/dashboard/', 'UserController@updateId');
+=======
+
+    Route::get('/static/dashboard/', 'UserController@index');
+    Route::patch('/static/dashboard/{id}', 'UserController@update');
+    Route::post('/static/dashboard/', 'UserController@updateId');
+>>>>>>> 8dff35403c4adf025c5808af290de026997f38bb
 
 });
 

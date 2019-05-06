@@ -54,7 +54,7 @@ class OffersController extends Controller
     public function addPictures($id)
     {
         $offer = Offer::findOrFail($id);
-        if(Auth::user()->id==$offer->user_id) {
+        if(Auth::user()->id==$offer->user_id || Auth::user()->isAdmin()) {
             return view('static.dashboardPage.annoucementPictures', ['offer'=>$offer]);
         }
         return redirect()->back();
@@ -62,8 +62,9 @@ class OffersController extends Controller
 
     public function storePictures(Request $request)
     {
+
         $offer = Offer::findOrFail($request->offer_id);
-        if(Auth::user()->id==$offer->user_id) {
+        if(Auth::user()->id==$offer->user_id || Auth::user()->isAdmin()) {
             $photo = new Photo();
             if ($file = $request->file('photo')) {
                 $newPhoto_id = $photo->photoUpload($request->file('photo'), 'offer_', $request->offer_id, Auth::user()->id);
@@ -86,11 +87,13 @@ class OffersController extends Controller
      * @param  \App\offers  $offers
      * @return \Illuminate\Http\Response
      */
-    public function show(Offer $offers)
+    public function show($id)
     {
-        return view('offers.index', [
-            'offers'=>Offer::paginate(30),
-            'photos'=>Photo::whereOffer_id($offers)->get()
+        $puppy = Offer::findOrFail($id);
+        $photo = Photo::where('offer_id', '=', $puppy->id)->get();
+        return view('static.puppiesPage.puppiesPage', [
+            'puppy'=>$puppy,
+            'photos'=>$photo
         ]);
     }
 
@@ -102,9 +105,9 @@ class OffersController extends Controller
      */
     public function edit($id)
     {
-        $offer = Offer::findOrFail($id)->first();
+        $offer = Offer::findOrFail($id);
             //Checking if offer belongs to user
-        if(Auth::user()->id==$offer->user_id) {
+        if(Auth::user()->id==$offer->user_id || Auth::user()->isAdmin()) {
             return view('static.dashboardPage.annoucementEdit', [
                 'offers' => $offer,
                 'categories'=>Categories::pluck('breed', 'id')->all()
@@ -124,7 +127,7 @@ class OffersController extends Controller
     {
         $offer = Offer::findOrFail($id);
         //Checking if offer belongs to user
-        if(Auth::user()->id==$offer->user_id) {
+        if(Auth::user()->id==$offer->user_id || Auth::user()->isAdmin()) {
             $offer->update($request->all());
         }
         return redirect()->back();
