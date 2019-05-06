@@ -49,17 +49,9 @@ Route::group(['middleware'=>'auth'], function() {
     Route::get('/static/announcement/addpictures/{id}', 'OffersController@addpictures')->name('create.offer.pictures');
     Route::post('/static/announcement/addpictures/', 'OffersController@storePictures');
 
-
-<<<<<<< HEAD
     Route::get('/dashboard/', 'UserController@index');
     Route::patch('/dashboard/{id}', 'UserController@update');
     Route::post('/dashboard/', 'UserController@updateId');
-=======
-
-    Route::get('/static/dashboard/', 'UserController@index');
-    Route::patch('/static/dashboard/{id}', 'UserController@update');
-    Route::post('/static/dashboard/', 'UserController@updateId');
->>>>>>> 8dff35403c4adf025c5808af290de026997f38bb
 
 });
 
