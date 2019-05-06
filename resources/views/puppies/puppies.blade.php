@@ -1,4 +1,4 @@
-@extends('static.layouts.app')
+@extends('layouts.app')
 
 @section('content')
     @if($puppy)

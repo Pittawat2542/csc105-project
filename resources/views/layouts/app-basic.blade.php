@@ -15,17 +15,14 @@
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link href="{{asset('css/styles.css')}}" rel="stylesheet">
-    <script src="{{asset('js/dashboard.js')}}"></script>
     <title>Puppies Hub</title>
 </head>
 
 <body>
 
-@include('navbar.navbar')
+@yield('body')
 
-@yield('content')
-
-@include('footer.footer')
+@include('components.footer')
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -41,10 +38,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="{{asset('js/favorite.js')}}"></script>
 
 <script>
     $(function () {
-        $("#searchForm").autocomplete({
+        $(".search-box").autocomplete({
             source: "/autocomplete",
             messages: {
                 noResults: '',

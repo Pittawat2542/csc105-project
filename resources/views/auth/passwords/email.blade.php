@@ -1,4 +1,4 @@
-@extends('static.layouts.app')
+@extends('layouts.app')
 
 @section('content')
     <section id="auth" class="container mt-5 mb-5">

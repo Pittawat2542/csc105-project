@@ -30,7 +30,7 @@ class OffersController extends Controller
      */
     public function create()
     {
-        return view('static.dashboardPage.announcement', [
+        return view('announcement.announcement', [
             'categories'=>Categories::pluck('breed', 'id')->all(),
         ]);
     }
@@ -48,14 +48,14 @@ class OffersController extends Controller
         $data = $request->except('user_id');
         $data['user_id'] = Auth::user()->id;
         $lastId = Offer::create($data)->id;
-        return redirect('/static/announcement/addpictures/'.$lastId);
+        return redirect('/announcement/addpictures/'.$lastId);
     }
 
     public function addPictures($id)
     {
         $offer = Offer::findOrFail($id);
         if(Auth::user()->id==$offer->user_id || Auth::user()->isAdmin()) {
-            return view('static.dashboardPage.annoucementPictures', ['offer'=>$offer]);
+            return view('announcement.annoucementPictures', ['offer'=>$offer]);
         }
         return redirect()->back();
     }
@@ -91,7 +91,7 @@ class OffersController extends Controller
     {
         $puppy = Offer::findOrFail($id);
         $photo = Photo::where('offer_id', '=', $puppy->id)->get();
-        return view('static.puppiesPage.puppiesPage', [
+        return view('puppies.puppies', [
             'puppy'=>$puppy,
             'photos'=>$photo
         ]);
@@ -108,7 +108,7 @@ class OffersController extends Controller
         $offer = Offer::findOrFail($id);
             //Checking if offer belongs to user
         if(Auth::user()->id==$offer->user_id || Auth::user()->isAdmin()) {
-            return view('static.dashboardPage.annoucementEdit', [
+            return view('announcement.annoucementEdit', [
                 'offers' => $offer,
                 'categories'=>Categories::pluck('breed', 'id')->all()
                 ]);

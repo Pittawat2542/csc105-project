@@ -1,4 +1,4 @@
-@extends('static.layouts.app-dashboard')
+@extends('layouts.app-dashboard')
 
 @section('content')
 
@@ -43,7 +43,7 @@
                 <div id="my_ann" class="router-content">
                     <div class="row mb-3">
                         <div class="col text-right">
-                            <a class="btn btn-primary text-uppercase" href="/static/announcement/create"
+                            <a class="btn btn-primary text-uppercase" href="/announcement/create"
                                target="_blank" role="button">Add New</a>
                         </div>
                     </div>

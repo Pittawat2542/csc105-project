@@ -1,4 +1,4 @@
-@extends('static.layouts.app-basic')
+@extends('layouts.app-basic')
 
 @section('body')
 

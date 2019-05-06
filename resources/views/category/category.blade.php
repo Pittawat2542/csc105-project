@@ -1,4 +1,4 @@
-@extends('static.layouts.app')
+@extends('layouts.app')
 
 @section('content')
 <section id="category" class="container mb-3">

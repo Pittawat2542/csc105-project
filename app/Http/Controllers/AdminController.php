@@ -32,7 +32,7 @@ class AdminController extends Controller
         $user->is_verified = 1;
         $user->save();
 
-        return redirect('/admin/');
+        return redirect('/admin');
     }
 
 }

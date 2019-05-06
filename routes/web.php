@@ -13,19 +13,11 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/static/puppiesPage', 'StaticRoutesController@puppies');
-
-Route::get("/static/register", 'StaticRoutesController@register');
-
-Route::get("/static/login", 'StaticRoutesController@login');
-
-Route::get("/static/password_reset", 'StaticRoutesController@password_reset');
-
 Route::get("/dashboard/", 'UserController@index');
 
-Route::get('/autocomplete', 'HomeController@autocomplete');
+Route::get('/autocomplete/', 'HomeController@autocomplete');
 
-Route::get('/static/categoryPage/{id}', 'CategoriesController@show')->name('category.show');
+Route::get('/category/{id}', 'CategoriesController@show')->name('category.show');
 
 Auth::routes();
 
@@ -39,15 +31,15 @@ Route::get('/offers', 'OffersController@index')->name('offers');
 
 //loged users
 Route::group(['middleware'=>'auth'], function() {
-    Route::get('/static/puppiesPage/{id}', 'OffersController@show')->name('show.offer');
+    Route::get('/puppies/{id}', 'OffersController@show')->name('show.offer');
 
-    Route::get('/static/announcement/create', 'OffersController@create')->name('create.offer');
-    Route::get('/static/announcement/{id}/edit', 'OffersController@edit')->name('edit.offer');
-    Route::post('/static/announcement/store', 'OffersController@store')->name('store.offer');
-    Route::patch('/static/announcement/{id}/update', 'OffersController@update')->name('update.offer');
-    Route::delete('/static/announcement/{id}/destroy', 'OffersController@destroy')->name('destroy.offer');
-    Route::get('/static/announcement/addpictures/{id}', 'OffersController@addpictures')->name('create.offer.pictures');
-    Route::post('/static/announcement/addpictures/', 'OffersController@storePictures');
+    Route::get('/announcement/create', 'OffersController@create')->name('create.offer');
+    Route::get('/announcement/{id}/edit', 'OffersController@edit')->name('edit.offer');
+    Route::post('/announcement/store', 'OffersController@store')->name('store.offer');
+    Route::patch('/announcement/{id}/update', 'OffersController@update')->name('update.offer');
+    Route::delete('/announcement/{id}/destroy', 'OffersController@destroy')->name('destroy.offer');
+    Route::get('/announcement/addpictures/{id}', 'OffersController@addpictures')->name('create.offer.pictures');
+    Route::post('/announcement/addpictures/', 'OffersController@storePictures');
 
     Route::get('/dashboard/', 'UserController@index');
     Route::patch('/dashboard/{id}', 'UserController@update');
@@ -62,7 +54,7 @@ Route::group(['middleware'=>'admin'], function() {
     Route::patch('/admin/approve/{id}', 'AdminController@approve')->name('approve');
 
     //users admin page
-    Route::resource('admin/users', 'AdminUsersController', ['names'=>[
+    Route::resource('/admin/users', 'AdminUsersController', ['names'=>[
         'index'=>'admin.users.index',
         'create'=>'admin.users.create',
         'store'=>'admin.users.store',
@@ -70,7 +62,7 @@ Route::group(['middleware'=>'admin'], function() {
         'destroy'=>'admin.users.destroy'
     ]]);
     //categories admin page
-    Route::resource('admin/categories', 'AdminCategoriesController', ['names'=>[
+    Route::resource('/admin/categories', 'AdminCategoriesController', ['names'=>[
         'index'=>'admin.categories.index',
         'create'=>'admin.categories.create',
         'store'=>'admin.categories.store',
@@ -79,16 +71,16 @@ Route::group(['middleware'=>'admin'], function() {
     ]]);
 
     //pictures manager
-    Route::resource('admin/media', 'AdminPhotoController', ['names'=>[
+    Route::resource('/admin/media', 'AdminPhotoController', ['names'=>[
         'index'=>'admin.media.index',
         'create'=>'admin.media.create',
         'store'=>'admin.media.store',
         'edit'=>'admin.media.edit',
     ]]);
-    Route::delete('admin/delete/media', 'AdminPhotoController@deleteMedia');
+    Route::delete('/admin/delete/media', 'AdminPhotoController@deleteMedia');
 
     //offers for admin
-    Route::resource('admin/offers', 'AdminOffersController', ['names'=>[
+    Route::resource('/admin/offers', 'AdminOffersController', ['names'=>[
         'index'=>'admin.offer.index',
         'create'=>'admin.offer.create',
         'store'=>'admin.offer.store',
