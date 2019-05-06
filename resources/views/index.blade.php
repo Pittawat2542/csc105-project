@@ -59,8 +59,13 @@
                 {!! Form::close() !!}
             </div>
             <div class="p-2">
-                <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
-    left: 2.7rem;">
+                @if(Auth::user()->isAdmin())
+                    <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
+    left: 1.7rem;">
+                @else
+                    <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
+    left: -2.3rem;">
+                @endif
             </div>
             <div class="p-2">
                 @guest
