@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Categories;
-use App\Offer;
 use App\Home;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,7 +20,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $categories = $categories = Categories::with('offer')->get();
+        $categories = Categories::with('offer')->get();
         return view('index', ['categories'=> $categories]);
     }
 

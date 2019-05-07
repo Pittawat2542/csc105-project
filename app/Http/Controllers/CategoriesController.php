@@ -26,9 +26,9 @@ class CategoriesController extends Controller
      */
     public function show($id)
     {
-        $category = Categories::findOrFail($id);
         return view('category.category', [
-            'category'=>$category,
+            'category'=>Categories::findOrFail($id),
+            'categories'=>Categories::with('offer')->where('id', '!=', $id)->get(),
             'puppies'=>Offer::where('category_id', '=', $id)->paginate(25)
         ]);
     }

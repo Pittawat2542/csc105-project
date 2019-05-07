@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UserEditRequest;
-use App\Http\Requests\UserStoreRequest;
 
 use App\Photo;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 
 
-class AdminUsersController extends Controller
+class AdminUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -58,16 +57,6 @@ class AdminUsersController extends Controller
         return redirect('/admin/users');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //show info about user? do we need it? We can see it clicking edit user :)
-    }
 
     /**
      * Show the form for editing the specified resource.
@@ -77,7 +66,8 @@ class AdminUsersController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.users.edit', ['user' => User::findOrFail($id)]);
+        return view('admin.users.edit', [
+            'user' => User::findOrFail($id)]);
     }
 
     /**
@@ -98,18 +88,16 @@ class AdminUsersController extends Controller
         }
 
         $photo = new Photo();
-        if($file = $request->file('photo')){
+        if ($file = $request->file('photo')) {
             $data['photo_id'] = $photo->photoUpload($request->file('photo'), 'user_', '0', Auth::user()->id);
         }
-
         $user->update($data);
-
-        return redirect('/admin/users');
+        return redirect()->back();
     }
 
     /**
      * Remove the specified resource from storage.
-     *
+     *F
      * @param int $id
      * @return \Illuminate\Http\Response
      */
