@@ -62,7 +62,7 @@
                         <div class="container-fluid">
                             <div id="row-line-fb" class="row">
                                 <div class="col-md-6 text-center" id="line">
-                                    <a href="https://line.me/th/{{$puppy->line}}"
+                                    <a href="https://line.me/ti/p/{{$puppy->line}}"
                                        class="btn btn-primary social-button no-border-radius" target="blank">
                                         <h4><img class="mr-1" src="/images/line.png" alt=""> LINE
                                         </h4>
