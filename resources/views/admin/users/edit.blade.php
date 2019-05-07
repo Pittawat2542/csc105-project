@@ -15,7 +15,7 @@
                 <div class="upload">
                     <p class="text-primary mb-0">Profile Picture</p>
                     <div class="commit-button sticky-left">
-                        {!! Form::model($user, ['method'=>'PATCH', 'action'=>['UserController@update',
+                        {!! Form::model($user, ['method'=>'PATCH', 'action'=>['AdminUserController@update',
                         Auth::user()->id], 'files'=>true]) !!}
 
                         {!! Form::label('photo', 'Select File', ['class'=> 'box-shadow text-uppercase']) !!}
@@ -89,6 +89,22 @@
                     @if ($errors->has('new_password_confirmation'))
                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('new_password_confirmation') }}</strong>
+                                    </span>
+                    @endif
+                </div>
+            </div>
+            <div class="form-group">
+                {!! Form::label('role', 'Role') !!}
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                    </div>
+                    {!! Form::select('role', [$user->role => $user->role()] + [1 => 'admin', 2 => 'mod', 3=>'user'], null,
+            ['class'=>'form-control']) !!}
+
+                    @if ($errors->has('name'))
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('name') }}</strong>
                                     </span>
                     @endif
                 </div>
