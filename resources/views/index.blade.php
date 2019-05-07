@@ -142,7 +142,7 @@
                 @if($categories)
                     @foreach($categories as $category)
                         @if(!$category->offer->isEmpty())
-                            <div class="d-flex catalog-header scrolling-wrapper">
+                            <div class="d-flex catalog-header scrolling-wrapper mt-5">
                                 <div class="pt-1 pl-0 mr-4">
                                     <h1 class="font-weight-bold"><a
                                             href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a>
