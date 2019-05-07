@@ -79,7 +79,7 @@ class AdminUserController extends Controller
      */
     public function update(UserEditRequest $request, $id)
     {
-        $user = User::findOrFail(Auth::user()->id);
+        $user = User::findOrFail($id);
         if (trim($request->password) == '') {
             $data = $request->except('password');
         } else {
@@ -97,7 +97,7 @@ class AdminUserController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     *F
      * @param int $id
      * @return \Illuminate\Http\Response
      */

@@ -16,7 +16,7 @@
                     <p class="text-primary mb-0">Profile Picture</p>
                     <div class="commit-button sticky-left">
                         {!! Form::model($user, ['method'=>'PATCH', 'action'=>['AdminUserController@update',
-                        Auth::user()->id], 'files'=>true]) !!}
+                        $user->id], 'files'=>true]) !!}
 
                         {!! Form::label('photo', 'Select File', ['class'=> 'box-shadow text-uppercase']) !!}
                         {!! Form::file('photo', null, ['class'=>'form-control']) !!}
@@ -94,12 +94,12 @@
                 </div>
             </div>
             <div class="form-group">
-                {!! Form::label('role', 'Role') !!}
+                {!! Form::label('role', 'Role. Actual Role '. $user->role()) !!}
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"></span>
                     </div>
-                    {!! Form::select('role', [$user->role => $user->role()] + [1 => 'admin', 2 => 'mod', 3=>'user'], null,
+                    {!! Form::select('role', [1 => 'admin', 2 => 'mod', 3=>'user'], null,
             ['class'=>'form-control']) !!}
 
                     @if ($errors->has('name'))

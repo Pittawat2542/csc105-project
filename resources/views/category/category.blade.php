@@ -34,15 +34,16 @@
     <section id="category-body" class="mt-5 container">
         <div class="row">
             <section id="category-filter" class="col-md-4">
-{{--                <h3 class="text-uppercase sub-cat">Subcategory</h3>--}}
-{{--                <div class="ml-5 sub-cat">--}}
-{{--                    <h5><a href="/static/categoryPage">Subcategory 1</a></h5>--}}
-{{--                    <h5><a href="/static/categoryPage">Subcategory 2</a></h5>--}}
-{{--                    <h5><a href="/static/categoryPage">Subcategory 3</a></h5>--}}
-{{--                    <h5><a href="/static/categoryPage">Subcategory 1</a></h5>--}}
-{{--                    <h5><a href="/static/categoryPage">Subcategory 2</a></h5>--}}
-{{--                    <h5><a href="/static/categoryPage">Subcategory 3</a></h5>--}}
-{{--                </div>--}}
+                <h3 class="text-uppercase sub-cat">Another breeds</h3>
+                <div class="ml-5 sub-cat">
+                    @if($categories)
+                        @foreach($categories as $category)
+                            @if(!$category->offer->isEmpty())
+                                <h5><a href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a></h5>
+                            @endif
+                        @endforeach
+                    @endif
+                </div>
 {{--                <h3 class="mt-3 text-uppercase filter">Filters</h3>--}}
 {{--                <div class="ml-5 filter">--}}
 {{--                    <label class="container ml-0 "><input type="checkbox" id="something" name="name" value="something"> something--}}
@@ -80,6 +81,9 @@
 
             <!-- dog card -->
             <section id="category-items" class="col-md-8" id="item-box">
+                @if($puppies->count()<=0)
+                    <div class="row mb-3"><h2>We don't have any puppies with that kind of breed :(</h2></div>
+                @endif
                 <div class="row mb-3">
 
                     @foreach($puppies as $puppy)
