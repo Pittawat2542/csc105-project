@@ -152,7 +152,7 @@
 
                                             <div class="col-md-6 col-sm-12 text-right align-middle">
                                                 {!! Form::open(['method'=>'GET',
-  'action'=>['AdminUsersController@edit', $user->id], 'class' => 'd-inline']) !!}
+  'action'=>['AdminUserController@edit', $user->id], 'class' => 'd-inline']) !!}
 
                                                 {!! Form::submit('&#128221;&nbsp;EDIT', [
                                                 'class'=>'btn btn-light box-shadow text-uppercase'
@@ -161,7 +161,7 @@
                                                 {!! Form::close() !!}
 
                                                 {!! Form::open(['method'=>'DELETE',
-                                                'action'=>['AdminUsersController@destroy', $user->id], 'class' => 'd-inline mr-2']) !!}
+                                                'action'=>['AdminUserController@destroy', $user->id], 'class' => 'd-inline mr-2']) !!}
 
                                                 {!! Form::submit('&#128465;&nbsp;DELETE', [
                                                 'class'=>'btn btn-light box-shadow text-danger text-uppercase'

@@ -15,5 +15,9 @@ class DatabaseSeeder extends Seeder
         $breeds = 'database/seeds/breeds.sql';
         DB::unprepared(file_get_contents($breeds));
         $this->command->info('Breeds table seeded!');
+
+
+        //example data
+        //factory(\App\User::class, 20)->make()
     }
 }

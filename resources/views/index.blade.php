@@ -87,7 +87,7 @@
                         <a href="/dashboard" class="btn btn-link nav-link-main text-uppercase">
                             Welcome, {{ Auth::user()->name }}
                         </a>
-                        @if(Auth::user()->isAdmin())
+                        @if(Auth::user()->isAdmin() || Auth::user()->isModerator())
                             <a href="{{route('admin')}}" class="btn btn-link nav-link-main text-uppercase"
                                role="button">Admin
                                 Panel</a>
