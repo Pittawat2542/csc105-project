@@ -611,6 +611,14 @@ input[type=date] {
     box-shadow: none;
 }
 
+#puppy a#more-info-link:hover {
+    color: #405377 !important;
+    font-weight: bold;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 #puppy a:hover {
     color: white !important;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
