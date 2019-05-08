@@ -1,5 +1,9 @@
 /* Global */
 
+.ui-autocomplete {
+    z-index: 9999;
+}
+
 a {
     color: #405377;
 }
