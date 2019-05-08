@@ -589,8 +589,9 @@ input[type=date] {
 
 /* Puppy page */
 
-#puppy-like{
+.puppy-like{
     position: relative;
+    right: -80%;
 }
 
 #puppy .user-image {
