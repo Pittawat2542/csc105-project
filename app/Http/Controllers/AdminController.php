@@ -22,8 +22,8 @@ class AdminController extends Controller
 
         return view('dashboard.dashboard_admin', [
             'toVerify' => $peopeToVerify,
-            'users' => User::paginate(25),
-            'offers' => Offer::paginate(25)
+            'users' => User::all(),
+            'offers' => Offer::all()
         ]);
     }
 
