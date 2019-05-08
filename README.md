@@ -5,7 +5,7 @@ variety of breeds, ages, colors, and so much more. Not only that, our platform a
 provide direct ways to contact the owner of the puppies to deal or make an agreement
 through Facebook, LINE, Email, and Telephone.
 
-You can visit our website at [this link](https://puppies-hub.appspot.com)
+You can visit our website at [this link](https://puppieshub.appspot.com)
 
 ---
 
