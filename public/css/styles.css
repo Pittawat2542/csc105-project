@@ -891,7 +891,6 @@ input[type=date] {
 }
 
 #dashboard .picture-uploader .profile-picture, #announcement .picture-uploader .profile-picture {
-    width: 4rem;
     height: 5rem;
     background-size: 100%;
     background-position: center;

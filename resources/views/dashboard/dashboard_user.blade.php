@@ -110,7 +110,7 @@
                     <!-- for manage user's profile -->
                     <div class="section">
                         <h2 class="mb-3 text-primary text-uppercase">Profile</h2>
-
+                        
                         <div class="picture-uploader mb-3">
                             <div class="profile-picture mr-3">
                                 @if($user->photo)
