@@ -102,7 +102,7 @@
                             </div>
                         </a>
                         @auth
-                            <form class="p-0 like-form puppy-like">
+                            <form class="p-0 like-form puppy-card-like">
                                 <input onclick="clickFav(this)" id="{{$puppy->id}}" class="like border-0 {{$puppy->wishlist ? 'liked' : 'like'}}" type="button">
                             </form>
                         @endauth

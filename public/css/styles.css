@@ -438,6 +438,10 @@ select[name="itemsPerPage"] {
     border-color: #405377;
 }
 
+.puppy-card-like{
+    position: relative;
+    right: -80%;
+}
 
 input[type=date] {
     width: 75%;
@@ -451,7 +455,7 @@ input[type=date] {
         #sort-group {
             margin-top: 1.5rem;
         }
-        .puppy-like{
+        .puppy-card-like{
             right: -72.5%;
         }
 
@@ -482,7 +486,7 @@ input[type=date] {
             div.catalog-card {
                 margin-bottom: 3rem !important;
             }
-            .puppy-like{
+            .puppy-card-like{
                 right: -90%;
             }
 
@@ -589,9 +593,8 @@ input[type=date] {
 
 /* Puppy page */
 
-.puppy-like{
+#puppy-like{
     position: relative;
-    right: -80%;
 }
 
 #puppy .user-image {
