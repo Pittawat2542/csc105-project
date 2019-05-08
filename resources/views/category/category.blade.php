@@ -6,7 +6,7 @@
     <section id="category-header" class="container mt-5">
         <div class="row">
             <div class="col-md-4">
-                <h1>{{$category->breed}}</h1>
+                <h1><i class="fas fa-paw"></i> {{$category->breed}}</h1>
             </div>
 {{--            <div id="sort-group" class="col-md-8">--}}
 {{--                <div class="">--}}
@@ -39,7 +39,7 @@
                     @if($categories)
                         @foreach($categories as $category)
                             @if(!$category->offer->isEmpty())
-                                <h5><a href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a></h5>
+                                <h5><a href="{{ route('category.show',$category->id)}}"><i class="fas fa-paw"></i> {{$category->breed}}</a></h5>
                             @endif
                         @endforeach
                     @endif

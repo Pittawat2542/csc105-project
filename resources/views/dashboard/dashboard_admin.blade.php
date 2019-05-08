@@ -7,9 +7,9 @@
             <h1 class="mb-3 text-uppercase">Dashboard</h1>
 
             <div class="router-tabs ml-3">
-                <p class="router-item text-uppercase" data-target="#verifications">Verification Requests</p>
-                <p class="router-item text-uppercase" data-target="#users">Users</p>
-                <p class="router-item text-uppercase" data-target="#announcements">Announcements</p>
+                <p class="router-item text-uppercase" data-target="#verifications"><i class="fas fa-user-check"></i> Verification Requests</p>
+                <p class="router-item text-uppercase" data-target="#users"><i class="fas fa-users"></i> Users</p>
+                <p class="router-item text-uppercase" data-target="#announcements"><i class="fas fa-copy"></i> Announcements</p>
             </div>
 
             <div class="router-display">

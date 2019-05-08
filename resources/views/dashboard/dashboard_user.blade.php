@@ -7,9 +7,9 @@
             <h1 class="mb-3 text-uppercase">Dashboard</h1>
 
             <div class="router-tabs ml-3">
-                <p class="router-item text-uppercase" data-target="#my_fav">My Favourites</p>
-                <p class="router-item text-uppercase" data-target="#my_ann">My Announcements</p>
-                <p class="router-item text-uppercase" data-target="#my_set">Settings</p>
+                <p class="router-item text-uppercase" data-target="#my_fav"><i class="fas fa-star"></i> My Favourites</p>
+                <p class="router-item text-uppercase" data-target="#my_ann"><i class="fas fa-file-alt"></i> My Announcements</p>
+                <p class="router-item text-uppercase" data-target="#my_set"><i class="fas fa-cogs"></i> Settings</p>
             </div>
 
             <div class="router-display">

@@ -27,7 +27,7 @@
             <a href="/dashboard" class="btn btn-link nav-link-main text-uppercase" role="button">
                 @if(Auth::user()->photo)
                     <img src="{{ Auth::user()->photo ? ('/' . Auth::user()->photo->path) : '/images/default.png' }}"
-                         class="img-responsive rounded-circle" style="width:2rem; height: 2rem;">
+                         class="img-responsive rounded-circle mr-1" style="width:2rem; height: 2rem;">
                 @endif
                 {{ Auth::user()->name }}
             </a>

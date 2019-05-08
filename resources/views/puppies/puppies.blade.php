@@ -46,9 +46,10 @@
                                 <p>
                                 <img class="mr-3 rounded-circle"
                                      src="{{$puppy->user->photo ? ('/' . $puppy->user->photo->path) : ''}}" alt="" style="width:2rem; height: 2rem;">
-                                Announced by {{ucwords($puppy->user->name)}}</p>
+                                Announced by {{ucwords($puppy->user->name)}}
+                                </p>
                                 @if($puppy->user->isVerified())
-                                    <p class="verified text-success">This user is verified</p>
+                                    <small class="verified text-success d-block text-right"><i class="fas fa-check-circle"></i> Verified User</small>
                                 @endif
                             </h5>
                         </div>
@@ -67,7 +68,7 @@
                                 <div class="col-md-6 text-center" id="line">
                                     <a href="https://line.me/ti/p/{{$puppy->line}}"
                                        class="btn btn-primary social-button no-border-radius" target="blank">
-                                        <h4><img class="mr-1" src="/images/line.png" alt=""> LINE
+                                        <h4><i class="fab fa-line mr-1"></i> LINE
                                         </h4>
                                     </a>
                                 </div>
@@ -75,8 +76,7 @@
                                     <a href="https://www.facebook.com/{{$puppy->facebook}}"
                                        class="btn btn-primary social-button no-border-radius"
                                        target="blank">
-                                        <h4><img class="mr-1" src="/images/facebook-logo.png"
-                                                 alt="">Facebook</h4>
+                                        <h4><i class="fab fa-facebook-f mr-1"></i> Facebook</h4>
                                     </a>
                                 </div>
                             </div>
@@ -85,15 +85,13 @@
                                     <a href="mailto:{{$puppy->user->email}}"
                                        class="btn btn-primary social-button no-border-radius"
                                        target="blank">
-                                        <h4><img class="mr-1" src="/images/close-envelope.png"
-                                                 alt=""> Mail</h4>
+                                        <h4><i class="fas fa-envelope mr-1"></i> Email</h4>
                                     </a>
                                 </div>
                                 <div class="col-md-6 text-center" id="call">
                                     <a href="tel:{{$puppy->phone}}"
                                        class="btn btn-primary social-button no-border-radius" target="blank">
-                                        <h4><img class="mr-1" src="/images/phone-receiver.png"
-                                                 alt="">Call</h4>
+                                        <h4><i class="fas fa-phone fa-rotate-180 mr-1"></i> Call</h4>
                                     </a>
                                 </div>
                             </div>

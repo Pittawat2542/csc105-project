@@ -97,7 +97,7 @@
                                             @if(Auth::user()->photo)
                                                 <img
                                                     src="{{ Auth::user()->photo ? ('/' . Auth::user()->photo->path) : '/images/default.png' }}"
-                                                    class="img-responsive rounded-circle"
+                                                    class="img-responsive rounded-circle mr-1"
                                                     style="width:2rem; height: 2rem;">
                                             @endif
                                             {{ Auth::user()->name }}
@@ -123,13 +123,15 @@
                     <section id="category-navigation" class="d-flex justify-content-center mt-5 scrolling-wrapper">
 
                         @if($categories)
+                            <p class="mr-2">|</p>
                             @foreach($categories as $category)
                                 @if(!$category->offer->isEmpty())
-                                    <div class="text-center d-inline-block mr-3">
+                                    <div class="text-center d-inline-block">
                                         <h5 class="d-inline font-weight-bold">
-                                            <a href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a>
+                                            <a href="{{ route('category.show',$category->id)}}"><i class="fas fa-paw"></i> {{$category->breed}}</a>
                                         </h5>
                                     </div>
+                                    <p class="mx-2">|</p>
                                 @endif
                             @endforeach
                         @endif
@@ -163,7 +165,7 @@
                                         <div class="d-flex catalog-header scrolling-wrapper mt-5">
                                             <div class="pt-1 pl-0 mr-4">
                                                 <h1 class="font-weight-bold"><a
-                                                        href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a>
+                                                        href="{{ route('category.show',$category->id)}}"><i class="fas fa-paw"></i> {{$category->breed}}</a>
                                                 </h1>
                                             </div>
                                         </div>
