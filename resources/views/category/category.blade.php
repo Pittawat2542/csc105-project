@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                         </a>
-                        <form class="p-0 like-form">
+                        <form class="p-0 like-form puppy-like">
                             <input onclick="clickFav(this)" class="like border-0 " type="button">
                         </form>
                     </div>
