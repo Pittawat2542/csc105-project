@@ -107,7 +107,7 @@
                     <p>{{$puppy->description}}</p>
                     @if($puppy->category->pdf!=null)
                         <h6 class="text-primary mt-5">More information about this breed</h6>
-                        <embed src="{{$puppy->category->pdf}}" width="800" height="800" alt="pdf"
+                        <embed class="embed-info" src="{{$puppy->category->pdf}}" width="800" height="800" alt="pdf"
                                pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
                     @endif
                 </div>

@@ -53,9 +53,9 @@ footer {
     background-size: cover;
 }
 .like-form{
-    position:absolute;
-    bottom:0.75rem;
-    right:1.5rem;
+    position:relative;
+    top: -3rem;
+    right: -12.5rem;
     z-index: 10;
 }
 
@@ -80,6 +80,18 @@ footer {
 #auth, #category, #announcement, #dashboard, #puppy, #edit_user {
     margin-top: 7rem !important;
 }
+@media (max-width:1199px){
+    .like-form{
+        position:relative;
+        right: -10.5rem;
+    }
+}
+@media (max-width:991px){
+    .like-form{
+        position:relative;
+        right: -7rem;
+    }
+}
 
 @media (max-width: 767px) {
     .card {
@@ -87,6 +99,14 @@ footer {
         -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
         box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
     }
+    .like-form{
+        position:relative;
+        right: -85%;
+        overflow: hidden;
+        width: 30px;
+        height: 30px;
+    }
+        
 }
 
 @media (max-width: 575px) {
@@ -625,6 +645,9 @@ input[type=date] {
 #puppy #call img {
     max-width: 50px;
     max-height: 50px;
+}
+.embed-info{
+    width: 80vw;
 }
 
 @media (max-width: 1199px) {
