@@ -702,10 +702,29 @@ input[type=date] {
         height: 5rem;
     }
 
+    .facebook-word {
+        margin-top: 0.2rem;
+        margin-left: 0.7rem;
+    }
+
     @media (max-width: 991px) {
         #puppy-info {
             margin-top: 1rem;
             align-items: flex-start !important;
+        }
+
+        #puppy .social-button .empty-box ~ div {
+            margin-top: 0.2rem;
+            margin-left: 0.7rem;
+        }
+
+        .facebook-icon {
+            display: none;
+        }
+
+        .facebook-word {
+            margin-top: 0;
+            margin-left: -1rem;
         }
 
         @media (max-width: 767px) {
