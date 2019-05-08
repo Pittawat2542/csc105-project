@@ -63,6 +63,7 @@
            "Illuminate\\Foundation\\ComposerScripts::postInstall",
            "@php artisan optimize",
            "chmod -R 755 bootstrap\/cache",
+            "chmod -R 777 storage",
             "@php artisan storage:link"
        ]
     }
