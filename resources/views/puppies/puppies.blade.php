@@ -106,9 +106,10 @@
                 <div class="mt-3 ml-3">
                     <p>{{$puppy->description}}</p>
                     @if($puppy->category->pdf!=null)
-                        <h6 class="text-primary mt-5">More information about this breed</h6>
-                        <embed class="embed-info" src="{{$puppy->category->pdf}}" width="800" height="800" alt="pdf"
-                               pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+                        <h6 class="text-primary mt-5 d-inline">More information about this breed: </h6>
+                        <a id="more-info-link" href="{{$puppy->category->pdf}}">Click here!</a>
+{{--                        <embed class="embed-info" src="{{$puppy->category->pdf}}" width="800" height="800" alt="pdf"--}}
+{{--                               pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">--}}
                     @endif
                 </div>
             </div>
