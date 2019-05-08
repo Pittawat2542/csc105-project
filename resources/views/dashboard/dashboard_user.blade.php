@@ -17,25 +17,46 @@
                 <div id="my_fav" class="router-content">
                     <div class="data-list">
                         <div class="data-spanner" data-span="false"></div>
+                        @if($wishlist)
+                            @foreach($wishlist as $wish)
+                            <div class="card no-border-radius border-0 box-shadow mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <img class="dashboard-img mr-3" src="{{$wish->photo ? $wish->photo->path : '/images/default.png'}}" alt="">
+                                            <h2 class="d-inline text-uppercase text-primary">{{$wish->offer->title}}</h2></div>
+                                        <div class="col-md-6 col-sm-12 text-right align-middle">
 
-                        <div class="card no-border-radius border-0 box-shadow mb-3">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12">
-                                        <img class="dashboard-img mr-3" src="https://bit.ly/1KUXdA3" alt="">
-                                        <h2 class="d-inline text-uppercase text-primary">Puppy Name</h2></div>
-                                    <div class="col-md-6 col-sm-12 text-right align-middle">
-                                        <form method="POST" action="">
-                                            @csrf
-                                            <button class="btn btn-light box-shadow text-danger text-uppercase">
-                                                &#128148;&nbsp;Unfavourite
-                                            </button>
-                                        </form>
+                                            {!! Form::open(['method'=>'DELETE', 'action'=>['WishlistController@destroy', $wish->id], 'class'=>'d-inline']) !!}
+                                            {!! Form::submit('&#128148;&nbsp;Unfavourite',
+                                            ['class'=>'btn btn-light box-shadow text-danger text-uppercase']) !!}
+                                            {!! Form::close() !!}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            @endforeach
+                        @else
+                            <div class="user-box">
+                                <div class="card no-border-radius border-0 box-shadow mb-3">
+                                    <div class="card-body">
+                                        <h2 class="text-primary text-center">Currently, nothing in favourites!</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
 
+                        @if($wishlist)
+                            @if(count($wishlist) == 0)
+                                <div class="user-box">
+                                    <div class="card no-border-radius border-0 box-shadow mb-3">
+                                        <div class="card-body">
+                                            <h2 class="text-primary text-center">Currently, nothing in favourites!</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
+                            @endif
                     </div>
                 </div>
 

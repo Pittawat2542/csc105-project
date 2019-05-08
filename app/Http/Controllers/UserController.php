@@ -6,6 +6,7 @@ use App\Http\Requests\UserEditRequest;
 use App\Offer;
 use App\Photo;
 use App\User;
+use App\Wishlist;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,7 +16,8 @@ class UserController extends Controller
 
         return view('dashboard.dashboard_user', [
             'offers'=>Offer::where('user_id', '=', Auth::user()->id)->paginate(30),
-            'user' => User::findOrFail(Auth::user())->first()
+            'user' => User::findOrFail(Auth::user())->first(),
+            'wishlist'=> $wishlists = Wishlist::where("user_id", "=", Auth::user()->id)->orderby('id', 'desc')->paginate(10)
         ]);
 
     }
