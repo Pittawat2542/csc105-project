@@ -1,5 +1,5 @@
 function clickFav(x){
-    var puppy_id = $(this).val();
+    var puppy_id = $(x).attr('id');
     $.ajax({
         url: '/wishlist/' + puppy_id + '/store',
         data: {
