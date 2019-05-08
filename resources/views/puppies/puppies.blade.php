@@ -35,9 +35,11 @@
                     <div id="puppy-info" class="container d-flex flex-column align-items-end">
                         <div class="row">
                             <h1 class="text-primary text-uppercase">{{$puppy->name}}</h1>
-                            <form id="puppy-like" class="ml-3">
-                                <input onclick="clickFav(this)" id="{{$puppy->id}}" class="like border-0 {{$puppy->wishlist ? 'liked' : 'like'}}" type="button">
-                            </form>
+                            @auth
+                                <form id="puppy-like" class="ml-3">
+                                    <input onclick="clickFav(this)" id="{{$puppy->id}}" class="like border-0 {{$puppy->wishlist ? 'liked' : 'like'}}" type="button">
+                                </form>
+                            @endauth
                         </div>
                         <div class="row mb-3">
                             <h5>
