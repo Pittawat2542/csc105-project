@@ -103,4 +103,8 @@ class User extends Authenticatable
     public function offer() {
         return $this->hasMany('App\Offer');
     }
+
+    public function wishlist(){
+        return $this->hasMany(Wishlist::class);
+    }
 }
