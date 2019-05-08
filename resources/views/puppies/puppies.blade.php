@@ -16,7 +16,7 @@
 
                             @foreach( $photos as $photo )
                                 <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                    <img src="{{$photo->path}}" class="d-block w-100" alt="{{$puppy->title}}">
+                                    <img src="../{{$photo->path}}" class="d-block w-100" alt="{{$puppy->title}}">
                                 </div>
                             @endforeach
                         </div>
