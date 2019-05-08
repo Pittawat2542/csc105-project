@@ -93,7 +93,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"></span>
                             </div>
-                            {!! Form::text('phone', null, ['class'=>'form-control', 'required']) !!}
+                            {!! Form::number('phone', null, ['class'=>'form-control', 'required']) !!}
                         </div>
                     </div>
                 </div>

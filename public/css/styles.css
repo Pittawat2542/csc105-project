@@ -690,6 +690,14 @@ input[type=date] {
         margin: 0.2rem auto !important;
     }
 
+    #puppy .social-button i, #puppy .social-button .empty-box {
+        display: none;
+    }
+
+    #puppy .social-button .empty-box ~ div {
+        margin-top: 1rem;
+    }
+
     #puppy .social-button {
         height: 5rem;
     }
@@ -715,6 +723,14 @@ input[type=date] {
 
             #call {
                 margin-top: 1rem;
+            }
+
+            #puppy .social-button i {
+                display: inline;
+            }
+
+            #puppy .social-button .empty-box ~ div {
+                margin-top: 0;
             }
 
             @media (max-width: 575px) {

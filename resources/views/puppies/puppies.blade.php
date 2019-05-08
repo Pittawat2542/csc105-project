@@ -4,7 +4,8 @@
     @if($puppy)
         <section id="puppy" class="container mt-5 mb-5">
             <h5 class="scrolling-wrapper">
-                <span class="opacity50"><a id="category-link" href="/category/{{$puppy->category->id}}">{{$puppy->category->breed}}</a> / </span>
+                <span class="opacity50"><a id="category-link"
+                                           href="/category/{{$puppy->category->id}}">{{$puppy->category->breed}}</a> / </span>
                 <span class="text-primary text-uppercase font-weight-bold">{{$puppy->title}}</span>
             </h5>
 
@@ -37,19 +38,23 @@
                             <h1 class="text-primary text-uppercase">{{$puppy->name}}</h1>
                             @auth
                                 <form id="puppy-like" class="ml-3">
-                                    <input onclick="clickFav(this)" id="{{$puppy->id}}" class="like border-0 {{$puppy->wishlist ? 'liked' : 'like'}}" type="button">
+                                    <input onclick="clickFav(this)" id="{{$puppy->id}}"
+                                           class="like border-0 {{$puppy->wishlist ? 'liked' : 'like'}}" type="button">
                                 </form>
                             @endauth
                         </div>
                         <div class="row mb-3">
                             <h5>
                                 <p>
-                                <img class="mr-3 rounded-circle"
-                                     src="{{$puppy->user->photo ? ('/' . $puppy->user->photo->path) : ''}}" alt="" style="width:2rem; height: 2rem;">
-                                Announced by {{ucwords($puppy->user->name)}}
+                                    <img class="mr-3 rounded-circle"
+                                         src="{{$puppy->user->photo ? ('/' . $puppy->user->photo->path) : ''}}" alt=""
+                                         style="width:2rem; height: 2rem;">
+                                    Announced by {{ucwords($puppy->user->name)}}
                                 </p>
                                 @if($puppy->user->isVerified())
-                                    <small class="verified text-success d-block text-right"><i class="fas fa-check-circle"></i> Verified User</small>
+                                    <small class="verified text-success d-block text-right"><i
+                                            class="fas fa-check-circle"></i> Verified User
+                                    </small>
                                 @endif
                             </h5>
                         </div>
@@ -63,20 +68,45 @@
                         </div>
 
                         <!-- contract info -->
-                        <div class="container-fluid">
+                        <div class="container-fluid text-center">
                             <div id="row-line-fb" class="row">
                                 <div class="col-md-6 text-center" id="line">
                                     <a href="https://line.me/ti/p/{{$puppy->line}}"
                                        class="btn btn-primary social-button no-border-radius" target="blank">
-                                        <h4><i class="fab fa-line mr-1"></i> LINE
-                                        </h4>
+                                        <div class="row mt-0 mt-md-3 mt-lg-0">
+                                            <div class="col-md-2 empty-box"></div>
+                                            <div class="col-md-2 col-sm-4">
+                                                <h4>
+                                                    <i class="fab fa-line mr-1"></i>
+                                                    <div class="d-inline d-md-none">
+                                                        LINE
+                                                    </div>
+                                                </h4>
+                                            </div>
+                                            <div class="col-md-6 d-none d-md-block">
+                                                <h4>LINE</h4>
+                                            </div>
+                                        </div>
+
                                     </a>
                                 </div>
                                 <div class="col-md-6 text-center" id="fb">
                                     <a href="https://www.facebook.com/{{$puppy->facebook}}"
                                        class="btn btn-primary social-button no-border-radius"
                                        target="blank">
-                                        <h4><i class="fab fa-facebook-f mr-1"></i> Facebook</h4>
+                                        <div class="row mt-0 mt-md-3 mt-lg-0">
+                                            <div class="col-md-2 col-sm-4">
+                                                <h4>
+                                                    <i class="fab fa-facebook-f mr-1"></i>
+                                                    <div class="d-inline d-md-none">
+                                                        Facebook
+                                                    </div>
+                                                </h4>
+                                            </div>
+                                            <div class="col-md-10 d-none d-md-block">
+                                                <h4>Facebook</h4>
+                                            </div>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -85,13 +115,39 @@
                                     <a href="mailto:{{$puppy->user->email}}"
                                        class="btn btn-primary social-button no-border-radius"
                                        target="blank">
-                                        <h4><i class="fas fa-envelope mr-1"></i> Email</h4>
+                                        <div class="row mt-0 mt-md-3 mt-lg-0">
+                                            <div class="col-md-2 empty-box"></div>
+                                            <div class="col-md-2 col-sm-4">
+                                                <h4>
+                                                    <i class="fas fa-envelope mr-1"></i>
+                                                    <div class="d-inline d-md-none">
+                                                        Email
+                                                    </div>
+                                                </h4>
+                                            </div>
+                                            <div class="col-md-6 d-none d-md-block">
+                                                <h4>Email</h4>
+                                            </div>
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="col-md-6 text-center" id="call">
                                     <a href="tel:{{$puppy->phone}}"
                                        class="btn btn-primary social-button no-border-radius" target="blank">
-                                        <h4><i class="fas fa-phone fa-rotate-180 mr-1"></i> Call</h4>
+                                        <div class="row mt-0 mt-md-3 mt-lg-0">
+                                            <div class="col-md-2 empty-box"></div>
+                                            <div class="col-md-2 col-sm-4">
+                                                <h4>
+                                                    <i class="fas fa-phone fa-rotate-180 mr-1"></i>
+                                                    <div class="d-inline d-md-none">
+                                                        Call
+                                                    </div>
+                                                </h4>
+                                            </div>
+                                            <div class="col-md-6 d-none d-md-block">
+                                                <h4>Call</h4>
+                                            </div>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -109,8 +165,8 @@
                     @if($puppy->category->pdf!=null)
                         <h6 class="text-primary mt-5 d-inline">More information about this breed: </h6>
                         <a id="more-info-link" href="{{$puppy->category->pdf}}">Click here!</a>
-{{--                        <embed class="embed-info" src="{{$puppy->category->pdf}}" width="800" height="800" alt="pdf"--}}
-{{--                               pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">--}}
+                        {{--                        <embed class="embed-info" src="{{$puppy->category->pdf}}" width="800" height="800" alt="pdf"--}}
+                        {{--                               pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">--}}
                     @endif
                 </div>
             </div>
