@@ -21,7 +21,6 @@
                                             'id'=>'searchForm',
                                             'class'=>'form-control mr-sm-2 search-box box-shadow',
                                             'placeholder'=>'Search . . .']) !!}
-                {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
                 {!! Form::close() !!}
             </div>
             @guest
@@ -65,7 +64,6 @@
                                                             'id'=>'searchForm',
                                                             'class'=>'form-control mr-sm-2 search-box box-shadow',
                                                             'placeholder'=>'Search . . .']) !!}
-                                {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
                                 {!! Form::close() !!}
                             </div>
                             <div class="p-2">

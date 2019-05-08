@@ -10,14 +10,12 @@
         <ul class="navbar-nav mr-auto">
         </ul>
 
-
-        {!! Form::open(['method'=>'GET', 'class'=>'form-inline my-2 my-lg-0']) !!}
+        {!! Form::open(['method'=>'GET', 'class'=>'form-inline my-2 my-md-0']) !!}
         <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
         {!! Form::text('search', null, ['required',
                                     'id'=>'searchForm',
                                     'class'=>'form-control mr-sm-2 search-box box-shadow',
                                     'placeholder'=>'Search . . .']) !!}
-        {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
         {!! Form::close() !!}
 
         @guest
@@ -31,11 +29,12 @@
                     <img src="{{ Auth::user()->photo ? ('/' . Auth::user()->photo->path) : '/images/default.png' }}"
                          class="img-responsive rounded-circle" style="width:2rem; height: 2rem;">
                 @endif
-                    {{ Auth::user()->name }}
+                {{ Auth::user()->name }}
             </a>
             @if(Auth::user()->isAdmin())
-                | <a href="{{route('admin')}}" class="btn btn-link nav-link-main text-uppercase" role="button"><i class="fas fa-user-cog"></i> Admin
-                    </a>
+                | <a href="{{route('admin')}}" class="btn btn-link nav-link-main text-uppercase" role="button"><i
+                        class="fas fa-user-cog"></i> Admin
+                </a>
             @endif
             <form action="/logout" method="POST">
                 @csrf
