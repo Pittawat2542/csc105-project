@@ -16,7 +16,7 @@
 
                             @foreach( $photos as $photo )
                                 <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                    <img src="../{{$photo->path}}" class="d-block w-100" alt="{{$puppy->title}}">
+                                    <img src="/{{$photo->path}}" class="d-block w-100" alt="{{$puppy->title}}">
                                 </div>
                             @endforeach
                         </div>
@@ -43,9 +43,10 @@
                         </div>
                         <div class="row mb-3">
                             <h5>
-                                <img class="mr-3 user-image rounded-circle"
-                                     src="{{$puppy->user->photo ? $puppy->user->photo->path : ''}}" alt="">
-                                <p>Announced by {{ucwords($puppy->user->name)}}</p>
+                                <p>
+                                <img class="mr-3 rounded-circle"
+                                     src="{{$puppy->user->photo ? ('/' . $puppy->user->photo->path) : ''}}" alt="" style="width:2rem; height: 2rem;">
+                                Announced by {{ucwords($puppy->user->name)}}</p>
                                 @if($puppy->user->isVerified())
                                     <p class="verified text-success">This user is verified</p>
                                 @endif

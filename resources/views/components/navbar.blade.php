@@ -27,11 +27,15 @@
 
         @auth
             <a href="/dashboard" class="btn btn-link nav-link-main text-uppercase" role="button">
-                Welcome, {{ Auth::user()->name }}
+                @if(Auth::user()->photo)
+                    <img src="{{ Auth::user()->photo ? ('/' . Auth::user()->photo->path) : '/images/default.png' }}"
+                         class="img-responsive rounded-circle" style="width:2rem; height: 2rem;">
+                @endif
+                    {{ Auth::user()->name }}
             </a>
             @if(Auth::user()->isAdmin())
-                <a href="{{route('admin')}}" class="btn btn-link nav-link-main text-uppercase" role="button">Admin
-                    Panel</a>
+                | <a href="{{route('admin')}}" class="btn btn-link nav-link-main text-uppercase" role="button"><i class="fas fa-user-cog"></i> Admin
+                    </a>
             @endif
             <form action="/logout" method="POST">
                 @csrf

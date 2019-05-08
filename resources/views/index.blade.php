@@ -34,8 +34,8 @@
                     Welcome, {{ Auth::user()->name }}
                 </a>
                 @if(Auth::user()->isAdmin())
-                    <a href="{{route('admin')}}" class="btn btn-link nav-link-main text-uppercase" role="button">Admin
-                        Panel</a>
+                    <a href="{{route('admin')}}" class="btn btn-link nav-link-main text-uppercase" role="button"><i
+                            class="fas fa-user-cog"></i> Admin</a>
                 @endif
                 <form action="/logout" method="POST">
                     @csrf
@@ -46,157 +46,171 @@
     </nav>
 
     @auth
-    @include('components.navbar');
+        @include('components.navbar');
     @endauth
 
     <!-- desktop site navbar-->
     @if (Auth::check())
-    <div class="container" style="margin-top: 7rem !important">
-    @else
-    <div class="container mt-5">
-    @endif
-    @guest
-        <section id="index-header" class="d-flex justify-content-between">
-            <div class="p-2">
-                {!! Form::open(['method'=>'GET', 'class'=>'form-inline my-2 my-lg-0']) !!}
-                <label class="mr-2 search-icon" for=""><i class="fas fa-search" id="search-icon"></i></label>
-                {!! Form::text('search', null, ['required',
-                                            'id'=>'searchForm',
-                                            'class'=>'form-control mr-sm-2 search-box box-shadow',
-                                            'placeholder'=>'Search . . .']) !!}
-                {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
-                {!! Form::close() !!}
-            </div>
-            <div class="p-2">
-                @auth
-                    @if(Auth::user()->isAdmin())
-                        <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
+        <div class="container" style="margin-top: 7rem !important">
+            @else
+                <div class="container mt-5">
+                    @endif
+                    @guest
+                        <section id="index-header" class="d-flex justify-content-between">
+                            <div class="p-2">
+                                {!! Form::open(['method'=>'GET', 'class'=>'form-inline my-2 my-lg-0']) !!}
+                                <label class="mr-2 search-icon" for=""><i class="fas fa-search"
+                                                                          id="search-icon"></i></label>
+                                {!! Form::text('search', null, ['required',
+                                                            'id'=>'searchForm',
+                                                            'class'=>'form-control mr-sm-2 search-box box-shadow',
+                                                            'placeholder'=>'Search . . .']) !!}
+                                {!! Form::submit('Search',['class'=>'btn btn-primary mt-3 mt-md-0']) !!}
+                                {!! Form::close() !!}
+                            </div>
+                            <div class="p-2">
+                                @auth
+                                    @if(Auth::user()->isAdmin())
+                                        <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
     left: 1.7rem;">
-                    @else
-                        <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
+                                    @else
+                                        <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
     left: -2.3rem;">
-                    @endif
-                @endauth
+                                    @endif
+                                @endauth
 
-                @guest
-                    <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
+                                @guest
+                                    <img id="logo" class="mx-auto" src="/images/logo.png" alt="" style="position: relative;
     left: -2.3rem;">
-                @endguest
-            </div>
-            <div class="p-2">
-                @guest
-                    <h5 class="d-inline mr-5"><a class="font-weight-bold text-uppercase"
-                                                 href="/register">Register</a>
-                    </h5>
-                    <h5 class="d-inline"><a class="font-weight-bold text-uppercase" href="/login">Login</a></h5>
-                @endguest
-
-                @auth
-                    <h5 class="d-inline mr-3 text-uppercase">
-                        <a href="/dashboard" class="btn btn-link nav-link-main text-uppercase">
-                            Welcome, {{ Auth::user()->name }}
-                        </a>
-                        @if(Auth::user()->isAdmin() || Auth::user()->isModerator())
-                            <a href="{{route('admin')}}" class="btn btn-link nav-link-main text-uppercase"
-                               role="button">Admin
-                                Panel</a>
-                        @endif
-                    </h5>
-                    <form class="d-inline" action="/logout" method="POST">
-                        @csrf
-                        <button type="submit" class="btn btn-danger nav-link-main text-uppercase">Logout</button>
-                    </form>
-                @endauth
-            </div>
-        </section>
-        @endguest
-
-        <!-- category navigation-->
-        <section id="category-navigation" class="d-flex justify-content-center mt-5 scrolling-wrapper">
-
-            @if($categories)
-                @foreach($categories as $category)
-                    @if(!$category->offer->isEmpty())
-                        <div class="text-center d-inline-block mr-3">
-                            <h5 class="d-inline font-weight-bold">
-                                <a href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a>
-                            </h5>
-                        </div>
-                    @endif
-                @endforeach
-            @endif
-        </section>
-
-
-        <!-- feature dog-->
-        {{--      <section id="hero" class="mt-5">--}}
-        {{--          <div class="jumbotron bg-white no-rounding box-shadow hero-background-image" style="background-image: url('/images/hero.jpeg')">--}}
-        {{--                  <h2 class="display-5 font-weight-bold text-center text-uppercase text-shadow">Siberian Husky</h2>--}}
-        {{--                  <p class="px-5 pb-3 text-center mt-5 ml-auto mr-auto hero-description text-shadow">The most smart and cutest--}}
-        {{--                      creatures ever!</p>--}}
-        {{--                  <div class="d-flex justify-content-center mt-3">--}}
-        {{--                      <div class="p-2">--}}
-        {{--                          <h6 class="d-inline text-shadow"><a class="font-weight-bold" href="/static/puppyPage">Learn More ></a>--}}
-        {{--                          </h6>--}}
-        {{--                      </div>--}}
-        {{--                      <div class="p-2 ml-5">--}}
-        {{--                          <h6 class="d-inline text-shadow"><a class="font-weight-bold" href="#">Buy ></a></h6>--}}
-        {{--                      </div>--}}
-        {{--                  </div>--}}
-        {{--              </div>--}}
-        {{--      </section>--}}
-
-        <section id="catalog">
-            <div class="catalog mt-5">
-
-                @if($categories)
-                    @foreach($categories as $category)
-                        @if(!$category->offer->isEmpty())
-                            <div class="d-flex catalog-header scrolling-wrapper mt-5">
-                                <div class="pt-1 pl-0 mr-4">
-                                    <h1 class="font-weight-bold"><a
-                                            href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a>
-                                    </h1>
-                                </div>
+                                @endguest
                             </div>
+                            <div class="p-2">
+                                @guest
+                                    <h5 class="d-inline mr-5"><a class="font-weight-bold text-uppercase"
+                                                                 href="/register">Register</a>
+                                    </h5>
+                                    <h5 class="d-inline"><a class="font-weight-bold text-uppercase"
+                                                            href="/login">Login</a></h5>
+                                @endguest
 
-
-                            <!-- dog card -->
-
-                            <div class="row mt-4 catalog-body">
-                                @foreach($category->offer as $doge)
-                                    <div class="col-md-3 col-sm-12 catalog-card">
-                                        <a href="{{route('show.offer', $doge->id)}}">
-                                            <div class="card no-border">
-                                                <img class="card-img-top"
-                                                     src="{{$doge->photo ? $doge->photo->path : ''}}"
-                                                     alt="Card image cap">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">{{$doge->name}}</h5>
-                                                    <p class="card-text">{{$doge->title}}</p>
-                                                    <img src="/images/like.png" class="like float-right invisible"
-                                                         alt="">
-                                                </div>
-                                            </div>
+                                @auth
+                                    <h5 class="d-inline mr-3 text-uppercase">
+                                        <a href="/dashboard" class="btn btn-link nav-link-main text-uppercase">
+                                            @if(Auth::user()->photo)
+                                                <img
+                                                    src="{{ Auth::user()->photo ? ('/' . Auth::user()->photo->path) : '/images/default.png' }}"
+                                                    class="img-responsive rounded-circle"
+                                                    style="width:2rem; height: 2rem;">
+                                            @endif
+                                            {{ Auth::user()->name }}
                                         </a>
-                                        @auth
-                                            <form class="p-0 like-form">
-                                                <input onclick="clickFav(this)"  id="{{$doge->id}}" class="like border-0 {{$doge->wishlist ? 'liked' : 'like'}}"type="button">
-                                            </form>
-                                        @endauth
-                                    </div>
-                                @endforeach
+                                        @if(Auth::user()->isAdmin() || Auth::user()->isModerator())
+                                            | <a href="{{route('admin')}}"
+                                                 class="btn btn-link nav-link-main text-uppercase"
+                                                 role="button"><i class="fas fa-user-cog"></i> Admin</a>
+                                        @endif
+                                    </h5>
+                                    <form class="d-inline" action="/logout" method="POST">
+                                        @csrf
+                                        <button type="submit" class="btn btn-danger nav-link-main text-uppercase">
+                                            Logout
+                                        </button>
+                                    </form>
+                                @endauth
                             </div>
+                        </section>
+                    @endguest
 
-                            <h4 class="d-inline float-right mt-3"><a href="{{ route('category.show',$category->id)}}">More
-                                    ></a></h4>
+                <!-- category navigation-->
+                    <section id="category-navigation" class="d-flex justify-content-center mt-5 scrolling-wrapper">
 
-
+                        @if($categories)
+                            @foreach($categories as $category)
+                                @if(!$category->offer->isEmpty())
+                                    <div class="text-center d-inline-block mr-3">
+                                        <h5 class="d-inline font-weight-bold">
+                                            <a href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a>
+                                        </h5>
+                                    </div>
+                                @endif
+                            @endforeach
                         @endif
-                    @endforeach
-                @endif
-            </div>
-            <br>
-        </section>
-    </div>
+                    </section>
+
+
+                    <!-- feature dog-->
+                    {{--      <section id="hero" class="mt-5">--}}
+                    {{--          <div class="jumbotron bg-white no-rounding box-shadow hero-background-image" style="background-image: url('/images/hero.jpeg')">--}}
+                    {{--                  <h2 class="display-5 font-weight-bold text-center text-uppercase text-shadow">Siberian Husky</h2>--}}
+                    {{--                  <p class="px-5 pb-3 text-center mt-5 ml-auto mr-auto hero-description text-shadow">The most smart and cutest--}}
+                    {{--                      creatures ever!</p>--}}
+                    {{--                  <div class="d-flex justify-content-center mt-3">--}}
+                    {{--                      <div class="p-2">--}}
+                    {{--                          <h6 class="d-inline text-shadow"><a class="font-weight-bold" href="/static/puppyPage">Learn More ></a>--}}
+                    {{--                          </h6>--}}
+                    {{--                      </div>--}}
+                    {{--                      <div class="p-2 ml-5">--}}
+                    {{--                          <h6 class="d-inline text-shadow"><a class="font-weight-bold" href="#">Buy ></a></h6>--}}
+                    {{--                      </div>--}}
+                    {{--                  </div>--}}
+                    {{--              </div>--}}
+                    {{--      </section>--}}
+
+                    <section id="catalog">
+                        <div class="catalog mt-5">
+
+                            @if($categories)
+                                @foreach($categories as $category)
+                                    @if(!$category->offer->isEmpty())
+                                        <div class="d-flex catalog-header scrolling-wrapper mt-5">
+                                            <div class="pt-1 pl-0 mr-4">
+                                                <h1 class="font-weight-bold"><a
+                                                        href="{{ route('category.show',$category->id)}}">{{$category->breed}}</a>
+                                                </h1>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- dog card -->
+
+                                        <div class="row mt-4 catalog-body">
+                                            @foreach($category->offer as $doge)
+                                                <div class="col-md-3 col-sm-12 catalog-card">
+                                                    <a href="{{route('show.offer', $doge->id)}}">
+                                                        <div class="card no-border">
+                                                            <img class="card-img-top"
+                                                                 src="{{$doge->photo ? '/' . $doge->photo->path : ''}}"
+                                                                 alt="Card image cap">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">{{$doge->name}}</h5>
+                                                                <p class="card-text">{{$doge->title}}</p>
+                                                                <img src="/images/like.png"
+                                                                     class="like float-right invisible"
+                                                                     alt="">
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    @auth
+                                                        <form class="p-0 like-form">
+                                                            <input onclick="clickFav(this)" id="{{$doge->id}}"
+                                                                   class="like border-0 {{$doge->wishlist ? 'liked' : 'like'}}"
+                                                                   type="button">
+                                                        </form>
+                                                    @endauth
+                                                </div>
+                                            @endforeach
+                                        </div>
+
+                                        <h4 class="d-inline float-right mt-3"><a
+                                                href="{{ route('category.show',$category->id)}}">More
+                                                ></a></h4>
+
+
+                                    @endif
+                                @endforeach
+                            @endif
+                        </div>
+                        <br>
+                    </section>
+                </div>
 @endsection
