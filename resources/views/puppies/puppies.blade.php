@@ -97,13 +97,13 @@
                                         <div class="row mt-0 mt-md-3 mt-lg-0">
                                             <div class="col-md-2 col-sm-4">
                                                 <h4>
-                                                    <i class="fab fa-facebook-f mr-1"></i>
+                                                    <i class="fab fa-facebook-f mr-1 facebook-icon"></i>
                                                     <div class="d-inline d-md-none">
                                                         Facebook
                                                     </div>
                                                 </h4>
                                             </div>
-                                            <div class="col-md-10 d-none d-md-block">
+                                            <div class="col-md-10 d-none d-md-block facebook-word">
                                                 <h4>Facebook</h4>
                                             </div>
                                         </div>

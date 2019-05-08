@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="03893466-bf04-481a-8666-4df6d09d62fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/announcement/announcement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/announcement/announcement.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/puppies/puppies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/puppies/puppies.blade.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
@@ -99,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/puppies/puppies.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="96" column="78" lean-forward="true" selection-start-line="96" selection-start-column="78" selection-end-line="96" selection-end-column="78" />
+            <state relative-caret-position="258">
+              <caret line="105" column="84" lean-forward="true" selection-start-line="105" selection-start-column="84" selection-end-line="105" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -108,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="728" column="31" selection-start-line="728" selection-start-column="31" selection-end-line="728" selection-end-column="31" />
+            <state relative-caret-position="439">
+              <caret line="725" column="26" lean-forward="true" selection-start-line="725" selection-start-column="26" selection-end-line="725" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -432,12 +431,12 @@
       <workItem from="1557307211493" duration="466000" />
       <workItem from="1557309567047" duration="1216000" />
       <workItem from="1557311431201" duration="45000" />
-      <workItem from="1557319315206" duration="6774000" />
+      <workItem from="1557319315206" duration="7533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12334000" />
+    <option name="totallyTimeSpent" value="13093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -624,15 +623,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/puppies/puppies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="96" column="78" lean-forward="true" selection-start-line="96" selection-start-column="78" selection-end-line="96" selection-end-column="78" />
+        <state relative-caret-position="258">
+          <caret line="105" column="84" lean-forward="true" selection-start-line="105" selection-start-column="84" selection-end-line="105" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="728" column="31" selection-start-line="728" selection-start-column="31" selection-end-line="728" selection-end-column="31" />
+        <state relative-caret-position="439">
+          <caret line="725" column="26" lean-forward="true" selection-start-line="725" selection-start-column="26" selection-end-line="725" selection-end-column="26" />
         </state>
       </provider>
     </entry>
