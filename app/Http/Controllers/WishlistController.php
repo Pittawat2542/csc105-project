@@ -12,13 +12,6 @@ class WishlistController extends Controller
         $this->middleware(['auth']);
     }
 
-    public function index()
-    {
-        $user = Auth::user();
-        $wishlists = Wishlist::where("user_id", "=", $user->id)->orderby('id', 'desc')->paginate(10);
-        return view('frontend.wishlist', compact('user', 'wishlists'));
-    }
-
     public function store($id)
     {
 
@@ -28,7 +21,9 @@ class WishlistController extends Controller
 
         if(isset($status->user_id) and isset($id))
         {
-            $this->destroy($status->id);
+            $wishlist = Wishlist::findOrFail($id);
+            $wishlist->delete();
+            return 'Deleted';
         }
         else
         {
@@ -37,9 +32,7 @@ class WishlistController extends Controller
             $wishlist->user_id = Auth::user()->id;
             $wishlist->offer_id = $id;
             $wishlist->save();
-
-            return redirect()->back()->with('flash_message',
-                'Item, '. $wishlist->offer_id->title.' Added to your wishlist.');
+            return 'Item, '. $wishlist->offer_id->title.' Added to your wishlist.';
         }
 
     }
@@ -48,8 +41,6 @@ class WishlistController extends Controller
     {
         $wishlist = Wishlist::findOrFail($id);
         $wishlist->delete();
-        return redirect()->route('wishlist.index')
-            ->with('flash_message',
-                'Item successfully deleted');
+        return redirect('/dashboard');
     }
 }
