@@ -92,7 +92,7 @@
                         <a href="{{route('show.offer', $puppy->id)}}">
                             <div class="card no-border">
                                 @if($puppy->photo)
-                                <img class="card-img-top" src="{{$puppy->photo->path}}" alt="Card image cap">
+                                <img class="card-img-top" src="/{{$puppy->photo->path}}" alt="Card image cap">
                                 @endif
                                 <div class="card-body">
                                     <h5 class="card-title">{{$puppy->title}}</h5>
