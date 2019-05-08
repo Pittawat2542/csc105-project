@@ -139,15 +139,15 @@
 
                         <div class="picture-uploader mb-3">
                             <div class="profile-picture mr-3">
-                                @if($user->photo)
-                                    <img src="{{ $user->photo ? $user->photo->path : '/images/default.png' }}"
+                                @if(Auth::user()->photo)
+                                    <img src="{{ Auth::user()->photo ? Auth::user()->photo->path : '/images/default.png' }}"
                                          class="img-responsive">
                                 @endif
                             </div>
                             <div class="upload">
                                 <p class="text-primary mb-0">Profile Picture</p>
                                 <div class="commit-button sticky-left">
-                                    {!! Form::model($user, ['method'=>'PATCH', 'action'=>['UserController@update',
+                                    {!! Form::model(Auth::user(), ['method'=>'PATCH', 'action'=>['UserController@update',
                                     Auth::user()->id], 'files'=>true]) !!}
 
                                     {!! Form::label('photo', 'Select File', ['class'=> 'box-shadow text-uppercase']) !!}
@@ -229,7 +229,7 @@
                         {!! Form::close() !!}
                     </div>
 
-                    @if($user->is_verified==0)
+                    @if(Auth::user()->is_verified==0)
                         <div class="section">
                             <h2 class="mb-3 text-primary text-uppercase mt-5">Verification</h2>
                             {!! Form::open(['method'=>'POST', 'action'=>'UserController@updateId', 'files'=>true]) !!}
