@@ -19,11 +19,6 @@ class CreateWishlistsTable extends Migration
             $table->integer('offer_id')->unsigned();
             $table->timestamps();
         });
-
-        Schema::table('wishlist', function($table) {
-            $table->foreign('user_id')->references('id')->on('users');
-        $table->foreign('offer_id')->references('id')->on('offers');
-        });
     }
 
 
