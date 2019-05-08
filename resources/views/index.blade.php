@@ -159,7 +159,7 @@
                                         <a href="{{route('show.offer', $doge->id)}}">
                                             <div class="card no-border">
                                                 <img class="card-img-top"
-                                                     src="/{{$doge->photo ? $doge->photo->path : ''}}"
+                                                     src="{{$doge->photo ? $doge->photo->path : ''}}"
                                                      alt="Card image cap">
                                                 <div class="card-body">
                                                     <h5 class="card-title">{{$doge->name}}</h5>
