@@ -40,11 +40,23 @@
                             <div class="user-box">
                                 <div class="card no-border-radius border-0 box-shadow mb-3">
                                     <div class="card-body">
-                                        <h2 class="text-primary text-center">Currently, nothing in wishlist!</h2>
+                                        <h2 class="text-primary text-center">Currently, nothing in favourites!</h2>
                                     </div>
                                 </div>
                             </div>
                         @endif
+
+                        @if($wishlist)
+                            @if(count($wishlist) == 0)
+                                <div class="user-box">
+                                    <div class="card no-border-radius border-0 box-shadow mb-3">
+                                        <div class="card-body">
+                                            <h2 class="text-primary text-center">Currently, nothing in favourites!</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
+                            @endif
                     </div>
                 </div>
 
