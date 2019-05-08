@@ -55,8 +55,9 @@ footer {
 .like-form{
     position:relative;
     top: -3rem;
-    right: -12.5rem;
+    right: -85%;
     z-index: 10;
+    overflow: hidden;
 }
 
 .opacity50 {
@@ -83,13 +84,13 @@ footer {
 @media (max-width:1199px){
     .like-form{
         position:relative;
-        right: -10.5rem;
+        right: -80%;
     }
 }
 @media (max-width:991px){
     .like-form{
         position:relative;
-        right: -7rem;
+        right: -77.5%;
     }
 }
 
@@ -101,10 +102,9 @@ footer {
     }
     .like-form{
         position:relative;
-        right: -85%;
-        overflow: hidden;
         width: 30px;
         height: 30px;
+        right: -90%;
     }
         
 }
@@ -434,6 +434,7 @@ select[name="itemsPerPage"] {
     border-color: #405377;
 }
 
+
 input[type=date] {
     width: 75%;
 }
@@ -445,6 +446,9 @@ input[type=date] {
     @media (max-width: 991px) {
         #sort-group {
             margin-top: 1.5rem;
+        }
+        .puppy-like{
+            right: -72.5%;
         }
 
         @media (max-width: 767px) {
@@ -473,6 +477,9 @@ input[type=date] {
             }
             div.catalog-card {
                 margin-bottom: 3rem !important;
+            }
+            .puppy-like{
+                right: -90%;
             }
 
             @media (max-width: 575px) {
