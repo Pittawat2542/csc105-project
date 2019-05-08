@@ -43,7 +43,7 @@ class AdminOffersController extends Controller
     public function store(Request $request)
     {
         Offer::create($request);
-        return redirect('/admin/offers');
+        return redirect('/admin');
     }
 
     /**
@@ -82,7 +82,7 @@ class AdminOffersController extends Controller
     {
         $offer = Offer::findOrFail($offers);
         $offer->update($request);
-        return redirect('/admin/offers');
+        return redirect('/admin');
     }
 
     /**
@@ -95,6 +95,6 @@ class AdminOffersController extends Controller
     {
         $offer = Offer::findOrFail($offers);
         $offer->delete();
-        return redirect('/admin/offers');
+        return redirect('/admin');
     }
 }

@@ -54,7 +54,7 @@ class AdminUserController extends Controller
         }
         User::create($data);
 
-        return redirect('/admin/users');
+        return redirect('/admin');
     }
 
 
@@ -107,6 +107,6 @@ class AdminUserController extends Controller
 
         $user->delete();
 
-        return redirect('/admin/users');
+        return redirect('/admin');
     }
 }
