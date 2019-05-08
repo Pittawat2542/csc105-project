@@ -49,4 +49,8 @@ class Offer extends Model
     public function photo() {
         return $this->belongsTo('App\Photo');
     }
+
+    public function wishlist(){
+        return $this->hasMany(Wishlist::class);
+    }
 }

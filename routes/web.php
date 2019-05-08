@@ -31,6 +31,9 @@ Route::get('/offers', 'OffersController@index')->name('offers');
 
 //loged users
 Route::group(['middleware'=>'auth'], function() {
+
+    Route::resource('/wishlist', 'WishlistController', ['except' => ['create', 'edit', 'show', 'update']]);
+
     Route::get('/puppies/{id}', 'OffersController@show')->name('show.offer');
 
     Route::get('/announcement/create', 'OffersController@create')->name('create.offer');
