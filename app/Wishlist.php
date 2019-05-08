@@ -15,4 +15,8 @@ class Wishlist extends Model
     public function offer(){
         return $this->belongsTo(Offer::class);
     }
+
+    public function photo() {
+        return $this->belongsTo(Photo::class);
+    }
 }

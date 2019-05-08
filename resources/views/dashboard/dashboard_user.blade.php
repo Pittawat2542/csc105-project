@@ -23,7 +23,7 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
-                                            <img class="dashboard-img mr-3" src="{{$wish->photo ? $wish->photo->path : '/images/default.png'}}" alt="">
+                                            <img class="dashboard-img mr-3" src="{{$wish->offer->photo ? $wish->offer->photo->path : '/images/default.png'}}" alt="">
                                             <h2 class="d-inline text-uppercase text-primary">{{$wish->offer->title}}</h2></div>
                                         <div class="col-md-6 col-sm-12 text-right align-middle">
 

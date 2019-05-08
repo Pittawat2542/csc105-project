@@ -8,7 +8,7 @@
             <div class="picture-uploader mb-3">
                 <div class="profile-picture mr-3">
                     @if($user->photo)
-                        <img src="{{ $user->photo ? $user->photo->path : '/images/default.png' }}"
+                        <img src="{{ $user->photo ? ('/' .$user->photo->path) : '/images/default.png' }}"
                              class="img-responsive">
                     @endif
                 </div>
