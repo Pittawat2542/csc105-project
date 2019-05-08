@@ -181,7 +181,7 @@
                                         </a>
                                         @auth
                                             <form class="p-0 like-form">
-                                                <input onclick="clickFav(this)"  id="{{$doge->id}}" class="like border-0 {{$puppy->wishlist ? 'liked' : 'like'}}"type="button">
+                                                <input onclick="clickFav(this)"  id="{{$doge->id}}" class="like border-0 {{$doge->wishlist ? 'liked' : 'like'}}"type="button">
                                             </form>
                                         @endauth
                                     </div>
