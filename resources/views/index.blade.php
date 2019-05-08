@@ -170,7 +170,7 @@
                                             </div>
                                         </a>
                                         <form class="p-0 like-form">
-                                            <input onclick="clickFav(this)" class="like border-0 " type="button">
+                                            <input onclick="clickFav(this)"  id="{{$puppy->id}}" class="like border-0 {{$puppy->wishlist ? 'liked' : 'like'}}"type="button">
                                         </form>
                                     </div>
                                 @endforeach

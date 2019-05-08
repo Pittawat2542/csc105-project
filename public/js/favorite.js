@@ -7,13 +7,14 @@ function clickFav(x){
         },
         type: "POST",
         success: function () {
-            if(x.classList.contains("like")) {
-                x.classList.add("liked");
-                x.classList.remove("like");
-            }else{
+            if(x.classList.contains("liked")) {
                 x.classList.add("like");
                 x.classList.remove("liked");
+            }else{
+                x.classList.add("liked");
+                x.classList.remove("like");
             }
         }
     });
+
 }

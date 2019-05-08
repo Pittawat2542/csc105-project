@@ -51,6 +51,6 @@ class Offer extends Model
     }
 
     public function wishlist(){
-        return $this->hasMany(Wishlist::class);
+        return $this->hasOne(Wishlist::class);
     }
 }
