@@ -19,10 +19,9 @@ class WishlistController extends Controller
             ->where('offer_id',$id)
             ->first();
 
-        if(isset($status->user_id) and isset($id))
+        if(isset($status))
         {
-            $wishlist = Wishlist::findOrFail($id);
-            $wishlist->delete();
+            $status->delete();
             return 'Deleted';
         }
         else
@@ -32,7 +31,7 @@ class WishlistController extends Controller
             $wishlist->user_id = Auth::user()->id;
             $wishlist->offer_id = $id;
             $wishlist->save();
-            return 'Item, '. $wishlist->offer_id->title.' Added to your wishlist.';
+            return 'Added to your wishlist.';
         }
 
     }
