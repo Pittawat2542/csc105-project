@@ -45,8 +45,17 @@
         </div>
     </nav>
 
+    @auth
+    @include('components.navbar');
+    @endauth
+
     <!-- desktop site navbar-->
+    @if (Auth::check())
+    <div class="container" style="margin-top: 7rem !important">
+    @else
     <div class="container mt-5">
+    @endif
+    @guest
         <section id="index-header" class="d-flex justify-content-between">
             <div class="p-2">
                 {!! Form::open(['method'=>'GET', 'class'=>'form-inline my-2 my-lg-0']) !!}
@@ -100,6 +109,7 @@
                 @endauth
             </div>
         </section>
+        @endguest
 
         <!-- category navigation-->
         <section id="category-navigation" class="d-flex justify-content-center mt-5 scrolling-wrapper">
